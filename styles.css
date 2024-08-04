@@ -1,0 +1,25 @@
+no {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.station {
+    margin: 0;
+    border: 2px solid;
+    width: fit-content;
+}
+
+.websiteWhite {
+    font-weight: bolder;
+    font-size: large;
+    color: white;
+}
+
+.box {
+    border: 5px solid;
+    padding: 8px;
+    width: 8em;
+}
