@@ -1,3 +1,4 @@
+/* common */
 body {
     background-color: #1f1f2f;
     color: #efefee;
@@ -34,19 +35,24 @@ nav ul {
 nav li {
     float: left;
     display: inline;
-    margin: 0 7.5px;
     overflow: hidden;
+}
+
+nav.navigation li {
+    margin: 0 15px 0 0;
 }
 
 nav a {
     color: #FF8080;
 }
 
-section#introduction ul li {
+/* homepage */
+
+section#introduction li {
     margin: 2px;
 }
 
-.works {
+.work {
     text-decoration: none;
 }
 
@@ -66,4 +72,38 @@ b#name {
     font-weight: bolder;
     font-size: large;
     color: white;
+}
+
+/* subs */
+section.sub li {
+    list-style: square;
+}
+
+.reference {
+    color: #ababaa;
+    font-size: 15px;
+}
+
+.date {
+    color: #ababaa;
+    font-size: 15px;
+    text-align: right;
+}
+
+.date li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+figcaption {
+    color: #ababaa;
+    font-size: 15px;
+    text-align: center;
+}
+
+.delline {
+    text-decoration-line: line-through;
 }
