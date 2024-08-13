@@ -90,6 +90,10 @@ section.sub li {
     text-align: right;
 }
 
+.date p {
+    margin: 0;
+}
+
 .date li {
     list-style: none;
 }
