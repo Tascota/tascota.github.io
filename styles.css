@@ -107,3 +107,9 @@ figcaption {
 .delline {
     text-decoration-line: line-through;
 }
+
+.reference-index {
+    color: #ababaa;
+    font-size: 15px;
+    list-style: upper-roman;
+}
