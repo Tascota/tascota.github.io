@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>新</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Index</a></li><li class="chapter-item expanded "><a href="../General/general.html"><strong aria-hidden="true">2.</strong> Biography of General</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../General/i.html"><strong aria-hidden="true">2.1.</strong> 上</a></li><li class="chapter-item expanded "><a href="../General/ii.html"><strong aria-hidden="true">2.2.</strong> 中</a></li><li class="chapter-item expanded "><a href="../General/novo.html" class="active"><strong aria-hidden="true">2.3.</strong> 新</a></li></ol></li><li class="chapter-item expanded "><a href="../Regeneral/regeneral.html"><strong aria-hidden="true">3.</strong> Re:Biography of General</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Regeneral/re.html"><strong aria-hidden="true">3.1.</strong> 再</a></li><li class="chapter-item expanded "><a href="../Regeneral/iii.html"><strong aria-hidden="true">3.2.</strong> 后</a></li><li class="chapter-item expanded "><a href="../Regeneral/quis.html"><strong aria-hidden="true">3.3.</strong> ？</a></li></ol></li><li class="chapter-item expanded "><a href="../Genechan/genechan.html"><strong aria-hidden="true">4.</strong> Biography of Genechan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Genechan/1.html"><strong aria-hidden="true">4.1.</strong> piRiutataze!</a></li><li class="chapter-item expanded "><a href="../Genechan/2.html"><strong aria-hidden="true">4.2.</strong> Šodpolis te Usa Ucikiqi</a></li><li class="chapter-item expanded "><a href="../Genechan/3.html"><strong aria-hidden="true">4.3.</strong> Pakba Atemvasty iQivi de laSargra</a></li><li class="chapter-item expanded "><a href="../Genechan/4.html"><strong aria-hidden="true">4.4.</strong> Steamia</a></li><li class="chapter-item expanded "><a href="../Genechan/citystates.html"><strong aria-hidden="true">4.5.</strong> in Citystates</a></li><li class="chapter-item expanded "><a href="../Genechan/aresia.html"><strong aria-hidden="true">4.6.</strong> on Aresia</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../Kanata/kanata.html"><strong aria-hidden="true">5.</strong> Kanata no Sonata</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Kanata/5.41.html"><strong aria-hidden="true">5.1.</strong> Hatsuyuki</a></li><li class="chapter-item expanded "><a href="../Kanata/5.42.html"><strong aria-hidden="true">5.2.</strong> Shiratsuyu</a></li><li class="chapter-item expanded "><a href="../Kanata/5.43.html"><strong aria-hidden="true">5.3.</strong> Kuroshio</a></li><li class="chapter-item expanded "><a href="../Kanata/5.44.html"><strong aria-hidden="true">5.4.</strong> Oboro</a></li><li class="chapter-item expanded "><a href="../Kanata/5.50.html"><strong aria-hidden="true">5.5.</strong> 这种事情显得我自我意识过剩</a></li><li class="chapter-item expanded "><a href="../Kanata/6.html"><strong aria-hidden="true">5.6.</strong> 当然没有什么意义啦</a></li><li class="chapter-item expanded "><a href="../Kanata/7.html"><strong aria-hidden="true">5.7.</strong> 我并没有否定自己的意思</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="新"><a class="header" href="#新">新</a></h1>
+<h3 id="16"><a class="header" href="#16">16</a></h3>
+<p>在看完《孤独摇滚》之后，索拉的形象便在我心中无限趋近于伊地知虹夏，圣虹夏应该是没有如此幼稚可笑、自相矛盾的，由衷地抱歉；而库莫则是任何一个模版化的黑长直，可能类似于晓美焰、雪之下雪乃或者井之上泷奈（因为我是见过这三位的），对以上三位再次致歉。</p>
+<p>按照原来的想法，这会是一个怎么样都能想到结局的无聊故事，虽然我在写下这段话的时候也并没想到什么能吸引人的好展开和好结局。理论上原来的结局中是有一些本世界的科学无法解释的东西的，我本来不想解释它们；但在对长颈鹿和 Revue 产生极大的不满之后，这样的想法就被我大概地抛弃了。</p>
+<p>上篇很显然是充斥着流水账、无聊的剧情和没有用的细节描写的，让其长度似乎成为了一场灾难。而且我确信没有读者能看得下去的。我对此表示歉意。</p>
+<p>以下的文字同样如此，并且会有更多的 neta，而我只会随着自己的性子写了。</p>
+<h3 id="17"><a class="header" href="#17">17</a></h3>
+<p>在看见小云和索拉那样不明所以的行动之后，我对自己的所在产生了无限的迷茫感。</p>
+<p>“又犯病了？”要是要我向前一步然后说些什么的话，我会这么说的。他在我的印象里是这样的人，但也仅限于“我的印象里”了。以我自身的角度来说，当然希望他的那些转变是发自内心的——而不是受到现充的魔女的引诱。</p>
+<p>又或者说，索拉为什么要说“对不起”呢？</p>
+<p>其本人的回答是，“我在那是不是有点毁气氛？”我确信这样的她不会以这样的神态做出这样的回答。</p>
+<p>“只是因为毁气氛吗？明明说出这样的话更毁气氛吧。”</p>
+<p>“确实是这样的啊。”</p>
+<p>这是对哪一句话的回应呢？“不过也应该由我或者库莫说出来的吧，对这一句话来说。”</p>
+<p>“只是我想说而已，”她说，“难道不允许一个中二病患者出出风头吗？”绿灯恰当地亮起，她恰当地踩着踏板离远了。</p>
+<br>
+<p>不过在索拉的话里，她很少会用中二病患者的人设。“所以说，出完风头之后就一头冲进了别人的怀里吗？”</p>
+<p>“啊…啊？那是库莫和我之间的引力——那是引力！”</p>
+<p>“引力是这么神奇的事物啊。会让你去道歉吗？”</p>
+<p>一怔。“喂，这不重要——！”</p>
+<p>“都是你那个时候大脑短路造成的问题吗？”</p>
+<p>“怎么能这样！”她用指尖点了点这边。绿灯亮起好一会之后，她踩着踏板离远了。</p>
+<br>
+<p>“停！”她打住我的话，“我知道你要问什么。”</p>
+<p>“那真是太好了，我的朋友。”</p>
+<p>周末的时间是很充裕的。</p>
+<br>
+<h3 id="18"><a class="header" href="#18">18</a></h3>
+<p>索拉从积满灰的书堆里、拥挤的书架里、互联网的角落里找出了她一切的罪证。</p>
+<p>“这样的罪证不稀罕的啊，索拉小姐。”在白纸上的城市路网、国家兴衰，或者是笔记本上的奇怪设定、打发上课时间的不知所云的表格和全班传阅的游戏记录本，如此令人扼腕叹息。</p>
+<p>但在这一时期，不去利用一下自己的金黄色头发是不合格的。“所以，从异世界穿越而来的王女，降临于此！哟呵呵！”同一屋檐下同时装着王女和将军，如此的相得益彰。</p>
+<p>这一时期的索拉仅能列于古典派精神病之列，连口号也是模仿着别人地喊出“邪王真眼是最强的”、“大幻梦森罗万象狂气断罪眼”之类的台词，姑且算作是角色厨之流，能够提升自己的萌度的话也无可厚非——但这个时代的一切和互联网都离不开联系了。</p>
+<p>“怎么可能？法国人很弱？怎、么、可、能？”有哪一个自定义为王女的少女，能抵挡得住优雅的法国文化的诱惑呢——尽管她在口头上为之而战的那个年代，已经没有法国国王了。</p>
+<p>“能不能正常点？就算都是穿越转生而来，什么宇宙太空星球将军的？本王女很不能理解！”王女的下一步是开除其将军的军籍。中二病或许能同病相怜，但当这状态稳定下来之后就该开除病籍了，何况王女和将军之间有着作为兄妹而随时都能对峙的减成。</p>
+<p>“就算同为王女，有的人却只想在宫廷和花园里寻欢作乐，真是难以想象她们的品味！懂得在阿尔卑斯山脚下、日内瓦湖畔享受美景的，才是最高贵的！”这么说，王女界也有着现充和婆罗门的较量啊。且不论是不是皈依者狂热效应之故，瑞士的公民们应该比王女站在歧视链中更高的位置吧。</p>
+<p>于是这样，索拉越来越接近于成为一个属于自己的王女。她的国度一步步地在幻想的海洋中弥漫开来，虚拟国也好、人造语也罢，那一块块砖块、一张张拼图不断地用各种方式汇合到一起——</p>
+<p>“写什么呢？下课来办公室！”最后，她波澜壮阔的、作为王女的美好生活，随着一声呵斥，戛然而止。</p>
+<p>侧卧着，索拉一条条地翻看自己的空间、自己的动态、自己所用于构建那美好幻想的一砖一瓦。关掉亮着的屏幕，她回想着自己的努力第一次被看到时的喜悦、和别人交流时的激动、以及……</p>
+<p>不再有“以及”了，她这么想。</p>
+<p>不再有“以及”了吗？</p>
+<p>不会在毫无意义的事情上浪费时间了，她这么想。</p>
+<p>不会在毫无意义的事情上浪费时间了吗？</p>
+<p>所以她也学着放弃了幻想。</p>
+<br>
+<h3 id="19"><a class="header" href="#19">19</a></h3>
+<p>“原来是这样啊，王女大人。”</p>
+<p>“别叫我王女大人…！”</p>
+<p>“没问题，王女大人。”</p>
+<p>她喝了口手里的那瓶汽水。</p>
+<br>
+<h3 id="20"><a class="header" href="#20">20</a></h3>
+<p>“索拉！不要在这里妨碍吾人释放捆仙绳之力！”</p>
+<p>真是难办呢。</p>
+<p>“所以说！”在褪去王女这一层枷锁之后，她能说得直截了当些了，“能不能别念叨你的那些，从各种修仙奇幻网文里搜集出来的东西了？”</p>
+<p>“你说什么？”</p>
+<p>他不太相信自己所听见的，不过他本应该直接不相信的。</p>
+<p>“别说那些有的没的了！”她重复。</p>
+<p>“什么？”他明白自己不是没有听清，而是不想听清。</p>
+<p>她没再重复一遍。</p>
+<p>“我已经和中二病彻底切割了！”她义正严辞地说，“你懂我的意思吗？切割！”</p>
+<p>“什么中二病？！吾转世几万世所得出的正道，岂是什么‘中二病’可以概括？”</p>
+<p>“在学校每天宣扬着，结果让自己成为所有人找的乐子的那个‘正道’吗？”</p>
+<p>“住嘴！你这无能小辈，竟敢妄加揣测吾银河将军！”</p>
+<p>这样奇怪的对话持续了好几回合，最后以恰到好处的电话响铃声结尾了。</p>
+<p>软肋在每个人身上都存在着，只是有没有人碰触之分。而他的只是被碰触到了而已——话虽如此，这对一个中二期的家伙已经是很大的精神打击了。</p>
+<br>
+<h3 id="21"><a class="header" href="#21">21</a></h3>
+<p>“所以就有了什么“变‘柔顺’”和 ooc 的举动了吗……都是你这家伙造成的啊。”</p>
+<p>“只是想拖更多人下水而已，毕竟不想只有我一个人受害啊。”</p>
+<p>“被打破中二病的幻想也是‘受害’啊。那总有一天会自己害到自己的吧？”</p>
+<p>“这种逻辑细节就别在意了啊。”</p>
+<p>“所以说，按照你的说法，你和小云演的那场戏，导火索也是你吧。我已经可以想到了。”</p>
+<p>“嗯哼？”</p>
+<br>
+<h3 id="22"><a class="header" href="#22">22</a></h3>
+<p>“你好，同学。”这样生疏的话语只是为了试探他而已。虽然我也很讨厌只发出“在吗”的消息的人们，但我发誓这次只是引蛇出洞而已。</p>
+<p>“请问您贵干？”</p>
+<p>“我直截了当地说：您的大脑在上周末——或者是上上周末，是否刚刚经历了一场大清洗？”</p>
+<p>一段时间内的屏幕上都毫无改变，甚至没有“输入中”的提醒。但理论上他会抛回另一个历史玩笑给我。</p>
+<p>“多有冒犯，十分抱歉。”蛇又回去了。对外交辞令拙劣的模仿。</p>
+<br>
+<p>“晚上好，哥哥——正式地说，兄长。”</p>
+<p>点头。</p>
+<p>“今天昼间应该有人进行了一次不成功的套话。如果那仅仅是因为不方便的话，那些话可以在这里说说。”</p>
+<p>“我想我们之间的谈话不需要那样正式的语气——库莫。”</p>
+<p>于是在沙发的这一侧和另一侧，两人开始进行看似漫不经心的交谈。</p>
+<br>
+<p>此时我和索拉正走在附近公园的路上。在这片地方附近，以湖泊为中心的这座公园是不多的有趣的地方——至少是对我而言。</p>
+<p>此时正是日暮时分，蓝色和橙黄色分别占据着一半的天空。作为互补色的它们在苍穹之上的碰撞，以及远处夕阳被恰当的层云遮住时迸发出的霞光，都集中在我们身上。</p>
+<p>“在这里可以很明显的看见夕阳呢。”</p>
+<p>“夕阳被云挡住了，你看见的只是晚霞而已。”</p>
+<p>“闭嘴啊。”</p>
+<p>稍微的沉默。</p>
+<p>“那天叫我们一起去海岸的时候，你也一直注意着时间呢。六点二十四分，是吧？这是那天日落的时间。你念叨了很多次呢。”</p>
+<p>“……”</p>
+<p>“结果这座城市的海岸线在东边，在那里是看不到海平面上的日落的呢。连傍晚的阳光也全都被城市覆盖住了。”</p>
+<p>“唔，明明看到其他人都是去海边看日出的时候就该想到的……”</p>
+<p>“结果最后没有等到太阳落山就回去了，‘为什么太阳不能从东边升起来啊——’”</p>
+<p>“喂！”</p>
+<p>裤子口袋里的手机震动起来了。</p>
+<p>那两人的交涉一定完成了。不过两个外冷内热的人的交锋一定很别扭，大概是竭力不想让对方率先抵达自己“热”的这一地方的那种别扭。于是我没兴趣去了解这样的谈话了——</p>
+<br>
+<h3 id="23"><a class="header" href="#23">23</a></h3>
+<p>“库莫啊……库莫。是‘くも’吧。一定是‘云’而不是‘蜘蛛’吧？”</p>
+<p>“‘索拉’很明显也不是别的什么东西吧。”</p>
+<p>“啊……难道不觉得这样的名字很酷吗？其他的语言什么的？”</p>
+<p>“我上幼儿园的时候，老师给我取的外语名是‘Momo’。”</p>
+<p>“不是‘科塔’吗？”</p>
+<p>“这个名字是以后才有的……Momo 很像“桃”吧？这可比你们的那个提前好几个版本了。”</p>
+<p>“怎么会有这样的冷笑话啊。”</p>
+<p>在为了缓解尴尬而刻意进行的一些对话之后，我们不约而同地开始看向手机。</p>
+<p>期间，我去快餐店的前台取了餐。等到我们慢慢地啃完汉堡、开始漫无目的地嚼起薯条之时，一束黑发从我眼前飘过，它的主人很快坐在了我面前。</p>
+<p>“他只是想做个戏剧性的了断而已。就这么简单。”</p>
+<p>确实很简单呢，也太简单了些。</p>
+<p>“需要那样了断的是什么事情啊？”</p>
+<p>“是自己所热爱的过往，对于虚妄之物的执着——囿于虚妄而不踏足现实的错误。”她思考了一下才说出口，大概思考的是如何编织一些难懂的词藻，虽然我没太听明白这样说出的书面语。</p>
+<p>“那不就是我吗……”</p>
+<p>“这是他的行事风格，你是明白的。”</p>
+<p>“嗯嗯——喂，其实这没什么好聊的吧。”</p>
+<p>“那就聊聊虚妄之物的来源吧。毕竟我的面前是一位网瘾少年和一位网瘾少女。”</p>
+<br>
+<h3 id="24"><a class="header" href="#24">24</a></h3>
+<p>直截了当地说，就是互联网吧。虽然如今的互联网——至少在一些地方——不再那么“互联”了。</p>
+<p>拜这个时代所赐，互联网和“我们”有着与生俱来的关系。我们出生的时候，互联网早已成熟；我们成长的时候，互联网渗入了这个时代。互联网在我们的视野里是理所应当的，不过有悖于众望的是，我不会因此而为自己赎罪。追根究底，就像万年来的人类（除了魔怔人）对于农业革命的态度一样，只是因为第三次科技革命的结晶成功融入了人类社会而已。</p>
+<p>所以这也大概解释了为何我对赛博朋克、理想城和机械飞升一类的东西有着天生的好感了。这很酷啊。不是吗？</p>
+<p>“我从小学低年级开始就是网瘾少年了哦。不过到了五六年级才开始了正式的网络生涯而已。”</p>
+<p>“欸——我五六年级的时候还在玩各种低成本小游戏呢。”</p>
+<p>“看来接触的时间晚一些会有助于减少黑历史吧。”</p>
+<p>“不过说，科塔——能通过这个成为百科全书也是别样地很厉害啊。”</p>
+<p>“呃……拜我没有兴趣爱好所赐。”</p>
+<p>我只是单纯地想知道更多，就像我有能从把各种东西列成表格得到满足感和成就感之类的奇怪癖好一样，具体来说，是星球、国家、城市之类。没有专门面向地图控的游戏而我又不会用 GIS 软件，真是世间一大憾事。进一步地举个例子，我时常想知道自己不见的东西在哪里、究竟是怎么不见的和目前为止的行动轨迹，甚至想在它们身上都安装定位器。又或者说，想知道所有人们估计的数字的具体数值。</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../General/ii.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../Regeneral/regeneral.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../General/ii.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../Regeneral/regeneral.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

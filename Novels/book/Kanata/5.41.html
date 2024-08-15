@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Hatsuyuki</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Index</a></li><li class="chapter-item expanded "><a href="../General/general.html"><strong aria-hidden="true">2.</strong> Biography of General</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../General/i.html"><strong aria-hidden="true">2.1.</strong> 上</a></li><li class="chapter-item expanded "><a href="../General/ii.html"><strong aria-hidden="true">2.2.</strong> 中</a></li><li class="chapter-item expanded "><a href="../General/novo.html"><strong aria-hidden="true">2.3.</strong> 新</a></li></ol></li><li class="chapter-item expanded "><a href="../Regeneral/regeneral.html"><strong aria-hidden="true">3.</strong> Re:Biography of General</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Regeneral/re.html"><strong aria-hidden="true">3.1.</strong> 再</a></li><li class="chapter-item expanded "><a href="../Regeneral/iii.html"><strong aria-hidden="true">3.2.</strong> 后</a></li><li class="chapter-item expanded "><a href="../Regeneral/quis.html"><strong aria-hidden="true">3.3.</strong> ？</a></li></ol></li><li class="chapter-item expanded "><a href="../Genechan/genechan.html"><strong aria-hidden="true">4.</strong> Biography of Genechan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Genechan/1.html"><strong aria-hidden="true">4.1.</strong> piRiutataze!</a></li><li class="chapter-item expanded "><a href="../Genechan/2.html"><strong aria-hidden="true">4.2.</strong> Šodpolis te Usa Ucikiqi</a></li><li class="chapter-item expanded "><a href="../Genechan/3.html"><strong aria-hidden="true">4.3.</strong> Pakba Atemvasty iQivi de laSargra</a></li><li class="chapter-item expanded "><a href="../Genechan/4.html"><strong aria-hidden="true">4.4.</strong> Steamia</a></li><li class="chapter-item expanded "><a href="../Genechan/citystates.html"><strong aria-hidden="true">4.5.</strong> in Citystates</a></li><li class="chapter-item expanded "><a href="../Genechan/aresia.html"><strong aria-hidden="true">4.6.</strong> on Aresia</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../Kanata/kanata.html"><strong aria-hidden="true">5.</strong> Kanata no Sonata</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Kanata/5.41.html" class="active"><strong aria-hidden="true">5.1.</strong> Hatsuyuki</a></li><li class="chapter-item expanded "><a href="../Kanata/5.42.html"><strong aria-hidden="true">5.2.</strong> Shiratsuyu</a></li><li class="chapter-item expanded "><a href="../Kanata/5.43.html"><strong aria-hidden="true">5.3.</strong> Kuroshio</a></li><li class="chapter-item expanded "><a href="../Kanata/5.44.html"><strong aria-hidden="true">5.4.</strong> Oboro</a></li><li class="chapter-item expanded "><a href="../Kanata/5.50.html"><strong aria-hidden="true">5.5.</strong> 这种事情显得我自我意识过剩</a></li><li class="chapter-item expanded "><a href="../Kanata/6.html"><strong aria-hidden="true">5.6.</strong> 当然没有什么意义啦</a></li><li class="chapter-item expanded "><a href="../Kanata/7.html"><strong aria-hidden="true">5.7.</strong> 我并没有否定自己的意思</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="541---hatsuyuki"><a class="header" href="#541---hatsuyuki">5.41 - Hatsuyuki</a></h1>
+<p>132 年 18 月 9 日，这是今天的日期。地球历 2218 年 1 月 27 日。</p>
+<p>这颗星球的北半球正处于初冬向仲冬过渡之际。细化到阿拉伯平原，则是不间断的北风凛冽。其成因——作为生活在这里的人并没有了解的义务。虽然我知道，但对于没有兴趣的人，即使再解释也只会是我一厢情愿。我想屏幕前的人看着这段文字的时候，并不想要一上来的长段世界观解说。</p>
+<p>在我醒来时，光线已经能透过窗帘把房间照亮了。</p>
+<p>现在是冬季吧。那现在应该已经很晚了。</p>
+<p>我按照惯例在床头的位置摸索手机，暂时只摸到了积下的灰尘。那些颗粒物在我的手指上遗留下了令人不悦的粗糙触感。在将要掉进窗缝的边缘处摸到塑胶手机壳的触感之后，我才安心下来。</p>
+<p>面向床垫的手机屏在我拿起之后亮起来，我才猛地想起来今天会发生的事——</p>
+<p>今天有我的进修课程。</p>
+<p>必须得在早上九点之前到课室。</p>
+<p>我顿时大惊失色，猛地爬起来，用力地肘击床垫，让席梦思床的弹簧发出被冲击的巨大嘎吱声，整个人一下如同龙虾一样竖直着蜷缩在床上。这副窘态不能被看见了。我强行伸展身体，试图冷静下来。此时我还没来得及细看手机锁屏上的数字——尽管那数字的字号和与背景的对比度，让数字在我的眼睛还未聚焦时就能看清——脚底就突然传来一阵异样的疼痛。一瞬间便盖过了我对迟到的恐惧心理。</p>
+<p>是脚趾撞到了旁边放着的椅子上，大拇指的指甲已经裂开了。粉红色的部分暴露出来，渗出鲜血。</p>
+<p>啊……</p>
+<p>我本能地伸手碰了碰，有些疼。那块脱落的脚趾甲被渗出的血粘到我的手上，掉了下来。我顺手把它扔进了垃圾桶。</p>
+<p>不管那个，手机上显示现在方才七点。明明昨天我三点钟才睡，今天为什么又能这么早起来？再这样每天睡四五个小时我该不会猝死吧？</p>
+<p>由于脚底下的痛意，我朦胧的双眼已经完全睁开了。现在完全没有倦意。</p>
+<br>
+<p>想要躺在床上干些什么，睡觉是最好的，但我已经睡不着了。我是很矛盾的人，体现在睡觉上，就是不应睡觉的课程日总是慵慵欲睡，理应睡觉的休息日却精神百倍。这么算来，我已经有三天理论上说睡眠不足了。</p>
+<p>现在怎么办呢。</p>
+<p>我扪心自问。</p>
+<p>“那好。”</p>
+<p>我对自己耳语，用手指口呼衣柜，完成无聊的一连串动作。</p>
+<p>始终一个人迷路着的我，连做换衣服这种事，都需要将自己的决心付诸其上。</p>
+<p>无精打采。这样的早上，我明明应该好好睡觉，直到真的有第一缕阳光洒到我身上时再起床。到那时，被自己口中难受的酸苦味难受到，昏昏沉沉地刷牙洗脸，在那期间才苏醒过来，再吃些合在一起的早午餐——自动热好的。然后，不做什么促进消化的麻烦事，带着吃饱的胃与长胖的预感，再度有气无力地躺回懒人沙发上。然后稍微拉开窗帘，让冬日的阳光洒在我的身上。那些阳光比任何经典里的阳光都跋涉了更远的距离，传递不了那么多的热量。惟能照亮白里泛黄的书页。</p>
+<p>那时又应该看怎样的书呢？</p>
+<p>迷糊着的我停下穿袜子的动作，带着只穿上了左腿的黑色过膝袜下了地板。右侧的脚与地板发出黏糊糊的接触摩擦声，那上面掉下的指甲处还有些空气带来的异物感。</p>
+<p>话说，似乎灰指甲就是这样产生的……不要啊。我还是早点去趟诊所吧。</p>
+<p>我走向的是书柜，而不是房间门。</p>
+<p>书架的最上层是那些经典的文学作品。说实话，因为它们的作者并没有感受过这里遥远的阳光，我对它们难以泛出景仰之情。它们的名气让我很忌惮，主要是害怕自己属于那些被问“谁解其中味”的集体之一。我很希望自己无需借助解析就能看懂作者所写，还能有自己的思想解读。</p>
+<p>不过那样太消耗精力了，我恐怕会睡着吧。</p>
+<p>我之前看那本《沙之书》的时候就睡着了好几次。不过就算这样，我在评分网站上还是没给1分，而是没有打分。</p>
+<p>我又看向最下面，那些大部头历史书籍我就更加忌惮了。</p>
+<p>还有一侧是语言书籍，里面有日语和新埃弗尔莱语词典。旁边还有本《阿利亚语总纲领》，这是我当时被一个在网上强行推销自己语言的家伙送的。当时我半开玩笑的让他寄到彼方的町役所，结果第二天我就在桌上看到了这本书。</p>
+<p>据说他在全火星送出了三十万本。</p>
+<p>那且不论，我还没阅览过任何一点点那个伟大语言。或许我还没有那么无聊吧。但总希望我能有朝一日真的那么无聊。</p>
+<p>能心无旁骛地把时间投入一件事多好啊。要是那样，就不会像我一样只能用支离破碎的语言描述自己的理想生活了。</p>
+<p>这么说来，唯一可选的就是中间的漫画和流行文学了。嗯，轻小说……？</p>
+<br>
+<p>最终，我决定在某一个冬日的下午，躺在房间的懒人沙发上看书。看的是流行文学，可能是轻推理小说或者青春文学吧。什么背包客、民谣艺人、酒吧驻唱、黄金左脸（这个词语是什么意思啊？）的故事，总感觉在这场景里显得太油腻了。</p>
+<p>我可能会因为发呆显得在细细品读某一页，也会因为期待看到结局而一目十行。不必强压自己的阅读速度。</p>
+<p>真好啊。我在无意识间也已经穿好衣服了。一件灰蓝色和浅灰色搭配的连帽卫衣，下身是短牛仔裤，因为有过膝袜的加持，希望不会感到太冷。如果对这种搭配有异议的话，那也很正常。因为我从来不研究搭配。这件卫衣本来就买得太大了。所幸衣服的远端都有松紧带。</p>
+<p>我把在肚子上皱成一大团的卫衣抖擞开来，最远已经够到膝盖了。走到镜子前面看了看我自己，居然异常地还不错。不过袖子好像有点长……啊，用手指抓住袖口的话，出人意料的有点不错。</p>
+<p>有点可爱？不对，只是幼稚笨拙而已。不过我最近已经放弃与这种特质斗争了。</p>
+<p>这么调整完，我的短牛仔裤完全若隐若现了。下面看起来就像从拉紧的松紧带，直接过渡到了一小段裸露的大腿，又到了带有松紧带的袜子一样。</p>
+<p>这样看起来是不是太过——</p>
+<p>不行。明明是我自己想穿得特别一些。但是——</p>
+<p>看起来有些牙白。</p>
+<p>不对。别人并没有无聊到会盯着你看吧？</p>
+<p>的确如此。</p>
+<p>纳尼娅和诺维娅都没有对我的穿搭表达不满。她们只对于松紧带可能会勒得我的腿疼表示了关心。</p>
+<p>突然想起来了那个家伙。她一定能够意识到今天我的打扮意外契合上了——那个叫什么——oversize 风格吧。</p>
+<p>……啊。明明是绝交了。即使是女生之间意义的那种绝交。</p>
+<br>
+<p>那个冬日的下午就将会是今天下午，我决定。</p>
+<p>我换完衣服要出门时，才发现自己其实并没有睡醒。首先意识到，自己的卫衣两侧袖子并不是一样的颜色，后来又意识到既然是有进修课程路上就不应该这么少人，本来我也应该被自动叫醒。那样不情不愿地叫醒自己——最后连回笼觉都睡不成——而不是被闹钟叫醒的我显得格外孤独、无助、可怜、多余——</p>
+<p>……怎么办呢，现在又转头回家的话又显得我太笨。</p>
+<p>啊，我吃过饭了吗？</p>
+<p>而且我的卫衣就是这种设计。</p>
+<p>不知道应该怎么说。</p>
+<p>我还是把自行车从车棚里拉了出来。既然如此，就去镇中心的便利店一趟吧。这样，又可以消磨些时间了。</p>
+<p>头皮感觉凉飕飕的。</p>
+<p>原来是忘记梳头了。一撮撮头发就这样散乱地排布着，发型恍若炸开的小章鱼香肠。又有一撮呆毛的存在。</p>
+<p>我的卫衣本来两侧就不对称。右侧是普通的灰白色长袖，左侧则是让主体只到短袖袖口处为止，装模作样地让灰白色“袖口”底下出现的较薄一些的灰蓝色袖子延伸到腕处。虽然有点多余，但是还是拒绝不了非对称美学。那种背离对称的美，循规蹈矩的正常，看起来有一种不着调的意外感。那是我最喜欢的一件衣服。</p>
+<p>我的想法很快落空。稍微压弯经过门口的路口时，我摔了一跤。眼睛里顿时噙满了泪水，感觉今天诸事不顺。</p>
+<p>便利店没有必要去。让机器人送货上门吧。机器人也把我这种人代替掉为好。唯一值得高兴的自己的外表也不见得难以被替代。</p>
+<p>我当然有很在意的那张脸。我希望那张有点笨的脸上，那双大眼睛能和我又一次对视，而我能不再下意识躲开，以对得起我故意留长的头发的方式。</p>
+<p>我只好无奈地把车又推回车棚，不是公路车，只是普通的买菜型单车。我从车棚的小门进了家。</p>
+<p>两个蓝色的小家伙已经回去睡回笼觉了。真羡慕她们啊，想睡就睡，还睡得着。就算不是在睡而是在打游戏或者看动画的话，也能全身心投入进去。</p>
+<p>我已经不行了。</p>
+<p>现在的脑袋里太混乱了。本来想着，多见识些东西，多学些东西，三观就会自动产生的，现在看来真是太天真了。</p>
+<p>从冰箱里的那几个奶油泡芙来看，我确实没有吃早餐。又泡了杯加了许多糖和牛奶的咖啡，没必要骗自己。现在已经是下午两点了。正统的下午从这时候开始。咖啡和点心既已准备好，懒人沙发已经就位。在冬日的下午看着书，这样的我或许才是理想中的我。</p>
+<p>我选择的书叫做《奇迹之国的爱丽丝》，在 2125 年出版的轻小说。从她淘来的成套书里，我选中了这本，只是因为封面上的人物吸引了我的目光。黄油般细腻柔软的头发，以及奶酪色的发色。一套公式的浅蓝色洛丽塔服装。看起来身上充满了奶香味，听起来（这是有声小说）眼前就出现了拔地而起的卫城。</p>
+<p>接下来数卷的封面以及插画，都是主角有栖在 cosplay 不同刚刚过了版权保护期的著名作品女主角。在头发上做了些挑染之类的不同文章的她，穿上印有英国国旗以及黄蓝横色块的外套——那是在致敬一些我叫不上名字，但是现在想必是有些粉丝的作品。</p>
+<p>笛卡尔说“我思故我在”，其逆否命题即“我不思则我不在”，我大概属于这种状态。</p>
+<p>我方才翻开第一页。刘易斯·卡罗尔曾写了《爱丽丝梦游仙境》。我曾经看过那本书，但是却什么都记不住了。我和未曾谋面的爱丽丝唯一见面的场景，就是下午阳光下做着白日梦时的场景。我醒来的时候阳光却被挡住了。</p>
+<p>不管怎么说，我还是先看看手机吧。</p>
+<p>哇啊，什么，十九公斤半的巨型土豆？十八公斤半的土豆、视频主、十九公斤半的土豆，左二为视频主。</p>
+<p>什么，害我笑了一下。</p>
+<br>
+<p>“先看视频，‘十九公斤半的土豆，你们有没有这样的土豆啊？’真是土土又豆豆啊。</p>
+<p>“（从快递箱里拿出包裹地严严实实的土豆）这是我借好哥们的力量，从火星订购的大土豆（大土豆、大土豆，你的感觉真的很奇妙）——奇妙的粘糕啊，有粉丝叫我试试这个。冰的和鹅卵石差不多硬度，看看配料表，大家平常在配料表上看见的‘土豆淀粉’，这就是那个的原形。真、的、很、大。（比较其与自己的脸大小）（使用高压锅试图弄熟土豆）蒸了两个小时，中间的部分还是梆梆硬——（切块）”</p>
+<p>于是其人费九牛二虎之力强行切开了巨大的土豆，又费一样的九牛二虎之力把每一个切割动作剪辑在一起。</p>
+<p>“怎么说呢，这个味道</p>
+<p>“那就像是，在一天晚上临入睡前在脑海里进行了脑海小剧场，但却由于小剧场太过有趣睡不着，兴奋地想了想什么意外爆红得奖的事情，消磨完精力之后记下点子，后来专门腾出时间把那个想法写成文后，那篇文的有趣程度。让过了一个小时的自己看，那都是唯唯诺诺</p>
+<p>“糯糯的粘糕啊。有友友说这个特别好吃</p>
+<p>“（拿起）我去，这个已经粘到我手上了。（在手上把玩，发现无法让其离开手指）（强行塞进嘴）唉嘶溜哈嗷呜唉嘶哈呜嘶哑呜哈啊呜嚯嚯嚯哈嗯哼嗯嗯嗯额。嘶喔嘛嘚卟嘚咦嘛。</p>
+<p>“马铃薯中的马铃薯，土豆中的土豆，洋芋，土豆，马铃薯。吃起来和没料的土豆泥没太大区别。（分为多份）（加奶油和酱汁）（搅拌）（装进小碗）（展示）诶呀妈呀，太好吃了！</p>
+<p>“这不就是肯记的土豆泥吗？</p>
+<p>“啊哈哈。”</p>
+<p>上下的眉毛让我眼前模糊不清，暗淡下来，那还只是幼年期的视频主吧，如此确信。</p>
+<p>“寻找 Unicode 中的幽灵字符”</p>
+<p>许多个视频合集。每个视频十个，一直有许多。我不认识，那些引起我欢乐谷效应的东西，和我无关，不是我的研究项目也不是我的兴趣爱好。</p>
+<p>为什么我看下去了。</p>
+<p>“一起探访日本最冷门的北虾夷海沿岸”</p>
+<p>那和我有什么关系。奥端是哪啊。</p>
+<p>三千人口，那里蹦出来，怎么看早该废弃了。还给自然吧。</p>
+<p>喔，真有意思啊。这种将要废弃的小镇。应该还给机器人吧。还给机器人。</p>
+<p>“刷了一下午视频毫无收获的你 be like：”</p>
+<p>呜。这不是我吗？</p>
+<p>“冷知识：蓝莓体内没有蓝色色素”</p>
+<p>啊？哦。</p>
+<p>“大爷因不服大闹风纪派出所”</p>
+<p>啊哈哈哈哈哈。</p>
+<p>哦哦，更新了新的一集。</p>
+<p>哎呀哎呀。“美好在日语里用‘素晴’两个汉字表示”</p>
+<p>我知道哦。为什么我还要点进去？明明这就是在玩梗吧？在玩那个作品的梗吧？日语教学？看看别的什么“日语里雾雨、时雨、夕立是什么意思”？</p>
+<p>哦，不需要解释“初雪”的意思吗？因为那就是最初的雪。</p>
+<p>“吹雪”是要的。被吹起的雪也即是暴风雪。大家有的是认识吹雪的，正在下面 @fubuki_oiua。</p>
+<p>那往下面翻一翻吧。那“朝潮”？太浅显了，也即是早上的潮吧。“白露”？白色透明的露水吧。“黑潮”值得一解呀，那是日本暖流的别名。</p>
+<p>“雾雨”是毛毛雨的意思。</p>
+<p>哦，原来真的有在教日语吗？</p>
+<p>“使役与被动结合？日语中最拗口的……”</p>
+<p>我不感兴趣。我不好奇。</p>
+<p>现在几点了？</p>
+<p>我看了看。往上扫了扫。</p>
+<p>哦，十六点五十六分。差不多了吧，该准备晚饭了吧？</p>
+<p>我很懒，让机器帮忙吧。</p>
+<p>“晚上也吃面包可以吗？”我问。</p>
+<p>“不用了，我们出去吃。”</p>
+<p>哦，那挺好。那夕立奶奶？我问她，她说自己点外卖。</p>
+<p>于是我不管了。在懒人沙发上磨蹭了自己五个小时的人生的我没必要为了几口饭菜磨炼自己。</p>
+<p>啊，小爱丽丝，对不起。这里你叫做立花爱丽丝吧。有栖也行。对不起。我把你放回书架上好了。</p>
+<p>好困，明明什么都没做。</p>
+<p>在那之前，我还要把空调打开。盖上被子。</p>
+<p>感觉会睡不着，找个助眠视频听着吧……</p>
+<br>
+<p>我还是把屏幕点亮了。</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Kanata/kanata.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../Kanata/5.42.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Kanata/kanata.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../Kanata/5.42.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

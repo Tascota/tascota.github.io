@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>奥斯维辛没有什么新闻</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Index</a></li><li class="chapter-item expanded "><a href="../old_late.html"><strong aria-hidden="true">2.</strong> Late Osþeb</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Ostheb/udhr.html"><strong aria-hidden="true">2.1.</strong> 世界人权宣言</a></li></ol></li><li class="chapter-item expanded "><a href="../early.html"><strong aria-hidden="true">3.</strong> Early Ëvëlre</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Early/udhr.html"><strong aria-hidden="true">3.1.</strong> 世界人权宣言</a></li><li class="chapter-item expanded "><a href="../Early/loushiming.html"><strong aria-hidden="true">3.2.</strong> 陋室铭</a></li></ol></li><li class="chapter-item expanded "><a href="../middle.html"><strong aria-hidden="true">4.</strong> Middle Ëvëlre</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Middle/dianas_dog.html"><strong aria-hidden="true">4.1.</strong> 嘉然小姐的狗</a></li><li class="chapter-item expanded "><a href="../Middle/anemo.html"><strong aria-hidden="true">4.2.</strong> 风</a></li><li class="chapter-item expanded "><a href="../Middle/north_wind_and_sun.html"><strong aria-hidden="true">4.3.</strong> 北风与太阳</a></li><li class="chapter-item expanded "><a href="../Middle/animal_friends.html"><strong aria-hidden="true">4.4.</strong> 粘合国</a></li><li class="chapter-item expanded "><a href="../Middle/genesis.html"><strong aria-hidden="true">4.5.</strong> 创世纪</a></li><li class="chapter-item expanded "><a href="../Middle/decade.html"><strong aria-hidden="true">4.6.</strong> 十年</a></li><li class="chapter-item expanded "><a href="../Middle/civilisation.html"><strong aria-hidden="true">4.7.</strong> 文明</a></li><li class="chapter-item expanded "><a href="../Middle/end_poem.html"><strong aria-hidden="true">4.8.</strong> 终末之诗</a></li><li class="chapter-item expanded "><a href="../Middle/gettysburg_address.html"><strong aria-hidden="true">4.9.</strong> 葛底斯堡演说</a></li><li class="chapter-item expanded "><a href="../Middle/le_petit_prince.html"><strong aria-hidden="true">4.10.</strong> 小王子</a></li><li class="chapter-item expanded "><a href="../Middle/boar_princess.html"><strong aria-hidden="true">4.11.</strong> 野猪公主</a></li><li class="chapter-item expanded "><a href="../Middle/fujino.html"><strong aria-hidden="true">4.12.</strong> 藤野先生</a></li><li class="chapter-item expanded "><a href="../Middle/berlin.html"><strong aria-hidden="true">4.13.</strong> 柏林墙</a></li><li class="chapter-item expanded "><a href="../Middle/auschwitz.html" class="active"><strong aria-hidden="true">4.14.</strong> 奥斯维辛没有什么新闻</a></li></ol></li><li class="chapter-item expanded "><a href="../late.html"><strong aria-hidden="true">5.</strong> Late Ëvëlre</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Late/chuangxiang.html"><strong aria-hidden="true">5.1.</strong> 《创想》之宠物杀死了主人</a></li><li class="chapter-item expanded "><a href="../Late/il_barone_rampante.html"><strong aria-hidden="true">5.2.</strong> 生活在树上</a></li><li class="chapter-item expanded "><a href="../Late/qiutiande_huainian.html"><strong aria-hidden="true">5.3.</strong> 秋天的怀念</a></li><li class="chapter-item expanded "><a href="../Late/i_have_a_dream.html"><strong aria-hidden="true">5.4.</strong> 我有一个梦想</a></li></ol></li><li class="chapter-item expanded "><a href="../re.html"><strong aria-hidden="true">6.</strong> reËvëlre</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Re/tiangou.html"><strong aria-hidden="true">6.1.</strong> 天狗</a></li><li class="chapter-item expanded "><a href="../Re/mukashi.html"><strong aria-hidden="true">6.2.</strong> 往昔</a></li><li class="chapter-item expanded "><a href="../Re/elaina.html"><strong aria-hidden="true">6.3.</strong> 魔女</a></li><li class="chapter-item expanded "><a href="../Re/udhr.html"><strong aria-hidden="true">6.4.</strong> 世界人权宣言</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="奥斯维辛没有什么新闻--sar-nil-novoa-apu-auschwitz"><a class="header" href="#奥斯维辛没有什么新闻--sar-nil-novoa-apu-auschwitz">奥斯维辛没有什么新闻 / Sar Nil Novoa apu Auschwitz</a></h1>
+<p>No News from Auschwitz</p>
+<br>
+<p>A·M·罗森塔尔</p>
+<p>A.M.Rosenthal</p>
+<br>
+<p>从某种意义上说，在布热金卡，最可怕的事情是这里居然阳光明媚温暖，一行行白杨树婆娑起舞，在大门附近的草地上，还有儿童在追逐游戏。</p>
+<p>The most terrible thing of all, somehow, was that at Brzezinka the sun was bright and warm, the rows of graceful poplars were lovely to look upon, and on the grass near the gates children played.</p>
+<p>Smotyvas eram apu očeu, era woisil, brus tat Apu Brzezinka soli kolosep et tigea, siëtgrad-ty hikod populabo yuruako, et apu remtera apuka konol twilus ames.</p>
+<br>
+<p>这真像一场噩梦，一切都可怕地颠倒了。在布热金卡，本来不该有阳光照耀，不该有光亮，不该有碧绿的草地，不该有孩子们的嬉笑。布热金卡应当是个永远没有阳光、百花永远凋谢的地方，因为这里曾经是人间地狱。</p>
+<p>It all seemed frighteningly wrong, as in a nightmare, that at Brzezinka the sun should ever shine or that there should be light and greenness and the sound of young laughter. It would be fitting if at Brzezinka the sun never shone and the grass withered, because this is a place of unutterable terror.</p>
+<p>Očea smory antiaaulud, et o fiëgmas ana smoyume. Apu Brzezinka soli unizmas kolosep, uniz sar ikahu et midoriep, uniz sar ameskou era twilus. Brzezinka niz brus ana presikum te Sarriri soli te Kolosep et remd ipe, kot trakkum bruslu satania apu tiakum.</p>
+<br>
+<p>每天都有人从世界各地来到布热金卡——这里也许是世间最可怕的旅游中心。来人的目的各不相同——有人为了亲眼看看事情是不是像说的那样可怕，有人为了不使自己忘记过去，也有人想通过访问死难者受折磨的场所，来向他们致敬。</p>
+<p>And yet every day, from all over the world, people come to Brzezinka, quite possibly the most grisly tourist center on earth. They come for a variety of reasons—to see if it could really have been true, to remind themselves not to forget, to pay homage to the dead by the simple act of looking upon their place of suffering. </p>
+<p>Apu očasoli, sar lusd udad Brzezinka era očakum apu aukum, et woidos o brus smotyvas tawromis apu aukum. Šodlus haks dodty resird - kotos Ika tat Šoda woi sar Fiëg saita ty smoera safry, kotos Let sasaf hitotriri lupis, kotos Vënt ipelusd ad Ikaut presikum te Od betipeko.</p>
+<br>
+<p>布热金卡在波兰南方城市奥斯维辛城外几英里的地方——世人对奥斯维辛这个地名更熟悉。奥斯维辛大约有12000名居民，距华沙120英里，地处被称为摩拉维安门的山口的东头，周围是一片沼泽地。布热金卡和奥斯维辛一道组成了被纳粹称为奥斯维辛集中营的杀人工厂的一部分。</p>
+<p>Brzezinka is a couple of miles from the better-known southern Polish town of Oświęcim. Oświęcim has about 12,000 inhabitants, is situated about 171 miles from Warsaw, and lies in a damp, marshy area at the eastern end of the pass called the Moravian Gate. Brzezinka and Oświęcim together formed part of that minutely organized factory of torture and death that the Nazis called Konzentrationslager Auschwitz. </p>
+<p>Brzezinka utna ikilty mile era Oświęcim te Ner inararo, te Nubi polis apu Polskia. Azry sar 12,000 polislusd apu Oświęcim, sar 171-mile-ty tauraro era Warszawa, utna ana slaimtera apu sinatem apu oimisivi te Nemin Moravia-Konol. Brzezinka et Oświęcim kukry emeralulu avaba de yadif i ipeu, te neminlu Konzentrationslager Auschwitz era Nazi.</p>
+<br>
+<p>十四年前，最后一批囚徒被剥光衣服，在军犬和武装士兵的押送下走进毒气室。从那时起，奥斯维辛的惨状被人们讲过了很多次。一些幸存者撰写的回忆录中谈到的情况，是任何心智健全的人所无法想像的。奥斯维辛集中营司令官罗道夫·弗兰斯·费尔南德·霍斯在被处决前也写了回忆录，详细介绍了这里进行的集体屠杀和用人体作的各种试验。波兰人说，共有400万人死在那里。</p>
+<p>By now, fourteen years after the last batch of prisoners was herded naked into the gas chambers by dogs and guards, the story of Auschwitz has been told a great many times. Some of the inmates have written of those memories of which sane men cannot conceive. Rudolf Franz Ferdinand Hoess, the superintendent of the camp, before he was executed wrote his detailed memoirs of mass exterminations and the experiments on living bodies. Four million people died here, the Poles say.</p>
+<p>Era aupis sar 14 enehano, atemyvas osti-ty tianeslus betdentišlu neko, atolu utat eëipekum ner ledosu era gatikanik et tulisty gatilus. Era šodpis, senočigra apu Auschwitz betsaitep piatus. Vitaty apu tokënso te Ikilty eltënlus jereilu, nat ikillus te Haks lomi sauta ubakosat. Te alizlus i romišdif, Rudolf Franz Ferdinand Höss dodry jereilu tokënso apuqu betipelu, et pahusepry olizëlu ostid-ry ipeu et tratau te Itulalu korpo era homotia. Očary 4-anailye-ty lus ipelulu apu šodkum, Polskalus sait.</p>
+<br>
+<p>今天，在奥斯维辛，并没有可供报道的新闻。记者只有一种非写不可的使命感，这种使命感来源于一种不安的心情：在访问这里之后，如果不说些什么或写些什么就离开，那就对不起在这里遇难的人们。</p>
+<p>And so there is no news to report about Auschwitz. There is merely the compulsion to write something about it, a compulsion that grows out of a restless feeling that to have visited Auschwitz and then turned away without having said or written anything would somehow be a most grievous act of discourtesy to those who died here. </p>
+<p>Et sar nil novoa te Bakbetalikoau kuk Auschwitz. Anary sar ana gatiera i jereiu, te Izum era ana atera i irakou, te Apudo ikautu apu trakkum, ivok karoë ner usait ur ujerei woiu, ramti o gomenri utat lus te Kamuyralu apu trakkum.</p>
+<br>
+<p>现在，布热金卡和奥斯维辛都是很安静的地方，人们再也听不到受难者的喊叫了。参观者默默地迈着步子，先是很快地望上一眼；接着，当他们在想像中把人同牢房、毒气室、地下室和鞭刑柱联系起来的时候，他们的步履不由得慢了下来。导游也无须多说，他们只稍用手指一指就够了。</p>
+<p>Apwau, Brzezinka et Oświęcim dodry brus kešisep presikum, et piatus dodry ubaksanera arenasu era kamuyralus. Ikautlus ato ner nil sana, plimin šeleëry ikahepko; dum, apupis te Od salutepaulu lus utat tianes, eëipekum, teraepkum et rongë-abogra apuko sauta, od hy atosti usafry sadaišaulu. Karanlus uniz masis sait, et od anary niz sembko era manuas.</p>
+<br>
+<p>每一个参观者都感到有一个地方对他说来特别恐怖，使他终生难忘。对有的人来说，这个地方是经过复原的奥斯维辛毒气室。人们对他们说，这是“小的”，还有一个更大的。对另外一些人来说，这样一个事实使他们终生难忘：在德国人撤退时炸毁的布热金卡毒气室和焚尸炉废墟上，雏菊花在怒放。</p>
+<p>Oča ikautlus očary peheë Sar woi ana presikum brus smotymas utë o, et let o hitotriri apu eltënolpis. Utë ikillus, trakkum brus Betyakaz ty Auschwitz-Eëipekum. Piatus sait utë od tat, Trakdif nat “pahus”, et sar ana te Maknumas. Utë edia ikillus, trak aununk let Od hitotriri apu eltënolpis: Apunu antikra i eëipekum et ipenes-ignitya apu Brzezinka te Doičlus letšabumlu apupis aineu, kikuremko kolosepaud.</p>
+<br>
+<p>还有一些参观者注视着毒气室和焚尸炉开头，他们表情茫然，因为他们不晓得这是干什么使的。然而，一看到玻璃窗内成堆的头发和婴儿的鞋子，一看到用以关押被判处绞刑的死囚的牢房时，他们就不由自主地停下脚步，浑身发抖。</p>
+<p>Dodry sar ikilty ikautlus utea utë eëipekum et ipenes-ignitya, et od okera, kot od uikaul resir i trakya. Odëm, apupis ika nonsgrad-ty kapiko et avorako hy podeko, apupis ika Betitulalu ledos iperi-tianeslus te Betanemep nolbaišu ty tianes, od usafry dokëaulu atosti, et imprepep.</p>
+<br>
+<p>一个参观者惊惧万分，张大了嘴巴，他想叫，但是叫不出来——原来，在女牢房，他看到了一些盒子。这些三层的长条盒子，6英尺宽，3英尺高，在这样大一块地方，每夜要塞进去五到十人睡觉。解说员快步从这里走开，因为这里没有什么值得看的。</p>
+<p>Ana ikautlus smomas, et maknuiš ostova. O kanu utat Arenas, odëm ubakoarenes - konsil brus tat, Apu inury-tianes, o ikaaulu ikilty nestul. Trak nestul te Sar tres nuberaro, nat 6-inch-ty vapotem, 3-inch-ty nutetem, apukum te Trakgra, piatulu 5-10 lus utat apsteilu apu oča lunapis. Karanlus seleëry atolu era trakkum, kot trakkum sar nilu te Koze apu ikau.</p>
+<br>
+<p>参观者来到一座灰砖建造的建筑物前，这是在妇女身上搞不育试验的地方。解说员试着推了一下门——门是锁着的。参观者庆幸他没有打开门进去，否则他会羞红了脸的。</p>
+<p>Ikautlus udad utat apuqu ana edifu te Betdifiš pako difdia, et trakkum brus Doslu usemen-tratau apu inulus. Karanlus linu tat Manuiš konol - konol nat nonsaty. Ikautlus beton tat Ën umaknuiš konol et ulatin, ur ën utupevasri.</p>
+<br>
+<p>现在参观者来到一条长廊里。从长廊两边的墙上，成排的人在注视着参观者。这是数以千计的照片，是囚徒们的照片。他们都死了——这些面对着照相机镜头的男人和妇女，都知道死亡在等待着他们。</p>
+<p>Apwau ikautlus udad ana ividif. Era atemdif apu vapotem de ividif, siëtgrad-ty lusd ikaau utë ikautlus. Traku brus mirad-ty ikahisd, te Ikahisd i tianeslusd. Od ipelulu - trak ënlusd et inulusd te Fašëmaluau ikahisya, ikaullulu tat Ipeu pisaluau od.</p>
+<br>
+<p>他们表情木然。但是，在一排照片的中间，有一张特别引人注目，发人深思。这是一个二十多岁的姑娘，长得丰满，可爱，皮肤细白，金发碧眼。她在温和地微笑着，似乎是为着一个美好而又隐秘的梦想而微笑。当时，她在想什么呢？现在她在这堵奥斯维辛集中营遇难者纪念墙上，又在想什么呢？</p>
+<p>Od omulu apu fašëko. Odëm, apuro ana-siëtgra-ty ikahis, sar ana o letišmas omusivi, et letsat piatus. Traklus brus ana dodsiis-ene-ty otomelus, et o hy fiëgum natlu preis et kawaity, pelis netlu dangoty et akio, ner auriryty kapiko et midori omus. Inu salutyry ameskokoluau, te Fiëg tat Ameskoko utë kotos ana hikod et ikako yume. Apupis šod, inu satluau woiu? Apwau, inu utna apu trak ateëu-atemdif i kamuyralus i Auschwitz-Romišdif, inu satau woiu?</p>
+<br>
+<p>参观者被带到执行绞刑的地下室去看一眼，这时，他们感到自己也在被窒息。另一位参观者进来了，她跪了下来，在自己胸前画十字。在奥斯维辛，没有可以作祷告的地方。</p>
+<p>Ikautlus betkaran utat teraepkum te Doslu nolbaišu et ikaut, apupis trak, od peheë tat Odsaf dodry ubaknesuau. Edia ana ikautlus majira, inu përikok, et dos ana sigra apuqu petrus. Apu Auschwitz, sar nilkum te Bakateë.</p>
+<br>
+<p>参观者们用恳求的目光彼此看了一眼，然后对解说员说：“够了。”</p>
+<p>Ikautlus ika utë edialus ad asaepty omusivi, dum sait utë karanlus: “Preiseik.”</p>
+<br>
+<p>在奥斯维辛，没有新东西可供报道。这里天气晴朗，绿树成荫，门前还有儿童在打闹、嬉戏。</p>
+<p>Apu Oświęcim, sar nil novou bakbetalikoau. Apukum trak, kamuy natau izumity, arabo sarau twataba, et apuqu konol sarau twilus te Dolibepaud et amesaud.</p>
+<br>
+<p>时间：2022-12-09</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Middle/berlin.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../late.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Middle/berlin.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../late.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>柏林墙</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Index</a></li><li class="chapter-item expanded "><a href="../old_late.html"><strong aria-hidden="true">2.</strong> Late Osþeb</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Ostheb/udhr.html"><strong aria-hidden="true">2.1.</strong> 世界人权宣言</a></li></ol></li><li class="chapter-item expanded "><a href="../early.html"><strong aria-hidden="true">3.</strong> Early Ëvëlre</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Early/udhr.html"><strong aria-hidden="true">3.1.</strong> 世界人权宣言</a></li><li class="chapter-item expanded "><a href="../Early/loushiming.html"><strong aria-hidden="true">3.2.</strong> 陋室铭</a></li></ol></li><li class="chapter-item expanded "><a href="../middle.html"><strong aria-hidden="true">4.</strong> Middle Ëvëlre</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Middle/dianas_dog.html"><strong aria-hidden="true">4.1.</strong> 嘉然小姐的狗</a></li><li class="chapter-item expanded "><a href="../Middle/anemo.html"><strong aria-hidden="true">4.2.</strong> 风</a></li><li class="chapter-item expanded "><a href="../Middle/north_wind_and_sun.html"><strong aria-hidden="true">4.3.</strong> 北风与太阳</a></li><li class="chapter-item expanded "><a href="../Middle/animal_friends.html"><strong aria-hidden="true">4.4.</strong> 粘合国</a></li><li class="chapter-item expanded "><a href="../Middle/genesis.html"><strong aria-hidden="true">4.5.</strong> 创世纪</a></li><li class="chapter-item expanded "><a href="../Middle/decade.html"><strong aria-hidden="true">4.6.</strong> 十年</a></li><li class="chapter-item expanded "><a href="../Middle/civilisation.html"><strong aria-hidden="true">4.7.</strong> 文明</a></li><li class="chapter-item expanded "><a href="../Middle/end_poem.html"><strong aria-hidden="true">4.8.</strong> 终末之诗</a></li><li class="chapter-item expanded "><a href="../Middle/gettysburg_address.html"><strong aria-hidden="true">4.9.</strong> 葛底斯堡演说</a></li><li class="chapter-item expanded "><a href="../Middle/le_petit_prince.html"><strong aria-hidden="true">4.10.</strong> 小王子</a></li><li class="chapter-item expanded "><a href="../Middle/boar_princess.html"><strong aria-hidden="true">4.11.</strong> 野猪公主</a></li><li class="chapter-item expanded "><a href="../Middle/fujino.html"><strong aria-hidden="true">4.12.</strong> 藤野先生</a></li><li class="chapter-item expanded "><a href="../Middle/berlin.html" class="active"><strong aria-hidden="true">4.13.</strong> 柏林墙</a></li><li class="chapter-item expanded "><a href="../Middle/auschwitz.html"><strong aria-hidden="true">4.14.</strong> 奥斯维辛没有什么新闻</a></li></ol></li><li class="chapter-item expanded "><a href="../late.html"><strong aria-hidden="true">5.</strong> Late Ëvëlre</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Late/chuangxiang.html"><strong aria-hidden="true">5.1.</strong> 《创想》之宠物杀死了主人</a></li><li class="chapter-item expanded "><a href="../Late/il_barone_rampante.html"><strong aria-hidden="true">5.2.</strong> 生活在树上</a></li><li class="chapter-item expanded "><a href="../Late/qiutiande_huainian.html"><strong aria-hidden="true">5.3.</strong> 秋天的怀念</a></li><li class="chapter-item expanded "><a href="../Late/i_have_a_dream.html"><strong aria-hidden="true">5.4.</strong> 我有一个梦想</a></li></ol></li><li class="chapter-item expanded "><a href="../re.html"><strong aria-hidden="true">6.</strong> reËvëlre</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Re/tiangou.html"><strong aria-hidden="true">6.1.</strong> 天狗</a></li><li class="chapter-item expanded "><a href="../Re/mukashi.html"><strong aria-hidden="true">6.2.</strong> 往昔</a></li><li class="chapter-item expanded "><a href="../Re/elaina.html"><strong aria-hidden="true">6.3.</strong> 魔女</a></li><li class="chapter-item expanded "><a href="../Re/udhr.html"><strong aria-hidden="true">6.4.</strong> 世界人权宣言</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="柏林墙--berlin-atemdif"><a class="header" href="#柏林墙--berlin-atemdif">柏林墙 / Berlin-Atemdif</a></h1>
+<br>
+<p>Two thousand years ago the proudest boast was "civis Romanus sum." Today, in the world of freedom, the proudest boast is "Ich bin ein Berliner."</p>
+<p>Apupis usuaputy dodra enehano, šod repvatyvas hawawu bruslu “Civis Romanus sum.” Apuau, apu aukum i anemoera, trak repvatyvas hawau brusau “Ich bin ein Berliner.”</p>
+<p>2000年前，全世界最自豪的一句话是“我是罗马公民”。今天，在自由世界，最自豪的一句话是“我是一个柏林人”。</p>
+<br>
+<p>There are many people in the world who really don't understand, or say they don't, what is the great issue between the free world and the Communist world. Let them come to Berlin. There are some who say that communism is the wave of the future. Let them come to Berlin. And there are some who say in Europe and elsewhere we can work with the Communists. Let them come to Berlin. And there are even a few who say that it is true that communism is an evil system, but it permits us to make economic progress. Lass' sie nach Berlin kommen. Let them come to Berlin.</p>
+<p>Sar halikty od apu aukum, tat Od čuëry uikaulišaulu, ur sait tat Od uikaulišaulu, woiu brus maknu okerau apukum era anemoeraty aukum utat anatyeraty aukum. Let od majira Berlin. Sar od sait tat Anatyera brus nami i ripis. Let od majira Berlin. Et sar od sait tat Apu Yuropia et ediakum ud bak eltënri kuk anatyeralusd. Let od majira Berlin. Et masry sar inus od sait tat Tat Anetyera brus ana tapuz strukra nat faktos, odëm o pagu Let ud dos novoris i auritemi. Lass' sie nach Berlin kommen. Let od majira Berlin.</p>
+<p>世界上有许多人真正不理解，或者说自己不理解自由世界和共产主义世界之间的巨大问题究竟是什么。那就让他们到柏林看看。有些人说共产主义是未来的浪潮。让他们到柏林看看。有些人说我们可以在欧洲或其他地区和共产主义阵营达成合作。让他们来柏林看看。甚至有些人说共产主义的确是一个邪恶制度，但是其能够让我们实现经济进步。让他们来柏林看看。让他们来柏林看看。</p>
+<br>
+<p>Freedom has many difficulties and democracy is not perfect, but we have never had to put a wall up to keep our people in, to prevent them from leaving us. I want to say, on behalf of my countrymen, who live many miles away on the other side of the Atlantic, who are far distant from you, </p>
+<p>Anemoera sar halikty haradu, et lusdosera nat uočisty, odëm ud uedifaaulu atemdif et ledos ud hy lusd korsenapury, utat dokeiš piatus no karoë era ud. U sat sait, Era u hy lusdialusd, tat Od eltënau tauapury apu šod ediakum de Atlantic-Atranta, tat Od natau tauraroaputy era usd, </p>
+<p>自由有许多困难，民主亦非完美，但我们从未建造一堵墙把我们的人民关在里面，阻止他们离开我们。我在千里之外、大西洋彼岸的国民，他们虽然距离遥远，</p>
+<hr>
+<p>that they take the greatest pride that they have been able to share with you, even from a distance, the story of the last 18 years. I know of no town, no city, that has been besieged for 18 years that still lives with the vitality and the force, and the hope and the determination of the city of West Berlin. While the wall is the most obvious and vivid demonstration of the failures of the Communist system, for all the world to see, we take no satisfaction in it, for it is, as your Mayor has said, an offense not only against history but an offense against humanity, separating families, dividing husbands and wifes and brothers and sisters, and dividing a people who wish to be joined together.</p>
+<p>但他们听到你们过去18年的故事，即使在千里之外也感到十分自豪。我想代表他们说，据我所知，没有哪座城市能够在经历了18年的围困后，依然像西柏林这样充满活力、力量、希望与决心。这座墙是苏联制度失败最明显、最生动的证明，整个世界都看在眼里，我们对这堵墙十分不满，因为正如你们的市长所说，这堵墙不仅违背历史，同时也泯灭人性，让无数家庭分离、让夫妻、兄弟姐妹不能团聚，分裂了一个渴望统一的民族。</p>
+<br>
+<p>What is true of this city is true of Germany--real, lasting peace in Europe can never be assured as long as one German out of four is denied the elementary right of free men, and that is to make a free choice. In 18 years of peace and good faith, this generation of Germans has earned the right to be free, including the right to unite their families and their nation in lasting peace, with good will to all people. You live in a defended island of freedom, but your life is part of the main. So let me ask you as I close, to lift your eyes beyond the dangers of today, to the hopes of tomorrow, beyond the freedom merely of this city of Berlin, or your country of Germany, to the advance of freedom everywhere, beyond the wall to the day of peace with justice, beyond yourselves and ourselves to all mankind.</p>
+<p>发生在这座城市的事也发生在全德国——如果四分之一的德国人都没有自由选择的基本人权，欧洲真正长久的和平就不可能实现。在18年的和平友善中，这一代德国人以善意待所有人，他们已经赢得了自由的权利，包括在长久和平中让家庭团聚、国家统一的权利。你们生活在自由世界的一座被保护的孤岛上，但是你们的生活依然是西方世界主体的一部分。所以当我闭上眼睛时，我会请你们抬起眼睛，越过今天的危机，看向明天的希望，不止局限于柏林市，或者你们的德意志祖国，而是全世界任何角落的自由进步。越过这堵墙，望向和平与公正之日，超出你们自身和我们自身，望向全人类。</p>
+<br>
+<p>Freedom is indivisible, and when one man is enslaved, all are not free. When all are free, then we can look forward to that day when this city will be joined as one and this country and this great Continent of Europe in a peaceful and hopeful globe. When that day finally comes, as it will, the people of West Berlin can take sober satisfaction in the fact that they were in the front lines for almost two decades.</p>
+<p>自由是不可分割的，只要尚有一人被奴役，所有人都不是自由人。只有当所有人都是自由人后，我们才能期盼这个城市获得统一，以及整个国家、整个欧洲大陆，在和平并充满希望的地球上获得统一。当那一天到来之际，当然那一天一定会到来，西柏林人便会对当年自己近20年时间里处于对抗最前沿的行为感到满意骄傲。</p>
+<br>
+<p>All free men, wherever they may live, are citizens of Berlin, and, therefore, as a free man, I take pride in the words "Ich bin ein Berliner."</p>
+<p>无论身处何处，所有自由人都是柏林市民，因此，作为一名自由人，我很自豪地说出：“我是一个柏林人”。</p>
+<br>
+<p>时间：2022-11-24</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Middle/fujino.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../Middle/auschwitz.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Middle/fujino.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../Middle/auschwitz.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
