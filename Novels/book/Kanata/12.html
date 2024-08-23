@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>一种奇怪的余裕</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Index</a></li><li class="chapter-item expanded "><a href="../General/general.html"><strong aria-hidden="true">2.</strong> Biography of General</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../General/i.html"><strong aria-hidden="true">2.1.</strong> 上</a></li><li class="chapter-item expanded "><a href="../General/ii.html"><strong aria-hidden="true">2.2.</strong> 中</a></li><li class="chapter-item expanded "><a href="../General/novo.html"><strong aria-hidden="true">2.3.</strong> 新</a></li></ol></li><li class="chapter-item expanded "><a href="../Regeneral/regeneral.html"><strong aria-hidden="true">3.</strong> Re:Biography of General</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Regeneral/re.html"><strong aria-hidden="true">3.1.</strong> 再</a></li><li class="chapter-item expanded "><a href="../Regeneral/iii.html"><strong aria-hidden="true">3.2.</strong> 后</a></li><li class="chapter-item expanded "><a href="../Regeneral/quis.html"><strong aria-hidden="true">3.3.</strong> ？</a></li></ol></li><li class="chapter-item expanded "><a href="../Genechan/genechan.html"><strong aria-hidden="true">4.</strong> Biography of Genechan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Genechan/1.html"><strong aria-hidden="true">4.1.</strong> piRiutataze!</a></li><li class="chapter-item expanded "><a href="../Genechan/2.html"><strong aria-hidden="true">4.2.</strong> Šodpolis te Usa Ucikiqi</a></li><li class="chapter-item expanded "><a href="../Genechan/3.html"><strong aria-hidden="true">4.3.</strong> Pakba Atemvasty iQivi de laSargra</a></li><li class="chapter-item expanded "><a href="../Genechan/4.html"><strong aria-hidden="true">4.4.</strong> Steamia</a></li><li class="chapter-item expanded "><a href="../Genechan/citystates.html"><strong aria-hidden="true">4.5.</strong> in Citystates</a></li><li class="chapter-item expanded "><a href="../Genechan/aresia.html"><strong aria-hidden="true">4.6.</strong> on Aresia</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../Kanata/kanata.html"><strong aria-hidden="true">5.</strong> Kanata no Sonata</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Kanata/5.41.html"><strong aria-hidden="true">5.1.</strong> Hatsuyuki</a></li><li class="chapter-item expanded "><a href="../Kanata/5.42.html"><strong aria-hidden="true">5.2.</strong> Shiratsuyu</a></li><li class="chapter-item expanded "><a href="../Kanata/5.43.html"><strong aria-hidden="true">5.3.</strong> Kuroshio</a></li><li class="chapter-item expanded "><a href="../Kanata/5.44.html"><strong aria-hidden="true">5.4.</strong> Oboro</a></li><li class="chapter-item expanded "><a href="../Kanata/5.50.html"><strong aria-hidden="true">5.5.</strong> 这种事情显得我自我意识过剩</a></li><li class="chapter-item expanded "><a href="../Kanata/6.html"><strong aria-hidden="true">5.6.</strong> 当然没有什么意义啦</a></li><li class="chapter-item expanded "><a href="../Kanata/7.html"><strong aria-hidden="true">5.7.</strong> 我并没有否定自己的意思</a></li><li class="chapter-item expanded "><a href="../Kanata/8.html"><strong aria-hidden="true">5.8.</strong> 像往常一样废话真多呢</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Kanata/8.1.html"><strong aria-hidden="true">5.8.1.</strong> </a></li></ol></li><li class="chapter-item expanded "><a href="../Kanata/9.html"><strong aria-hidden="true">5.9.</strong> 我也很好奇</a></li><li class="chapter-item expanded "><a href="../Kanata/10.html"><strong aria-hidden="true">5.10.</strong> 那些很重要啊</a></li><li class="chapter-item expanded "><a href="../Kanata/11.html"><strong aria-hidden="true">5.11.</strong> 只会点带雪顶的冰咖啡</a></li><li class="chapter-item expanded "><a href="../Kanata/12.html" class="active"><strong aria-hidden="true">5.12.</strong> 一种奇怪的余裕</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Kanata/12.5.html"><strong aria-hidden="true">5.12.1.</strong> </a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="12---一种奇怪的余裕"><a class="header" href="#12---一种奇怪的余裕">12 - 一种奇怪的余裕</a></h1>
+<p>正所谓现实比故事更魔幻。小说家向编辑交稿时，一时兴起的混乱之作会被负责任的编辑打回，但是现实的展开却没有编辑来负责。</p>
+<p>镇上所有喇叭都播放着特别播报。站房里的电车、柏油路上的汽车、农田里的拖拉机、跑道上的农用飞机，也全楞在原地。自称火星共和国大统领的人缓慢却又沉重的声音，通过广播传到耳道中，震动着耳膜。带着仿佛注有魔法般的穿透力，开到最大声的广播让脑电波受到了扰动。</p>
+<p>“今天是火星历 132 年 24 月 17 日，我们在此……”</p>
+<p>没有一秒等待着台下掌声的余波消失，回放就开始了。三级警报在镇上冲撞，重叠的三次警报声互相争斗。今天的天空依然是灰色，但压抑的云层与苍白的天空却少有地泾渭分明，连带着地面也是一样。</p>
+<p>“……火星宣布脱离地球联合国的统治，建立一个秩序井然的国度……”</p>
+<p>云层的边缘本来还在那边的第八条田埂处，现在瞬间移动过来。</p>
+<p>“……即刻起，火星将不再依靠地球联合国，与其倒行逆施、不自量力的‘统治’划上鲜明的界限……”</p>
+<p>一时间，天空从我眼中消失了。从云层中下起了大雨。</p>
+<p>雨滴打在便利店向外延伸的铁皮屋棚上，噼里啪啦的声音在尽力地抵挡播报声。</p>
+<p>“……在火星这片人类最新抵达的土地上，将不再有作为文明领袖的小姑娘，不再有被当作社会实验场的城市。</p>
+<p>“拉各斯、金沙萨、开普敦、利伯维尔，还在建立的卢安达、阿克拉、巴马科！首脑居然无一例外地是些小姑娘小伙子。”</p>
+<p>连珠炮般的报菜名后，台下爆发出一阵笑声。</p>
+<p>“金沙萨、姆班达卡、基桑加尼，个个巨婴角色扮演着自己举着红旗，倒先从刚果盆地里最近的城市开始逐个批判，最下流的辱骂是宣布对方是修正主义，最痛的处罚是把一个人逐出城市，不得再加入社会主义建设。</p>
+<p>“拉各斯、阿布贾、尼亚美，个个把自己当作天才大亨，每天却不知有多少企业在证券交易所里跌停！郊区宛如后启示录的废土，市中心夜夜笙歌，待到社会达尔文主义降临到自己头上时，又不愿意光着屁股离开。”</p>
+<p>嘛，这段话倒是相当普通的调侃。毕竟刚果河的左派和尼日尔河的右派，对彼此的嘲讽挖苦笑话早已入选非物质文化遗产了。</p>
+<p>场外对于二者的笑话也入选了非遗。</p>
+<p>一次，两个城市的风纪委员分别宣布社会民主主义和新自由主义乃为异端，所有支持以上意识形态的人居住的地方，那个城市上应该要被撒盐。第二天，地球和火星建成了两座理想城，下起了纷纷扬扬的暖雪。</p>
+<p>因果论武器。</p>
+<p>有点荒唐。联想到了好笑的事情，我突然笑了一下。</p>
+<p>“拿人民的生命开玩笑，是可忍孰不可忍！……”</p>
+<p>我决定就这样走回家。便利店的老奶奶见状推开门，拔下耳上的耳塞，摆摆手叫我进去。我还是迈开脚步走上路面。</p>
+<p>“……我们代表所有不愿意将人类文明当作儿戏的人民，将向全人类证明传承与延续的重要性，请整个宇宙拭目以待。”</p>
+<p>演说总共重放了 122 次，直到 24 月 18 日凌晨一时二十七分。</p>
+<br>
+<p>淋得全湿，回到家，脚步在地板上留下了一道深色的水渍。</p>
+<p>初雪往浴缸里放了热水。泡在浴缸里，在眼镜上刷社交媒体。</p>
+<p>网络异常。</p>
+<p>是这样啊，网络应该确实是第一个切断的。不过不知道是以物理方式还是单纯的屏蔽，局域网还存不存在。如果直接把通信光缆切断，估计就只能通过卫星传播信号了。火星的星链搭建得破破烂烂，还难以防范地面的阻塞干扰……如果是后者。</p>
+<p>不过还是……</p>
+<p>是“爱哭的孩子有奶喝”呢，还是要玩真的。除了土豆一无是处的火星能干些什么。这么想，地联有重兵把守在新威尼斯，那不会变成当代西柏林吧……会有余土豆收集制吗？</p>
+<p>现在还什么都不知道。作为普通人，我连棋子都不是，只是灰尘罢了。</p>
+<p>或许连灰尘都不是。</p>
+<p>现在时代好像崩塌了。时代的一粒灰尘，对于一个普通人来说都是一场灾难，这么看来我恐怕是原细菌吧。</p>
+<p>不知如何才好的时候，只有叹气才能够表达自己的情绪。现在最适合胡思乱想，往好的方向（像波萨达斯一样）想，这不就是“洗礼”吗？会让我变成真正的人，有自己思想的人。扫除一切害人虫，全无敌！——</p>
+<p>从文艺创作上来看，所谓塑造角色，就是让角色在经历事件时作出不同的举动、产生不同的反应，从而塑造出一个有血有肉的角色。迷路的我宛如行尸走肉，既然如此就长出血肉来！——</p>
+<p>——之类的。</p>
+<p>我从浴缸里出来，换上衣服。“别放水哦”，初雪从外面说。从这里看似乎一切都还正常。</p>
+<p>但是，从上而下的变革，效果是逐渐展现出来的。</p>
+<br>
+<p>网络的三格标识本来在状态栏里，我还长嘘了一口气。加载条不断上下跳动——看起来像长条形的凉粉——长度果然没有增长。</p>
+<p>最后浏览器放弃了挣扎。请稍后再试。</p>
+<p>这就是我最后看到这个标志了，是因为路由器没反应过来。</p>
+<p>“纳尼娅同学？”</p>
+<p>“……啊，没什么。”我关上网络设置界面，“例行检查而已。”</p>
+<p>“根据通知，网络服务也会无限期中断……”</p>
+<p>我叹了口气，把脸别过去。虽然硬盘很大，在本地下载了很多游戏和动画，但这些东西很明显不能成为巨大的世界的平替。</p>
+<p>有时候，只是玩着游戏、看着动画，出神的时候也会想着，自己一瞬间和世界断开连接了。所以我一直冒着被剧透的风险开着弹幕看动画，只玩能让自己沉浸其中或者忙不过来的游戏。在以乡下为背景的动画和游戏里，感觉自己好像变成了另一个朝潮姐。在那期间没有摄入足够的信息，如果最后发现那是部烂作就更是如此。</p>
+<p>看动画的时候，我有段时间故意去看了许多“话题作”，就算是评分网站上评分不高的，我不会自己主动去看的类型。只是因为能了解更多流行的梗。</p>
+<p>就连听歌的时候，我也时常跳过歌单里随机到的舒缓曲子，在推荐歌单里也对评论数低的歌要求更高。如果是深夜就更是这样。</p>
+<p>“纳尼娅同学，能这样已经很不错啦……”</p>
+<p>我当然知道了。毕竟我自己都觉得自己这样的选择倾向很恶心。</p>
+<p>一种奇怪的余裕。</p>
+<p>啊，不对。她说的不是这件事。这种情况下我还能玩游戏确实很不错。从创作中摄取的信息只是缺少我最喜欢的松弛感而已。</p>
+<p>“果然是这样。”她黑了一下脸，“啊，这个游戏！”但很快又振奋起来。</p>
+<p>我还在漫无目的地划着鼠标，初雪就对其中的一个展现出了兴趣。是文字冒险游戏——准确地说是“galgame”，现在这只是会在涩谷区的历史书上才会有的东西了。</p>
+<p>不排除会有人真的喜欢玩，但公认神作差不多都已经被重制成不错的 VRAVG 了。如果对独特的历史时代限制的韵味感兴趣，那种简陋的系统和重复的画……或许这是怀旧？那种自己没经历过的旧，也不知有什么好怀的。</p>
+<p>“也很不错呢。所幸人类已经进入信息时代两个世纪了。”</p>
+<p>“嘛，也是吧。”我苦笑了一下，“能玩到历史书吧。”</p>
+<p>标题界面上只有二维的、不会动的美少女立绘，画质有点低。</p>
+<p>BMAVG 似乎也有试水作，但在 SAO-like 的 MMORPG 盛行的当下，那种有故事结局、主角又是虚拟角色的游戏也太笨了。</p>
+<br>
+<p>“成功让纳尼娅同学娱乐降级了呢。”</p>
+<p>好像实在出人意料地长，就这样无所事事地过了快半个月了。</p>
+<p>才半个月啊……比之前还无所事事的、没有意义的日子一直重复，回头一看，才过去半个月。</p>
+<p>说实话，有点无聊。明明是有阳光的下午，却玩得我昏昏欲睡，每天最多玩上三个小时就必须存档退出了。</p>
+<p>真是的，什么游戏性啊。</p>
+<p>“一切的艺术载体都只是载体而已，不变的是创作者投入其中的灵魂。”初雪一字一顿地说，“纳尼娅同学会这么说吗？”</p>
+<p>我不想反驳。刚刚又差点睡着了。立绘也没有什么不同，我还不如放着当作背景听，眼睛闭上就好了。</p>
+<p>“唉，乡下土妹子——”</p>
+<p>“这是人身攻击。”</p>
+<p>“是萌属性。而且我也没说错，彼方镇的农业管理员之一。”</p>
+<p>“呼。最近除了玩电脑就是睡觉和吃饭，这样会变成废人哦。”</p>
+<p>“啊。”我从地板上爬起来瞪着依然是那个姿势的立绘，切回桌面看了看。状态栏里依然显示着黄色三角形，今天也没有互联网。</p>
+<p>“少有分不了心的时间，我却在这里玩这种信息密度低得吓人的游戏，真是浪费人生。”</p>
+<p>不过，头脑里也有了该有的知识了。对我这种普通人来说，知道天空中实际上有八十八个而不是十二或者十三个星座，已经很足够了。我又不是初雪或者白露，而且就算她们也顶多是 C1 级人员吧。</p>
+<p>可以复现简单实验，进行与分析观察试验，并进行整理。发现新物种自己可以发论文的样子。</p>
+<p>不过，我如果到野外发现了新蘑菇，拍照或者采集标本寄给 C 级人员，自己也能算是二作吧……如果一作是白露的话她会的。</p>
+<br>
+<p>“预订偶像？”</p>
+<p>开什么玩笑。</p>
+<p>“呃。还没给纳尼娅同学说过来着？”</p>
+<p>作为镇长的夕立奶奶，实际上还和地联保持着一些联系。或者说在这个时代完全切断一切连接是不可能的。“毕竟火星还有不完整的星链卫星。就算是靠地球同步轨道——火星同步轨道的卫星也有最低限度的沟通。”</p>
+<p>这样吗？那我的生活可以恢复了吗？</p>
+<p>——不对，那种生活和现在的没有什么本质上的区别。潜意识里，我也想靠这段时间多少厚积而薄发一下的哪……</p>
+<p>但是如果让我选，肯定是前者。</p>
+<p>“在探讨现在加密火星的星链，但是新威尼斯又没有发射场。”</p>
+<p>不过，我的信息不足恐惧症也多少要犯了……把那种互联网热点总结 bot 的每日定番发一份？</p>
+<p>“我很需要那种，热点总结 bot。”</p>
+<p>“目前的带宽，发过来的确实有其中之一。”不是，还真有啊。</p>
+<p>互联网日报，2218 年 2 月 15 日。很遗憾是文字配图片那种样式的。</p>
+<p>新东京警方证实，乐队 SHIMO 的作编曲担当 kusu 昨日因故意伤害事件被捕。</p>
+<p>真的假的？这不是逗我们玩的吧。我抬起眼镜瞪着初雪，示意她赶紧划一划自己手上的平板电脑。我的眉眼间应该露出了一种“这不是闹着玩的吗快看别逗我”的样子。</p>
+<p>前几天我才听过他们的歌。</p>
+<br>
+<p>在这种情况下，感觉自己的脑袋要停转了。</p>
+<p>前记，所谓玩了很久的游戏，反应过来时却只过了半个月。现在同样是无所事事很久，却飞一下地过去了一个月。</p>
+<p>这就是……所谓的“麻木”吧。</p>
+<p>一开始的两个星期，不断有新的消息传来，都和我目前的三观极不相合。多谢那些事情，我感觉自己的三观又一次更新了版本。不过仔细一想，好像又毫无条理，只是单纯自我主义至上而已。</p>
+<p>火星政府倒行逆施，是我理想的敌人。地联虽然相比起来很进步，但是时常处处被掣肘。</p>
+<p>我会批评前者的脑袋放久了，与此同时，维护后者以“这是目前最好的方式”的说法。如果可以，很有可能我会在两场赛博辩论里同时持有以上两个观点，同时作为激进派和保守派。</p>
+<p>可能这会是坐标系原点的正常人想法。</p>
+<p>但反过来想，我难道不是脱离实际的理想派吗？永远站在中间，指责极端的人。或者说这也是保守主义？可我明明最讨厌“保守主义”。</p>
+<p>保守主义的想法是，不论其他的新事物如何，但维持现状一定不会是最坏的。有的时候我支持这个想法。</p>
+<p>但别的时候我是激进派，虽然不知道新事物如何，但试一试并没有错。</p>
+<p>现在我居然杂糅在这两者中间。</p>
+<p>我自已也回复过别人，中间派站不住脚，一定会滑向两极。</p>
+<p>为了一直站在中间，难不成我要支持托洛茨基吗？</p>
+<p>不行。这么想下去，我的世界观就爆炸了。</p>
+<p>但可以理解的一点是，叠加在一起，我的观点不过是个人好恶的集合而已。</p>
+<p>怎么办呢……？</p>
+<p>在这种世界观下形成的产物，会不值一提的吧。</p>
+<p>不过它怎么样都存在过，在这个蓝色头发的脑袋里。就算再不值得推敲也存在过。既然如此，就有被记录的价值。就算形成的是不成熟的想法，也应该如此。</p>
+<p>长大之后——可能会有一段时间，认为这是当年中二病或者高二病的产物而掩面。但到时候怀旧青春时，又会拿这些东西来说事。真够矛盾的。</p>
+<p>所以，我只好一股脑地记录下来了。</p>
+<p>也许对于别人，甚至是未来的我，这些都没有意义——但是只要在某一时某一刻，这些有意义就足够了。小孩子不应该掺合大人的事情，那大人也一样吧？既然不能给予意义，那必定也不能剥夺意义。意义不是别人给予的，而是本身存在的。</p>
+<p>以上是为我的所有叙述增添合法性。因为一切事情都很重要。</p>
+<br>
+<p>沉默中。</p>
+<p>房间里只有我换坐姿时椅子发出的嘎吱声，以及点击对话时的键盘敲击声。之后，由于开了自动模式，连键盘敲击声也省去了。</p>
+<p>在语音播完之后，在下一句之前有微妙的空隔，有点难受。不过比起更加微妙的噪声要好得多吧。</p>
+<p>窗外的雪花飘落着，室内与自然反常的温暖让我坐立不安。二十一月的天气，是春天似乎马上就要来临，但是能关掉永远不知道该设定什么温度的暖气的日子却迟迟不来。</p>
+<p>暖气的温度又开得太高了。我背上冒起的浮汗告诉我。</p>
+<p>“那个，初雪，让一下。我去调一下暖气。”</p>
+<p>“把套着的外套脱掉。”她下意识地回答，随后又好像怕是语气过重似的加上，“怎么样？”</p>
+<p>脱下外套的时候袖子打到了初雪的头。“抱歉”的声音小得只有通过耳咽管才能听见。</p>
+<p>死亡般的沉默，就像是被窗外好几个月似乎没听过的大雪覆盖在头顶一样。表面寒冷，内里却热得皮肤火烧又龟裂一样。</p>
+<p>坐在椅子上太久了，背后热得难受。</p>
+<p>但旁边的初雪一直盯着我，不管怎么调整姿势都很不自在。我想直接把脚翘到扶手上，让炽热的坐垫稍微冷下来。但现在的情况下，感觉自己稍微动一动都很奇怪。</p>
+<p>处于奇怪的稳态中。</p>
+<p>“……纳尼娅同学，昨天也睡得很晚呢。”她试着找出话题。</p>
+<p>“嗯。”</p>
+<p>“既然现在时间这么足够了，就没必要像夜晚借时间了吧？不是这样吗？”</p>
+<p>“……”我不想回答这种问题。</p>
+<p>“不是吗？”</p>
+<p>但她居然还继续追问。她难道不明白，自己的那头黑长直很具有压迫感吗？</p>
+<p>“……在闭上眼睛之前，今天的一切都还不会改变。明天起床之后，世界都有可能变得更坏……”</p>
+<p>这种故作深沉的发言，是我使劲组织自己脑中混乱的辞藻而成的。</p>
+<p>“不想看到更坏的明天，想一直留在不改变的今天……在闭上眼睛、陷入睡眠那一刻之前都不会变。”</p>
+<p>但是我好像真的这么想，如果她认为我这是孩子气就好了。</p>
+<p>我还是有点不敢去看初雪听到这段话时的表情。她也没有回应。</p>
+<p>气氛更加沉重了。这段时间进行不下去了。</p>
+<p>“那样……也不错呢。能让纳尼娅同学的今天变好就很好了。”胡乱的结尾。</p>
+<p>她拉开就在手边的窗帘，透过落地窗看到的是无垠的白色原野。被遥远的太阳反射着，简直要得雪盲症一般的照耀我的一切。</p>
+<p>“火星真是巨大得该死。”</p>
+<p>“火星比地球小得多呢。是海陆分布不均匀的缘故而已。”</p>
+<p>“南极荒原真是无聊得该死。”</p>
+<p>“毕竟是在陆地的中央，而且海拔高、纬度也高。”</p>
+<p>“阿拉伯沿岸铁路真是长得要死。”</p>
+<p>“毕竟也绕火星三分之一了啊。”</p>
+<p>“地球真是远得要死。”</p>
+<p>“这根据时间不同距离也不同。”</p>
+<p>“最后只有我渺小得该死。”</p>
+<p>“但无论什么东西都是刚刚从纳尼娅同学的喉咙里说出来的呢。”</p>
+<p>在说什么东西……你的声音不也是颤抖的吗？认为自己真的走出迷路期了吗？</p>
+<p>我打开窗户，收拾起被屋檐上的掉落冰锥砸破的风铃外壳。</p>
+<p>还是在九月份。我和姐姐一起挂上去的风铃和晴天娃娃，晴天娃娃早就不知被吹去了哪里，风铃现在也碎掉了啊。</p>
+<p>这是已经消逝的夏天。当时我还认为那种日子会一直持续下去，但现在看来，生活的不思议已经连混沌都撕碎了。</p>
+<p>住在一年二十四个月的星球上，每一个夏季和每一个冬季都有六个月以上的时间。夏天的长度让我很高兴，但沉溺于夏天的话，就拔不出身了。</p>
+<p>九月是椰子之月呢。椰树的果实在成熟之后就掉落到未知的海洋中漂流，无论最后落到哪里。</p>
+<p>不过，我最讨厌九月。九月就是夏季的最后一个月，从掐着秒迎来夏季，到散漫地过着夏季，最后到什么都推到明天再干地送走夏季。夏季有着机遇。但对我更多地是遗憾。</p>
+<p>因为冬季最后还是会很快来临。沉醉在夏季之中。夏季就要结束了。再不过三四个月，马上就是冬季了。马上就又成为雪海了。</p>
+<p>最后，我和姐姐在夏日祭上买了风铃。自己画了晴天娃娃。两个人一起挂了上去。烟火，夜空，繁星，两颗月亮。笨拙的和服，执着的集合，最终的夏季。词汇的堆砌，在漫漫寒冬里对于夏季最多只有这些记忆了。</p>
+<p>虽然，对我这样的人，冬季或许才更加适合我。时常有各式各样的性格分类法冒出来，其中有用四个字母表示的，还有用星座的传统派，有一种对应月份的说法里我是毫无疑问的十二月。显然也是那样，冬季里我不会出汗，不用被太长的日照闪到眼睛，凛冽的寒风比黏糊的衣服好受得多。夏天里我会想着“假如只迎来一个房间的冬天就好了”，但冬天里却不会这么想。</p>
+<p>我也不是在说冬天的坏话，我也承蒙了寒风的不少招待。</p>
+<p>甚至从理性上说我理应更喜欢冬天。</p>
+<p>冬天也不是不浪漫的，没有人会讨厌在寒冷的日子里钻进被窝的感觉吧。想永远待在冬天也不奇怪。</p>
+<p>……这真的不是反作用而已吗？</p>
+<p>如果有季节虚无主义的话，就是些认为小孩子的打打闹闹无伤大雅的行为，或者说那些就是一无是处。对宏大叙事来说，当然是夏天的孩子更有价值。如果定下了“做志愿者”作为考核指标之一，就可以以此充分利用社会资源了，像是这样吧。再者，新台场人又会少一员。</p>
+<p>总有人明明不是新东京的上层干部，不会因此影响自己的工作指标，却当上了赛博市长。我直截了当地讨厌这种人。</p>
+<p>当然他们也批判冬天了。难道真的认为这有用吗，不得不感慨，没有季节的脑袋和代码块有什么两样。</p>
+<p>作为反作用，我才更加拥入冬天的怀抱。</p>
+<p>我一直想和互联网上遇到的某个人深层次对话，想从那个某人后现代中的后现代言论中捕捉到他的真实人格，很遗憾目前的对象只有我自己。</p>
+<p>那就这么看。难道冬天中的我真的甘于冬天吗？</p>
+<p>总是说我自己是阴暗的爬虫，地上的苔藓。但是最终消耗的是光合作用的养分吧？</p>
+<p>面对着虚拟的夏日祭和烟花，我也会稍微哽咽一两声，嘴里泛起些微的咸味。这并不是人类先天就有的条件反射，而只是心中对夏天潜意识地向往吧。</p>
+<p>是时候也应该从对夏天的故作抵抗中解脱出来了。那些耀眼的夏天，直视会烧伤眼睛的夏天，令人心惊胆战的夏天，游泳池、海滩、约会、音乐、成就、疯狂、难以忘记，遮阳伞、墨镜、泳装、浴服、鲷鱼烧、小金鱼、恋人的夏天，并不一定要有吧？</p>
+<p>那些并不是真正的夏天啊。</p>
+<p>如果我想要的话，空调、屏幕、饮料的房间里不也是夏天吗？</p>
+<p>为什么一定要把那些被其他人建构的夏天当作自己的夏天啊？</p>
+<p>这样下去，不就是成为他们的活靶子吗？我是阴暗潮湿的爬虫，我是社会的废料，我一无是处……不是这样的。</p>
+<p>那样和说“迷路的孩子一无是处”有什么区别？明明大家都认为孩子们迷茫一些没有问题，为什么拒绝那些太过于正确的夏天有问题呢？</p>
+<p>我讨厌的并不是并不存在的夏天。就算知道那些夏天不存在于自己身上，也没有问题。每一部动画里我都不会跳过泳装回，歌单里有着的都是写夏天的曲子。做着不存在的梦时希望自己能画出汽水味的画，弹着没弹过几次的吉他时希望自己也能谱写出柠檬味的夏天。虽然知道由于自己的实力或者只是单纯的努力，那些都实现不了，我也不会责怪自己。</p>
+<p>因为本来就做不到，为什么要责怪自己？那为什么要发自内心地讨厌那个夏天，乃至于整个夏天？</p>
+<p>或许我从一开始就想错了。喜欢冬日的我成为的是必要之敌，是让那个建构起来的夏天更加光辉亮丽的垫脚石，是必要的矛盾转移目标。</p>
+<p>那么就不应该那样啊。变得稍微好一点点，也并不是那么遥远的吧？</p>
+<p>就算需要几个小时，我也可以做到写出能给自己用的一段代码。就算一个个需要几分钟，我也可以认出本被视作装饰用的五线谱音符。或者说，就算只是自己玩游戏的经验，我也能随手回答一下别人的评论。</p>
+<p>一直以来，都认错了自己心中的夏天。夏天不是千篇一律的，不是公式的，不是理想的……</p>
+<p>夏天只是心中总存在着的一些美好幻想，以及那些幻想可能衍生出的一些些些美好现实。</p>
+<p>并不是成为恋爱动画的男主角才是夏天，也不是突然一鸣惊人才叫夏天。或者说，初投稿就爆火的未成年人新人作曲家一般都是实际上烂到会被我匿名骂的那种。从冬天里稍微抽出身，变得好了一些些，那也是夏天。</p>
+<p>我讨厌那种被建构的夏天，什么火星先锋队，什么新火星好少年。</p>
+<p>喜欢的是自己的夏天，那个稍微好一些的夏天。能让自己稍微有更多可能性，或许在旁人眼里看来仍然是问题青年，但能让自己更高兴一点点，活得稍微舒畅一点。</p>
+<p>变好才不是错，想变得像是别人期待的一样，甚至认为那才是“好的”，才是大错特错。</p>
+<p>喜欢夏天完全没有错，再阴湿再黑暗也可以。</p>
+<p>就算是喜欢上了并不存在的夏天——也没有错啊。</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Kanata/11.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../Kanata/12.5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Kanata/11.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../Kanata/12.5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
