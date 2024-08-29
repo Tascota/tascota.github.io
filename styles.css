@@ -47,7 +47,6 @@ nav a {
 }
 
 /* homepage */
-
 section#introduction li {
     margin: 2px;
 }
@@ -77,6 +76,7 @@ b#name {
 /* subs */
 section.sub li {
     list-style: square;
+    margin: 2px 0;
 }
 
 .reference {
