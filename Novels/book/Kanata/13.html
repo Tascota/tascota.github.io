@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>虽然，有趣的灵魂我好像没有</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Index</a></li><li class="chapter-item expanded "><a href="../General/general.html"><strong aria-hidden="true">2.</strong> Biography of General</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../General/i.html"><strong aria-hidden="true">2.1.</strong> 上</a></li><li class="chapter-item expanded "><a href="../General/ii.html"><strong aria-hidden="true">2.2.</strong> 中</a></li><li class="chapter-item expanded "><a href="../General/novo.html"><strong aria-hidden="true">2.3.</strong> 新</a></li></ol></li><li class="chapter-item expanded "><a href="../Regeneral/regeneral.html"><strong aria-hidden="true">3.</strong> Re:Biography of General</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Regeneral/re.html"><strong aria-hidden="true">3.1.</strong> 再</a></li><li class="chapter-item expanded "><a href="../Regeneral/iii.html"><strong aria-hidden="true">3.2.</strong> 后</a></li><li class="chapter-item expanded "><a href="../Regeneral/quis.html"><strong aria-hidden="true">3.3.</strong> ？</a></li></ol></li><li class="chapter-item expanded "><a href="../Genechan/genechan.html"><strong aria-hidden="true">4.</strong> Biography of Genechan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Genechan/1.html"><strong aria-hidden="true">4.1.</strong> piRiutataze!</a></li><li class="chapter-item expanded "><a href="../Genechan/2.html"><strong aria-hidden="true">4.2.</strong> Šodpolis te Usa Ucikiqi</a></li><li class="chapter-item expanded "><a href="../Genechan/3.html"><strong aria-hidden="true">4.3.</strong> Pakba Atemvasty iQivi de laSargra</a></li><li class="chapter-item expanded "><a href="../Genechan/4.html"><strong aria-hidden="true">4.4.</strong> Steamia</a></li><li class="chapter-item expanded "><a href="../Genechan/citystates.html"><strong aria-hidden="true">4.5.</strong> in Citystates</a></li><li class="chapter-item expanded "><a href="../Genechan/aresia.html"><strong aria-hidden="true">4.6.</strong> on Aresia</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../Kanata/kanata.html"><strong aria-hidden="true">5.</strong> Kanata no Sonata</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Kanata/5.41.html"><strong aria-hidden="true">5.1.</strong> Hatsuyuki</a></li><li class="chapter-item expanded "><a href="../Kanata/5.42.html"><strong aria-hidden="true">5.2.</strong> Shiratsuyu</a></li><li class="chapter-item expanded "><a href="../Kanata/5.43.html"><strong aria-hidden="true">5.3.</strong> Kuroshio</a></li><li class="chapter-item expanded "><a href="../Kanata/5.44.html"><strong aria-hidden="true">5.4.</strong> Oboro</a></li><li class="chapter-item expanded "><a href="../Kanata/5.50.html"><strong aria-hidden="true">5.5.</strong> 这种事情显得我自我意识过剩</a></li><li class="chapter-item expanded "><a href="../Kanata/6.html"><strong aria-hidden="true">5.6.</strong> 当然没有什么意义啦</a></li><li class="chapter-item expanded "><a href="../Kanata/7.html"><strong aria-hidden="true">5.7.</strong> 我并没有否定自己的意思</a></li><li class="chapter-item expanded "><a href="../Kanata/8.html"><strong aria-hidden="true">5.8.</strong> 像往常一样废话真多呢</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Kanata/8.1.html"><strong aria-hidden="true">5.8.1.</strong> </a></li></ol></li><li class="chapter-item expanded "><a href="../Kanata/9.html"><strong aria-hidden="true">5.9.</strong> 我也很好奇</a></li><li class="chapter-item expanded "><a href="../Kanata/10.html"><strong aria-hidden="true">5.10.</strong> 那些很重要啊</a></li><li class="chapter-item expanded "><a href="../Kanata/11.html"><strong aria-hidden="true">5.11.</strong> 只会点带雪顶的冰咖啡</a></li><li class="chapter-item expanded "><a href="../Kanata/12.html"><strong aria-hidden="true">5.12.</strong> 一种奇怪的余裕</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Kanata/12.5.html"><strong aria-hidden="true">5.12.1.</strong> </a></li></ol></li><li class="chapter-item expanded "><a href="../Kanata/13.html" class="active"><strong aria-hidden="true">5.13.</strong> 虽然，有趣的灵魂我好像没有</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="13---虽然有趣的灵魂我好像没有"><a class="header" href="#13---虽然有趣的灵魂我好像没有">13 - 虽然，有趣的灵魂我好像没有</a></h1>
+<p>我本来写有这一部分的剧情，但由于太流水账，故放弃。理论上说，这里还是铺垫。</p>
+<br>
+<p>火星互联网最近正式架设了。毕竟互联网是转移注意力最好的工具了。</p>
+<p>与此同时来的是又一位美少女，姓是北上，名字是みのり（音）。从外表上看，分辨不出这是男孩子还是女孩子，所以我不太确定该写成女孩子的“穣子”一类还是男孩子的“稔”之类的。花名 Minoria，自称希望被叫做 Minorin。</p>
+<p>浅灰色的短发，发梢微卷。御寒的毛绒卫衣，连下半身也裹得严严实实，没有裸露的皮肤。面容标准可爱。瞳色是灰蓝色。本来就难以辨别第二性征，这么穿就更这样了。</p>
+<p>自称男孩子。</p>
+<p>那好吧，米诺莉娅君。</p>
+<p>他以十分都合的方式住入我们家里，身兼风纪委员与火星互联网项目组的最主要成员之一之职，居然还能放任他远程办公。</p>
+<p>但幸运的是，我很乐意看到他每天被工作忙得团团转。每天起床都能看到他的餐盘旁边的一大杯黑咖啡，有时候还能看到黑眼圈和眼袋，比我稍微大些的身躯，感觉再摁一下就会炸开了。刚来时像是鹅卵石一样不尖锐但是清楚的声音，好像也变得嘶哑了。</p>
+<p>不知道为什么，我居然很喜欢看这种本应很阳角的人，因为自己想不通或者单纯的工作原因，被迫阴暗下来的画面。</p>
+<p>如此的话，我只好把买给初雪的安眠药借给他用了。</p>
+<p>初雪也需要安眠药什么的不是也很棒吗？</p>
+<p>总之，忙活了大概两个星期，⑨ channel 算是终于上线了。看着灯光下白色的卫衣和他深度睡眠中的脸，总感觉注册帐号在这面前都不太有诱惑力了。更想多看一眼他的黑眼圈和眼袋，地上的速溶咖啡包装或者塞满的垃圾桶。</p>
+<p>大概这是那种想摧毁可爱事物的心理，可爱侵略冲动。</p>
+<br>
+<p>从零建立起的火星互联网网站故意做得很复古，像是 21 世纪开端时的论坛风格。帐号注册不需要挂靠邮箱之类的联系方式，设置密码不需要二次确认，甚至没有验证码。</p>
+<p>唯一的分区是杂谈区。</p>
+<p>在网站正式上线的那一天，米诺莉娅久违地能够上桌吃饭了。眼袋和眼泪的痕迹叠加在一起。据说他们重新写了一个论坛的框架，因为这种古早的论坛翻尽了本地的库都没有找到。</p>
+<p>既然汽车已经能够单独成为一种人类的爱好，那么没有《如何制造轮子》之书好像也很合理。</p>
+<p>“我比较无知，恕我直言。”我说，“为什么一定要是这种风格？”</p>
+<p>“那个，两个星期不是开发这个网站的时间……是各种调试网络服务的时间。”他的回答答非所问，眼神迷离，已然是一个合格的官僚了。</p>
+<p>“为什么……”</p>
+<p>“虽然互联网这方面的开发经验比较丰富……但是还需要做好起跑第一步，找到未来项目用户，发掘可能蓝海市场……”</p>
+<p>“米诺莉娅！”</p>
+<p>大大的眼珠骨碌碌地旋转，哭诉着生成式人工智能的职位缺失。</p>
+<p>他以这种方式又失魂地走了回去。</p>
+<br>
+<p>又稍微过了一会，他又从楼上下来了。客厅里只有我，初雪回房间里去了。</p>
+<p>他对我的态度还不错，似乎很关照我的样子。</p>
+<p>“啊……让你目睹了社畜的惨状哪。不过，虽然做火星互联网也是任务之一，但我也挺想做个自己喜欢的项目的……”</p>
+<p>“自己喜欢的项目……？莫非说米诺莉娅是想要成为‘可爱有趣的管理员大人’之类的人？”</p>
+<p>他抿了抿嘴唇，稍微转了转脑袋，用手指摆弄着鬓发。</p>
+<p>“嘛，确实是这样……”</p>
+<p>“诶——”好有趣的社畜，明明都自称社畜了。</p>
+<p>“毕竟啊，”他像下定了决心，把双手撑到了桌子上，“之前我可太想进步了，自己主动做了很多项目，把自己变成社畜的形状了。”</p>
+<p>“所以才成了风纪委员啊——”</p>
+<p>“……还真是。不过现在成了风纪委员，虽然工资是变多了……不过还得有什么社交平台营业之类的工作要做，什么开会也好 live 的准备也好，总感觉很烦人啊。”</p>
+<p>“是这样啊……难道风纪委员是类似于偶像的东西吗？”</p>
+<p>“也不是，更像是主播或者视频主之类的……虽然也不一定就是偶像，但是营业什么的也要做啊。像我这种家伙居然都要练歌和练舞，啊……啊啊啊！”</p>
+<p>他发出了很大的声音，两颗虎牙历历在目。</p>
+<p>“但是，实不相瞒，我觉得米诺莉娅作为主播应该是个很有趣的人。”确实很可爱，性格虽然内向但是也会好好聊天（而且还是隔着屏幕），虽然会抱怨却还是会好好练歌练舞。而且他还是个伪娘，程序员又当得好。</p>
+<p>“啊、这个……”</p>
+<p>“比如说是伪娘，又是程序员。”</p>
+<p>“欸——不过好像确实用这个人设吸引了不少人。其实我的直播很多是套皮敲代码回的。”</p>
+<p>“那么这样不是挺好的嘛。有时候营业确实也是会有的嘛。”</p>
+<p>“啊，不是。在成为风纪委员之前我本来就也是个人势。所以成为风纪委员，反而让我要学歌舞这种和我的人设不符的东西了。”</p>
+<p>“做个人势难道不需要歌营业吗？”</p>
+<p>“歌营业可以唱自己喜欢的歌，就算是原创曲也可以找自己喜欢的人合作。地联的风纪委员其实也是企业势。这样就不得不接些商单什么的，能自己决定的事情也变少了。”</p>
+<p>“不过啊。”我说，这是大多数人最在意的事，“赚的钱变多了吧？”</p>
+<p>“嘛啊。是这样呢。但是像我这种，整天花钱的地方只有买游戏漫画和周边的人来说怎么样都一样吧。”</p>
+<p>如果不是理智的我的话就会大骂了。</p>
+<p>“其实做主播的要领在于培养 gachi 粉丝。就算有很多粉丝，没有人打钱的话还是活不下去，叫好不叫座的话赚不到钱。”</p>
+<p>他扭扭捏捏地说完这段话，停顿了几秒，图穷匕见：“我看起来像是那种会有很多 gachi 的主播吗？”</p>
+<p>老实说来好像不是。更像是某个 meme 的主人，虽然人尽皆知，但是会特意找去关注的很少，会长期关注的就更少了。说来，看到过寥寥几个米诺莉娅的爆款视频好像都是 meme 那种类型的。</p>
+<p>“不是。”</p>
+<p>“这样啊，”他看起来没有我想象中的沮丧，“所以我才说我进企业势更没什么好的了。本来就是流量很多但赚钱很少的类型，现在宣传给了更多流量，赚的钱却还被分走了。”</p>
+<p>似乎确实是这样。“要——”</p>
+<p>“不过不过！”他又把话锋一转，两手撑在椅子上倾了过来，“不是这样的话，我也认识不了小纳尼娅和初雪了。毕竟初雪是很美好的女孩子啊。”</p>
+<p>同感。</p>
+<p>“让我想起了——什么来着？《雪国》中的女子们。不管性格上像不像，那种若即若离的感觉，还有‘雪’的名字，都很棒啊。”</p>
+<p>她还有个闹腾的妹妹叫做吹雪，好像脱离这个规律了。不过这么形容倒确实和我的想象完全对上了。</p>
+<p>“有点意外啊，米诺莉娅看过的书比我想象中的多。”</p>
+<p>“……毕竟也是得过诺贝尔文学奖的书啊。既然正好还是日本的，那就一定会去看了。”</p>
+<p>“拜许多作品所赐，还是芥川、太宰更为人熟知吧。”</p>
+<p>“欸——是这样呢。不过啊，不觉得正儿八经地应用此二位的话，而不是二创的形象会显得更厉害吗？”</p>
+<p>“哇啊。”</p>
+<p>可能从营造人设的角度上是这样。这样看来，就变成精通编程的文学少年了。而且他的歌舞虽然是被迫营业，但做得都很不错，这种什么都会的感觉也很棒。</p>
+<p>“全能型选手啊。好羡慕。”</p>
+<p>“诶诶？并、并不是这样……”</p>
+<p>“……”</p>
+<p>“……告辞了。”</p>
+<p>广而不精和精而不广哪个更重要，对于米诺莉娅来说应该也不重要吧。难道不是又精又广吗，这个……而且还是努力型。看来米诺莉娅确实是个相当厉害的有意思的人类。</p>
+<p>有着有趣的灵魂。</p>
+<p>——可能只是因为没有触碰到我的专业方面，所以我没有表现出胜负欲吧。</p>
+<p>但我最喜欢的就是无论抛出什么话题都能接得上的人。</p>
+<p>这么看，或者说，我觉得周边的所有人都有着相当有趣的灵魂。初雪会讨论起人生哲学，白露会讨论暗恋哲学。虽然不会天天见面，但是小胧有时候也会有认真起来的时刻，比如突然在聊天软件上和我辩论起来什么的。新月则是在社交媒体上抱不平时，在混乱的精神中会展现出冷静到可怕的一面。</p>
+<p>虽然，有趣的灵魂我好像没有。因此我才想当一个虽然和大家关系很好，但是也只是普通的旁观者。</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Kanata/12.5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Kanata/12.5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
