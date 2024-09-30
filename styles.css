@@ -73,6 +73,18 @@ b#name {
     color: white;
 }
 
+/* quote */
+p.quote-content {
+    font-size: larger;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+p#quote_cite {
+    margin-right: 40px;
+    text-align: right;
+}
+
 /* subs */
 section.sub li {
     list-style: square;
