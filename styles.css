@@ -80,7 +80,7 @@ p.quote-content {
     margin: 10px auto;
 }
 
-p#quote_cite {
+p.cite {
     margin-right: 40px;
     text-align: right;
 }
