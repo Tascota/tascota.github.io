@@ -86,9 +86,14 @@ p#quote_cite {
 }
 
 /* subs */
-section.sub li {
+.sub li {
     list-style: square;
     margin: 2px 0;
+}
+
+.sub p {
+    color: #ababaa;
+    font-size: small;
 }
 
 .reference {
@@ -103,6 +108,10 @@ section.sub li {
 }
 
 .date p {
+    margin: 0;
+}
+
+.date ul {
     margin: 0;
 }
 

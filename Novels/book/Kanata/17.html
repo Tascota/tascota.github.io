@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>于是心之壁又提醒了自己的存在</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Index</a></li><li class="chapter-item expanded "><a href="../General/general.html"><strong aria-hidden="true">2.</strong> Biography of General</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../General/i.html"><strong aria-hidden="true">2.1.</strong> 上</a></li><li class="chapter-item expanded "><a href="../General/ii.html"><strong aria-hidden="true">2.2.</strong> 中</a></li><li class="chapter-item expanded "><a href="../General/novo.html"><strong aria-hidden="true">2.3.</strong> 新</a></li></ol></li><li class="chapter-item expanded "><a href="../Regeneral/regeneral.html"><strong aria-hidden="true">3.</strong> Re:Biography of General</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Regeneral/re.html"><strong aria-hidden="true">3.1.</strong> 再</a></li><li class="chapter-item expanded "><a href="../Regeneral/iii.html"><strong aria-hidden="true">3.2.</strong> 后</a></li><li class="chapter-item expanded "><a href="../Regeneral/quis.html"><strong aria-hidden="true">3.3.</strong> ？</a></li></ol></li><li class="chapter-item expanded "><a href="../Genechan/genechan.html"><strong aria-hidden="true">4.</strong> Biography of Genechan</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Genechan/1.html"><strong aria-hidden="true">4.1.</strong> piRiutataze!</a></li><li class="chapter-item expanded "><a href="../Genechan/2.html"><strong aria-hidden="true">4.2.</strong> Šodpolis te Usa Ucikiqi</a></li><li class="chapter-item expanded "><a href="../Genechan/3.html"><strong aria-hidden="true">4.3.</strong> Pakba Atemvasty iQivi de laSargra</a></li><li class="chapter-item expanded "><a href="../Genechan/4.html"><strong aria-hidden="true">4.4.</strong> Steamia</a></li><li class="chapter-item expanded "><a href="../Genechan/citystates.html"><strong aria-hidden="true">4.5.</strong> in Citystates</a></li><li class="chapter-item expanded "><a href="../Genechan/aresia.html"><strong aria-hidden="true">4.6.</strong> on Aresia</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../Kanata/kanata.html"><strong aria-hidden="true">5.</strong> Kanata no Sonata</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Kanata/5.41.html"><strong aria-hidden="true">5.1.</strong> Hatsuyuki</a></li><li class="chapter-item expanded "><a href="../Kanata/5.42.html"><strong aria-hidden="true">5.2.</strong> Shiratsuyu</a></li><li class="chapter-item expanded "><a href="../Kanata/5.43.html"><strong aria-hidden="true">5.3.</strong> Kuroshio</a></li><li class="chapter-item expanded "><a href="../Kanata/5.44.html"><strong aria-hidden="true">5.4.</strong> Oboro</a></li><li class="chapter-item expanded "><a href="../Kanata/5.50.html"><strong aria-hidden="true">5.5.</strong> 这种事情显得我自我意识过剩</a></li><li class="chapter-item expanded "><a href="../Kanata/6.html"><strong aria-hidden="true">5.6.</strong> 当然没有什么意义啦</a></li><li class="chapter-item expanded "><a href="../Kanata/7.html"><strong aria-hidden="true">5.7.</strong> 我并没有否定自己的意思</a></li><li class="chapter-item expanded "><a href="../Kanata/8.html"><strong aria-hidden="true">5.8.</strong> 像往常一样废话真多呢</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Kanata/8.1.html"><strong aria-hidden="true">5.8.1.</strong> </a></li></ol></li><li class="chapter-item expanded "><a href="../Kanata/9.html"><strong aria-hidden="true">5.9.</strong> 我也很好奇</a></li><li class="chapter-item expanded "><a href="../Kanata/10.html"><strong aria-hidden="true">5.10.</strong> 那些很重要啊</a></li><li class="chapter-item expanded "><a href="../Kanata/11.html"><strong aria-hidden="true">5.11.</strong> 只会点带雪顶的冰咖啡</a></li><li class="chapter-item expanded "><a href="../Kanata/12.html"><strong aria-hidden="true">5.12.</strong> 一种奇怪的余裕</a></li><li class="chapter-item expanded "><a href="../Kanata/13.html"><strong aria-hidden="true">5.13.</strong> 虽然，有趣的灵魂我好像没有</a></li><li class="chapter-item expanded "><a href="../Kanata/14.html"><strong aria-hidden="true">5.14.</strong> 我回去了</a></li><li class="chapter-item expanded "><a href="../Kanata/15.html"><strong aria-hidden="true">5.15.</strong> 毕竟这是彼方的海岸</a></li><li class="chapter-item expanded "><a href="../Kanata/16.html"><strong aria-hidden="true">5.16.</strong> 我的头发确实是蓝色的</a></li><li class="chapter-item expanded "><a href="../Kanata/17.html" class="active"><strong aria-hidden="true">5.17.</strong> 于是心之壁又提醒了自己的存在</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="17---于是心之壁又提醒了自己的存在"><a class="header" href="#17---于是心之壁又提醒了自己的存在">17 - 于是心之壁又提醒了自己的存在</a></h1>
+<p>我还想再去田埂的另一端看看的。但前奏等不了我。</p>
+<p>但或许仔细想想，在没有付诸行动之前，一切对自己的辩白都只不过像是歌词一样苍白。这么想的话，我可能有些安心了。</p>
+<p>今天依然是一个清冷的日子。不同的是，天空澄澈了起来，我的头脑不自觉地沉入了苍蓝的天空。</p>
+<p>初雪没有带什么东西，背后鼓囊的不过是几件衣服，最多的是一些留待拍照的小玩意儿，底下的是笔记本电脑和书。fufu 玩偶本来就要被塞进大背包里，却被她制止住了，现在被抱在了怀里。白露提着小行李箱，从远处逐渐变大，使劲地跋涉过铁轨。初雪左右看了看，克制地抬起右手示意。穿过道口之后，两人在天空下相遇了。</p>
+<p>看着这一切，畅想的清澈湖水忽然从上方的天空里涌出。原来这就是思想——有时候是畅想，有时候是胡思妄想——只不过是关于过去已经怎样，现在是怎样，而在那之后会是怎样，在这以外引申出的想法，以及便签纸和草稿纸。在作为背景的样例视频的神经网络中，神经元连接又一次史无前例地纵横交错。只是占位符的金色丝线如牛奶般流淌，而在那其中有几朵不安分的逆行箭矢。上面涂着牛奶的带来《雪国》的回忆，于是我才想到，那时仿佛有银河倾泻了下来——其实并无益于问题的思考，但神经网络不过恰巧这么连接。</p>
+<p>涂着毒液的让我下意识想到电车难题。如果有电车突然驶来——</p>
+<p>或许她正讨厌这种毒箭吧。思绪中有咬人的螃蟹，人与人是带刺的豪猪（或者刺猬），互相理解能让刺痛不经意间少一些。</p>
+<p>如果箭上都涂满蜂蜜和牛奶，在一阵阵的箭雨之后，心底会变成流着奶与蜜的土地吗？</p>
+<p>更广泛普适的语言称其为头脑风暴或者其他的名词，以最不幸的方式，往往出现于各种管理学书籍。</p>
+<p>在形而下的箭突然带来刺痛的时刻，我突然被拉回了现实。宛如将要入睡时的一阵失重，带我去见了海百合。</p>
+<p>“就像是和世界隔离开了一样。”我说。</p>
+<p>“所谓的灵魂出窍吗？”白露用力地解析了我的自言自语。</p>
+<p>“我喜欢头脑风暴呢。”初雪也下意识说。下意识地说，她后来强调这种下意识往往会成为后来被反复思考的对象。“反气旋或者漏斗——就像是那种会把一切带进身体里的。”</p>
+<p>“……”</p>
+<p>其实我喜欢这种表达。航迹云把云层带进发动机里又喷出来，大雨中的排水井盖把水流吞噬，那里面说不定有某人遗失的宝物。自己世界里的一切旋转着到了身体里。以我作为中心，往上是不断扩大的云彩同心圆，而我是苍蓝的天空、广袤的大地、此方和彼方的原点，一切思考的中心与箭矢的终点。</p>
+<p>“……我不是很听得懂呢。”</p>
+<p>白露说。于是心之壁又提醒了自己的存在。监控室般的大脑里还有那幅反气旋的倾泻，我也依然思慕着它，只不过不受控制的意识又一次把现实放在了世界的正中间。犹如螳臂当车一般，倾泄的星空、苍茫大地的反气旋、闪烁的银河铁道都被迫让位，视觉传感器里，就连汽水味的苍穹也忽然迎来了不明不白的多云。</p>
+<br>
+<p>彼方相当宽广，本来离开镇中心几公里开外就会有那种世界尽头的断崖。但是彼方的车站本身却和其他地方的并没有什么两样。很遗憾地说，或许我更希望的是那种只有站台和模糊的站牌的车站，但彼方站因为有新干线停靠而与之截然相反。</p>
+<p>不过新干线早已停驶了。现在只有按照地方线路运行的慢车。</p>
+<p>上午十点。刚布满云彩的天空还试图示意自己的存在，阳光因而从云层的裂隙中用力溢出。铁轨旁侧没有种植暗淡的各类作物，只有完整的青草地。本来就没有人踩踏，火车班次又极度减少，定期的清除已经弥补不了大地了。</p>
+<p>只有我因为被视作小孩子，不用背大包或者提箱子。确认了她们正在跋涉过来后，我凝视着那只铁盒子从地平线的尽头缓缓走来。眼球不经意间变成了长焦镜头，笔直的铁轨扭曲了，让人不禁怀疑行驶的电车是否安全。地平线也随之扭曲，是夏天才有的现象，他们把这种现象称为所谓的“阳炎”。</p>
+<p>电车是无人驾驶的，按照极简单地设定的时刻表运行，不管站台上有没有人，车门还需要手动打开。视野所见，车上果然空无一人。只有一个搭起的临时房间。车厢的地板上有这样的轨道，可以拉出临时的隔间来——本来只是为了乘客少而乘车时间长的慢电车而设计的功能。感谢颇有前瞻性的几十年前的制造商。他们会想到今天我们会把这当作卧铺车来使用吗？</p>
+<br>
+<p>“这还真有意思啊。”终于坐定之后，初雪说，“就像是《金阁寺》里的主角先生一样。自己的脑袋里面太混乱，就乘着电车出逃了。希望我们不会遇到有人把自己抓回去啊。”</p>
+<p>作为话题的开始，这句话实在太压抑了。而白露还试图撑住自己那一层薄薄的暖纱，脆弱程度就类似于冬天的阳光。如果因为汗水沾湿，那种薄纱一定会变成对自己实行水刑的用具。</p>
+<p>但总而言之，初雪和白露的对话里总不经意间有着某种程度的心之壁。心之纱是主观形成的一方面，而初雪的才更类似于下意识产生的 AT 力场。</p>
+<p>“你的意思是我们回去会烧掉些什么吗？”</p>
+<p>“可能吧。”很低沉。为了配合自己的新形象，她最近开始压低嗓音了。</p>
+<p>“嗯？”</p>
+<p>“对于这种单纯的感想寻根究底是很不礼貌的，小——白露。”</p>
+<p>“啊？我并没有寻根究底吧。”</p>
+<p>“……”</p>
+<p>似乎是被麻到了，初雪望向窗外。白露的所谓“下意识”的话语总有一种种玉米笋的感觉，还只是有苗头而已，就被一口咬掉了。初雪应该对此颇有微词吧——但坐在她对面的孩子差不多确实是唯一能理解她的人，就算是用这种刺痛的方式。在冬日里——</p>
+<p>“在冬天，”初雪似乎酝酿了很久才说出口，“穿厚大衣的话，如果稍微动一动就会很热，后背就像是神经疼痛般的刺痛炎热。但是不穿的话又会很冷。你的话大概就是这种感觉吧。”说实话，我也想用这个比喻。</p>
+<p>“欸——这样啊。”很提不起兴趣的对话，“小初前辈的话果然让人听不懂啊。”</p>
+<p>初雪咽了咽嗓子，稍微眯起眼睛，更加犀利地盯着窗外地上的第三轨。她不甘心于这种不着边的回答。</p>
+<p>“简单的说，就是人与人之间就像是刺猬一样。虽然大家都这么比喻。或者说这就是心之壁。”</p>
+<p>“欸。”依然是这种回答。</p>
+<p>“……你在听我说话吗？”冷静的初雪开始有些动摇。她话语的末尾有点模糊。</p>
+<p>“嗯。”白露心不在焉地说。她下意识地摆弄起手指。</p>
+<p>“……喂。”</p>
+<p>“嗯？”</p>
+<p>“你耳朵有问题吧。”</p>
+<p>请注意。问题就出在这里。在初雪看来——或者至少是下意识看来，两人的关系已经好到可以说这种话了。在她的定义里，这算是单纯开玩笑损人的话。理想的状况应该是对方也损一损自己。但事情并没有这样展开。</p>
+<p>本来半睁的眼睛现在是怒目圆睁，低下的头也抬了起来，她缓缓用怒音发出声音。“啊？”这个模糊的声响里同样包括了很多种可能，“你是在骂我吗？”</p>
+<p>“啊？没有啊。”</p>
+<p>“如果我说‘你脑袋是不是有问题’，你会觉得我在骂你吗？”</p>
+<p>初雪稍作思考。“如果是现在的情况的话，不会。”</p>
+<p>“相比起我的脑袋，你的脑袋果然稍微劣等一点呢。”</p>
+<p>“……”初雪怔住了。她强忍着不作出反应。但是她浅吸了一口清凉的空气。有点不安的她在脑中为自己打开了座位加热功能，她左右摇晃着，开始辗转反侧。</p>
+<p>现在，她开始后悔了——不过现在还没有切中重点，她还只是单纯认为自己的这句话戳中了对面的雷点。白露的反问确实是这么引导她的。</p>
+<p>“……啊，对不起。”</p>
+<p>“什么？”</p>
+<p>“对不起。抱歉。”她认真地说。但只是坐在椅子上向前倾。</p>
+<p>“对不起呢。毕竟我耳朵有问题。”</p>
+<p>“……抱歉。”事情是不是严重了呢？</p>
+<p>没有回答。白露自顾自的开始翻自己的包，拿出电子书。</p>
+<p>“我的那句话让你很不舒服吧。对不起。真的很对不起。”她一边说着，慢慢站起来，只不过是故意要让白露注意到自己的这个动作。阴影遮住了她面前的人。</p>
+<p>“嗯。可以让开吗？”</p>
+<p>“对不起。”</p>
+<p>“哦。”</p>
+<p>“真的很对不起。”</p>
+<p>“……”</p>
+<p>白露毫无反应。或许很让人生气。但我又应该怎么指责她呢——毕竟被骂的不是我。我不知道白露到底认为多大程度上自己与她难以和解。</p>
+<p>“对不起！”初雪突然大声吼叫起来。就算是被称作耳朵有问题的白露也抬起了头。“对不起对不起对不起对不起对不起！”她一再大声地重复，从脸颊到耳朵都被充血而显得红肿，头发不停大幅度摇动。几根难以承受的发丝飘到我的鼻尖。我不由得打了个喷嚏。</p>
+<p>打喷嚏时要闭上眼睛。据说打喷嚏时的瞬时速度高得足以把眼睛甩出去。</p>
+<p>再睁眼时，白露已经跑出去了。只留下初雪一个人摇摇晃晃地站着，双腿失了力，而脑袋又因为突然站起、狠狠摇晃而一时缺氧。我只不过看到她涣散着眼神缓缓坐下。</p>
+<p>她用自己的右手撑住额头。这并不是沉思者的姿态，而只不过是因为她想暂时关闭自己的视觉。不过她或许也缓缓思考出了什么。</p>
+<p>“刚刚，我差点就要出手了。”</p>
+<p>“出手？”</p>
+<p>“‘啪’——一下，那样的。”</p>
+<p>“所谓的友情破颜掌？”</p>
+<p>“或许吧。”她说着苦笑了一下，“不过，我们之间真的有那种友情吗。如果我真的干了的话，恐怕真的一切就那么结束了吧。”</p>
+<p>我站起身来。探出房间门望了望。白露一个人坐在最前方的展望席，一副轻松的姿态。仿佛一切都在她的计划之中。她望了望我，和我稍稍对视。</p>
+<p>“或许啊，”我身后的初雪又说，那种语气宛如酒后吐真言，“我真的是个笨蛋。”</p>
+<p>“哦？”我也不知道怎么回答这句话。我不想和她也起这种冲突。</p>
+<p>“你想想啊。”她缓慢地开口。此时我看到白露已经回到附近了，她坐在正对着门口的横排座位上，用耳朵对着我们。“这是一个悖论。像我刚刚那样下意识说的话，就是所谓的‘真心话’吧？如果两个人要用真心对待彼此的话，这种话就不得不说；但是说了这种话之后，要是踩到了对方的雷点，又会很麻烦，恐怕一切就就此结束了。不说真心话的朋友之间不过是表面朋友罢了。表面朋友要转化成真心的朋友的话，那种话就是必须的吧。是掏心窝子的话啊。”</p>
+<p>“哈哈哈。”听完这些长篇大论，白露终于绷不住了。她笑出声来。“意思是，你真心认为我就是耳朵有问题啊。”</p>
+<p>初雪又倒吸一口凉气。“不是……”她欲言又止，看似不知道怎么回复。</p>
+<p>“怎么？又要说我的哪个身体器官有问题吗？”</p>
+<p>“……不、不是……”她以一副不可思议的样子转向我。而我又有什么好说的呢？我不过是看热闹不嫌事大的旁观者而已。</p>
+<p>“我就喜欢这种看别人大脑疯狂运转，而自己只用看乐子就行的时刻啊。”面对初雪的求助，我报以这样的感叹。初雪表情上的潜台词似乎是认为白露不可理喻。看起来，白露并不是那种性格——不过，或许是出于她自己的总结，或许是我的总结，或许她是那种外热内冷的人。</p>
+<p>经过几番同上的对话，初雪终于放弃了挣扎。“不行不行。‘一言既出，驷马难追’。感谢新高同学今天让我意识到这个道理了。所以我发自内心地道歉，可以吗？我以后不会再对你说这种不经过大脑思考就说出来的话了，”她没有意识到自己正在做的就是加厚心之壁，“可以吗？就像我现在说的话一样，虽然听起来是玩祖玛一样说出来的，但是真的是我自己经过思考的话啊。就算我的脸已经这么红了——你看——但是我说的话都是真心的。当然最开始的那句话真的只是一时上头了而已，我现在说的话都是我真心想要跟你说的。我以后都会和你好好说话的好吗？不会再说那种伤害我们两个关系的话了。”</p>
+<p>“哦。那挺好的啊。希望你能践行哦。”</p>
+<p>两人间从表面上就此达成了和解。一只很白的手和一只略微晒黑的手合在一起。初雪顿时玩起了那种小学男生的把戏，用力地捏紧了白露的手，但脸上并没有露出那种似笑非笑的笑容。她警惕地望向对方，直到手上也感觉到来自对方手指的压力，对方脸上也露出微笑之后，她才稍微放下心来。过了很久，初雪才悻悻然般放下手。</p>
+<p>最后，“……我们去展望席看看吧。很有趣的。”白露说。</p>
+<br>
+<p>“其实吧。”初雪还没走进展望室，白露就低声地开了口，“我刚刚也只是有些生气而已。我脑海中的小初前辈应该不是那种随便就会骂人的人吧。”</p>
+<p>“嗯。我已经在反省了。”初雪说，“真的。真的真——”</p>
+<p>“我不是在质疑这个。你不要着急。”白露似乎为对方的笨拙而着急，“往小了说只是互损，往大了说就是人格侮辱了。”</p>
+<p>“嗯。”</p>
+<p>“我只是希望……就像你刚刚说的那样，小初前辈能不要那样意气用事，不要说出那种只是逞一时口快的话。”</p>
+<p>杂糅到话语里的书面词汇让初雪又多想了一会。“啊。我知道了。”</p>
+<p>“如果那样的话，我说不定会讨厌你的……不过对小初前辈来说不重要吧？”</p>
+<p>“并没有！”她声明，再次没有盖住自己的本音。</p>
+<p>“更害怕的应该是被纳尼娅和诺维娅，或者被小胧和新月她们讨厌吧。”</p>
+<p>“嗯。”她回应，“但是。但是，很重要的一点……”</p>
+<p>白露转过头望向她。她知道现在应该是很重要的时刻。</p>
+<p>“那么，那种……那种真正的感情又该去哪里找寻呢。毕竟又没有真的人类补完计划。”</p>
+<p>“啊……”</p>
+<p>这还真是很难的问题。电车在周围荒芜的土地中向着东北方向缓慢挪动，铁路上未除完的杂草时不时让车厢摇晃。白露和初雪肩并着肩，出于偶然，开始聊起其他的话题，随着电车的摆动，时不时爆发出一些笑声。我依靠在隔间的门口，时不时看看手中的杂志，不过是过了中午，高纬度的残阳就开始从我的后方射入车内。两人眼前的场景未有改变，不过时不时因掠过几个无人上下的车站而暂停一刹那。车内的光线逐渐暗淡下来，而又未到车灯打开的时分。在这青黄不接的时刻里，车内一片暗淡，理应让人昏昏欲睡，但两人的聊天依然断断续续。而那个问题依旧无人回答。</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Kanata/16.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Kanata/16.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
