@@ -1,3 +1,8 @@
+function generateRandomNumber(list) {
+    const randomSelector = Math.floor (Math.random() * list.length);
+    return randomSelector;
+}
+
 /* random quote */
 const madoka = ["奇迹和魔法都是存在的", "「奇跡も、魔法も、あるんだよ」", "鹿目圆", "《魔法少女小圆》", "ja-jp"];
 const shuumatsu = ["没到最后就不会结束哦", "「終わるまでは終わらないよ」", "千户、尤莉", "《More One Night》", "ja-jp"];
@@ -19,13 +24,8 @@ const quoteList = [
     kimoi
 ];
 
-function generateRandomNumber() {
-    const randomSelector = Math.floor (Math.random() * quoteList.length);
-    return randomSelector;
-}
-
 function generateRandomQuote() {
-    const quoteSelected = quoteList[generateRandomNumber()];
+    const quoteSelected = quoteList[generateRandomNumber(quoteList)];
     const quote = quoteSelected[0];
     const originalQuote = quoteSelected[1];
     const author = quoteSelected[2];
@@ -78,7 +78,7 @@ const vocaloidList = [
 ]
 
 function generateRandomSong() {
-    const vocaloidSelected = vocaloidList[generateRandomNumber()];
+    const vocaloidSelected = vocaloidList[generateRandomNumber(vocaloidList)];
     document.getElementById("random_vocaloid").textContent = vocaloidSelected;
 }
 
