@@ -61,6 +61,7 @@ b#name {
 
 .contact-box {
     border: 3px solid;
+    border-radius: 3px;
     padding: 1%;
     height: fit-content;
     width: 8em;
@@ -73,6 +74,26 @@ b#name {
     color: white;
 }
 
+div.container {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #8080FF;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    border-radius: 4px;
+    border-color: white;
+}
+
+button.smaller-button {
+    margin-left: 10px;
+    font-size: medium;
+}
+
 /* quote */
 p.quote-content {
     font-size: larger;
@@ -81,8 +102,18 @@ p.quote-content {
 }
 
 p.cite {
-    margin-right: 40px;
+    margin: 10px auto;
+    margin-inline-end: 40px;
     text-align: right;
+}
+
+div#quote_part div.container {
+    justify-content: space-between;
+}
+
+div#quote_part button {
+    margin-top: 0;
+    text-align: left;
 }
 
 /* subs */
