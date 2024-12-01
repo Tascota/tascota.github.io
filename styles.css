@@ -169,3 +169,43 @@ figcaption {
     font-size: 15px;
     list-style: upper-roman;
 }
+
+/* conlang */
+.paragraph {
+    margin-bottom: 1.5em;
+}
+
+.paragraph p {
+    margin: 0;
+}
+
+.original {
+    color: #cdcdcc;
+}
+
+.translation {
+    color: #efefee;
+}
+
+.ref-translation {
+    font-size: small;
+    color: #ababaa;
+}
+
+article#re_erverlre_intro .original {
+    color: #efefee;
+}
+
+article#re_erverlre_intro .translation {
+    color: #cdcdcc;
+}
+
+.original-b {
+    color: #cdcdcc;
+    font-weight: bold;
+}
+
+.translation-b {
+    color: #efefee;
+    font-weight: bold;
+}
