@@ -47,16 +47,8 @@ nav a {
 }
 
 /* homepage */
-section#introduction li {
-    margin: 2px;
-}
-
 .work {
     text-decoration: none;
-}
-
-b#name {
-    color: #8080FF;
 }
 
 .contact-box {
@@ -190,14 +182,6 @@ figcaption {
 .ref-translation {
     font-size: small;
     color: #ababaa;
-}
-
-article#re_erverlre_intro .original {
-    color: #efefee;
-}
-
-article#re_erverlre_intro .translation {
-    color: #cdcdcc;
 }
 
 .original-b {
