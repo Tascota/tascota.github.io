@@ -1,10 +1,12 @@
 # Summary
 
-- [Kanata no Sonata](./ReKanata/rekanata.md)
+- [Kanata no Sonata](./ReKanata/index.md)
     - [Re:1](./ReKanata/1.md)
-    - [Re:2 / 4.91](./ReKanata/2.md)
+    - [Re:2 / 5.41](./ReKanata/2.md)
+    - [Re:3 / 5.42](./ReKanata/3.md)
+    - [Re:4 / 5.43](./ReKanata/4.md)
 -----
-- [v1](./Kanata/kanata.md)
+- [v1](./Kanata/index.md)
     - [Hatsuyuki](./Kanata/5.41.md)
     - [Shiratsuyu](./Kanata/5.42.md)
     - [Kuroshio](./Kanata/5.43.md)
