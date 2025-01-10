@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Re:5 (7) - 彼方的奏鸣曲</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../ReKanata/index.html"><strong aria-hidden="true">1.</strong> Kanata no Sonata</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ReKanata/1.html"><strong aria-hidden="true">1.1.</strong> Re:1</a></li><li class="chapter-item expanded "><a href="../ReKanata/2.html"><strong aria-hidden="true">1.2.</strong> Re:2 (5.41)</a></li><li class="chapter-item expanded "><a href="../ReKanata/3.html"><strong aria-hidden="true">1.3.</strong> Re:3 (5.42)</a></li><li class="chapter-item expanded "><a href="../ReKanata/4.html"><strong aria-hidden="true">1.4.</strong> Re:4 (5.43)</a></li><li class="chapter-item expanded "><a href="../ReKanata/5.html" class="active"><strong aria-hidden="true">1.5.</strong> Re:5 (7)</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded "><a href="../Kanata/index.html"><strong aria-hidden="true">2.</strong> v1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Kanata/5.41.html"><strong aria-hidden="true">2.1.</strong> Hatsuyuki</a></li><li class="chapter-item expanded "><a href="../Kanata/5.42.html"><strong aria-hidden="true">2.2.</strong> Shiratsuyu</a></li><li class="chapter-item expanded "><a href="../Kanata/5.43.html"><strong aria-hidden="true">2.3.</strong> Kuroshio</a></li><li class="chapter-item expanded "><a href="../Kanata/5.44.html"><strong aria-hidden="true">2.4.</strong> Oboro</a></li><li class="chapter-item expanded "><a href="../Kanata/5.50.html"><strong aria-hidden="true">2.5.</strong> 这种事情显得我自我意识过剩</a></li><li class="chapter-item expanded "><a href="../Kanata/6.html"><strong aria-hidden="true">2.6.</strong> 当然没有什么意义啦</a></li><li class="chapter-item expanded "><a href="../Kanata/7.html"><strong aria-hidden="true">2.7.</strong> 我并没有否定自己的意思</a></li><li class="chapter-item expanded "><a href="../Kanata/8.html"><strong aria-hidden="true">2.8.</strong> 像往常一样废话真多呢</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Kanata/8.1.html"><strong aria-hidden="true">2.8.1.</strong> </a></li></ol></li><li class="chapter-item expanded "><a href="../Kanata/9.html"><strong aria-hidden="true">2.9.</strong> 我也很好奇</a></li><li class="chapter-item expanded "><a href="../Kanata/10.html"><strong aria-hidden="true">2.10.</strong> 那些很重要啊</a></li><li class="chapter-item expanded "><a href="../Kanata/11.html"><strong aria-hidden="true">2.11.</strong> 只会点带雪顶的冰咖啡</a></li><li class="chapter-item expanded "><a href="../Kanata/12.html"><strong aria-hidden="true">2.12.</strong> 一种奇怪的余裕</a></li><li class="chapter-item expanded "><a href="../Kanata/13.html"><strong aria-hidden="true">2.13.</strong> 虽然，有趣的灵魂我好像没有</a></li><li class="chapter-item expanded "><a href="../Kanata/14.html"><strong aria-hidden="true">2.14.</strong> 我回去了</a></li><li class="chapter-item expanded "><a href="../Kanata/15.html"><strong aria-hidden="true">2.15.</strong> 毕竟这是彼方的海岸</a></li><li class="chapter-item expanded "><a href="../Kanata/16.html"><strong aria-hidden="true">2.16.</strong> 我的头发确实是蓝色的</a></li><li class="chapter-item expanded "><a href="../Kanata/17.html"><strong aria-hidden="true">2.17.</strong> 于是心之壁又提醒了自己的存在</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">彼方的奏鸣曲</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="re5-7"><a class="header" href="#re5-7">Re:5 (7)</a></h1>
+<p>在彼方镇的中心以南，从家里出发，穿过车站旁的道口之后，眼前就会出现一座迷你环形山。具体来说，是可以作为“冷知识”登上短视频的程度。它被当作了天然的水库，一个小湖被放置在小山的中心。</p>
+<p>于是，我和初雪一起，在阴云密布的冬日上午到彼方山散步。</p>
+<p>走在路上，我还不停地扫动着智能眼镜。看到诺维娅不断发来的照片，虽然我嘴上不予置评，但心里多少还有些羡慕。我很相信初雪或者白露也差不多是这样的。</p>
+<p>那种得以暂时从一片黑暗中抽身而出的感觉。飞机从阴暗的地面开始，穿过积雨云，爬升进入平流层时的感觉。</p>
+<p>阳光一下子扑面而来。</p>
+<p>——虽然这种感觉只是暂时的。</p>
+<p>而且，让人忍受不了黑暗。因为他已经见过光明了。</p>
+<p>不过，就算我知道这种事情，我的眼睛还是继续浏览着诺维娅的照片。唉。越看越难受，越看越羡慕，但还是继续在看。</p>
+<p>于是我只好借助外力。我用手摘下眼镜，直视眼前的彼方。</p>
+<br>
+<p>在彼方的秋冬季节，时不时就会有厚重灰暗的云层出现。热风从南半球吹来，而北方则有逐渐变强的阿西马尼亚海的季风。二者交汇在一起，正好在彼方交持不下。</p>
+<p>而夏季的彼方，因为上述两者全部改换了方向，夏日的天空里甚至看不到一缕云朵的泡沫。从那时的彼方看向天空是一派无限的景象，没有建筑物的遮挡，没有云层的阻拦。庄子如果看到这样的天空，就会问出“天之苍苍，其正色邪”了。只不过整个火星系都凑不出九万里的长度。于是，在埃弗尔莱语——地联的通用语言里，“无限”的构词是夏天加上天空。</p>
+<p>不过那只是因为联想到了《鸟之诗》，大词典里写。</p>
+<p>回到冬天的彼方天空吧。</p>
+<p>冬日的天空一反夏日的无限，低气压的云层压迫着地面，云层间找不出阳光可以透过的缝隙。就像是“发烧了就要盖好被子”时的被子一样，天气渐冷，空气黏稠，乌云低得不能再低，人难以不跟着也沉默下来。</p>
+<p>有了乌云，一望无际的原野变成了一道狭窄的灰绿色矮墙。如同哈德良长城一样，阻碍着目光的延伸，标记着文明世界的终结。空气中的水雾、灰尘、其他的一切东西也都蜂拥而至，为所有物体蒙上阴影。这样，万物都变成了褪色的黑白照片，一切都混在一起。</p>
+<p>掌管冬天彼方的神没能看到光是好的，于是光暗便没有分开。</p>
+<p>世界一片昏暗，好像听到了远方天空的雷声。就算伸出自己的手也确实看不清五指的轮廓。尽管有着像是凌晨四点的光线，但现在已经上午十点了。</p>
+<p>铁轨照例向两侧无限延伸，最终绕着整个星球围成环状。上面自动驾驶着的列车如同莫比乌斯环上的蚂蚁。电车缓缓驶了过来，不管涂着什么绿色、橙色还是白色，现在也都完全褪色了，只有深浅不一的灰色剩下来。</p>
+<p>道口处明亮的指示灯突然亮起，暂时晃清了我们的视野。</p>
+<p>电车通过。衣摆被带起的空气吹了起来。夹杂着水分的空气令人担心那些水分会不会附着在衣服上，让衣服湿掉。</p>
+<p>车站的站房被仿古的煤油灯照亮。那些灯低于一定亮度就会亮起，现在看起来，孤独伫立于灰暗原野上的站房，就像是末日降临时四方唯一的避难所一样。</p>
+<p>与此相比，路灯就只随时间而不是亮度机械性地开闭。</p>
+<p>从本能上，光还是会吸引生物的。夜晚的路灯下总会聚集飞溅的蚊虫，不过我们倒不是趋光的蚊虫，所以才会背着光的方向走向荒芜的道路。虽然，走上小丘的话，就相当于离窒息般的乌云又近了一步。</p>
+<br>
+<p>虽然都写作“彼方”，但是彼方镇里的念做 Kanata，彼方山里的念做 Anata。这座山的海拔不过二十三点四米而已，在上山口旁边的牌子上写得很清楚。</p>
+<p>“彼方山（あなたやま) 海拔 23.4 m”</p>
+<p>除此以外没有别的话了。或许还可能可以写“火星上最小型的环形山”吧。虽然我认为实际上并不会是。</p>
+<p>其实在各种度量的数轴上——包括高度、长度、深度、大小（没有“大度”），人们都只会对数轴右侧的方面感兴趣，甚至大部分时间里，只会对那个唯一的最值感兴趣。</p>
+<p>比如说，地球上的最高峰毋庸置疑地是珠穆朗玛峰，而大部分人的认知也就止步于此。要是问第二高峰的话，很多人是答不出来的。</p>
+<p>“——是 K2？”声音传过来。</p>
+<p>当然是 K2 了。但作为堂堂地球第二高峰的它，甚至也只留下了代号一般的名字（至少是对使用大部分的人。中国好像习惯叫“乔戈里峰”这个名字）：K 代表 Karakorum，也就是喀喇昆仑山；2 代表它是第二座被探索的山峰。</p>
+<p>“只是到了第二高的山峰就到了被赋予代号的程度啊。好可怜。”</p>
+<p>是的，人类就是这种有时很有仪式感，有时却十分缺乏这种感觉的个体。</p>
+<p>再举一个例子，台湾最高的玉山曾经叫做“新高山”，因为它比富士山高一百多米。至于同样比富士山高的雪山就叫做“次高山”，从字面上理解就是第二高的山。</p>
+<p>当时的马鹿们尚且如此，其他的更不值一谈了。</p>
+<p>其实，据说世界最小的山是中国某地的“静山”，相对高度 0.6 米，东西长 1.24 米，南北宽 0.7 米。也只有被当作噱头的可怜石头会被如此精细地测量，并没有人以小数点后两位数的精度测量过奥林普斯山的长度。即使提出质疑，人们也会说它是确实和地壳下层的岩石连为一体的，所以得以成为真的“山”，只是被冲来的泥沙掩埋了而已……之类的。</p>
+<p>但在怎么看，那座山也不过是广阔农地里的一块石头，如果不被发掘出来，只会让农机容易撞上去而已，根本没有观赏价值。或许当时人们是准备把它撬掉却挖不到底时才发现的，这么一想，“最小的山”名号还有很多可发掘的地方。以后“最小的山”的海拔说不定会是负数了。</p>
+<p>彼方山没有进入吉尼斯世界纪录，无非是因为申请世界纪录也要钱。</p>
+<br>
+<p>不过一会，我们登顶了彼方山。</p>
+<p>二十三米，其实也相当于七层楼的高度，在广袤的阿拉伯平原上耸立着。视野没有了其他的遮挡，横向上无比开阔，但却在纵向上仿佛进行了被动的偏振。由于不合时宜的偏振，进入眼中的只有饱和度极低的灰暗图景。</p>
+<p>其实这就是彼方冬天的通常景象。</p>
+<p>我冒着弄坏眼睛的风险，极力眯紧双眼。远处其他的环形山早已被朦胧吞噬，那些踪影在夏天的彼方还看得清清楚楚。远方的地平线本能因它们而现出一些波澜，现在却因云层的压迫而早已模糊不清。视野之下，所能看清的无非被融化成暗黄色的土地。脚下的田埂星罗棋布，在缝隙中若隐若现，粘滞在一起，仿佛夏天被高温融化的沥青，在阳炎的错觉下显得更加模糊。房屋匍匐在地上，形成所谓人口一千余人的彼方镇。</p>
+<p>一千余人不过是名义上的人口。</p>
+<p>房屋围绕着车站微妙地稍微聚集成一小团，以作为所谓的镇中心。隔着云层弥散开的雾霭，便利店、咖啡厅和小餐厅的招牌无一例外地暗淡无光，显得毫无生机。尽管那些店铺就是彼方不多的商业设施，最热闹的中心。周边还有些诊所一类的公共设施，实际上人烟更加密集，不过却没有发光灯牌。还有许多的是靠外的零散农家房屋。在那之中，我试图寻找乘鞍家，但怎么都找不到。</p>
+<p>上一次，初雪还久违地谈起了彼方山上的风景，带着我向左边望去。</p>
+<p>“看吧。那里就是我们家。”</p>
+<p>这是今年的夏天的事情。当时白露还没有回来，初雪已经接近释怀了。夏日祭上，她似乎什么都没有发现。当时的她比现在开朗许多，眼睛张得大些，眼袋没有那么明显。</p>
+<p>“哪个？”</p>
+<p>“那个三角形的屋子……那个，”她下巴点了点，仿佛以为我和她能够共享视野，“那个很奇怪的突起，白露家。旁边的不就是我们家了。”</p>
+<p>“啊。”</p>
+<p>我漫不经心的看了看。原来那么渺小。</p>
+<p>就在那两个房子里，发生了会影响她们两位少女一生的思考。</p>
+<p>不远处的彼方镇中心广场。看起来是个不规则的多边形，依然很渺小，从这里看仿佛大地上打碎的一块玻璃。在那里的夏日祭中心，各种摊位上，她们的关系发生了无数的变化。海边的断崖，崖壁上还是未受改造的铁红色岩石。崖壁的尖角处有一座像模像样建起的灯塔。尽管从来没有船只驶入过又浅又贫瘠彼方湾。彼方湾的水里没有鱼，自然连钓鱼者都没有过。悬崖上是暗绿色的苔藓，看起来像是北欧神话中的世界尽头一样。当然，还有曾经从那里升空的烟花。</p>
+<p>……原来彼方是这样的地方啊。我想着。原来是这么渺小、狭隘又逼仄的地方。</p>
+<p>我大概是不停地想着夏天的广大，忘记了眼前的灰暗。</p>
+<p>于是，我习惯性地从裤兜里掏出了眼镜，戴到了眼旁。与眼前的情景毫不相干的浅蓝色 UI 顿时在我眼前展开。</p>
+<p>我无言地摇动一下视线，切换了 UI 配色。或许还“嘁”了一声。</p>
+<p>一旁的初雪把身体靠在栏杆上，耷拉着嘴角，同样用手指滑动着屏幕。</p>
+<p>界面的最中间是诺维娅从地球发来的消息。“利伯维尔的单人车轨道真厉害——”</p>
+<p>我的点赞单纯出于礼节。</p>
+<p>回看旁边社交媒体的模块，美食视频也好，旅游视频也好，似乎都在不断地使我的心思烦乱着。堪察加的火山如何，大久保的辛拉面如何，现在一时似乎与我无缘了。</p>
+<p>吃饭的时候，我们明明还很乐意投屏看的。我和初雪不多的交流恐怕都在那时。</p>
+<p>“唉。”</p>
+<p>我不由自主地叹了声气。虚拟的开拓眼界也只是一时的而已，后来的会是无限的空虚才对。躺在床上的凡尔纳，发电站里的刘慈欣，真是伟大的人物。</p>
+<p>“你怎么想？关于诺维娅。”</p>
+<p>初雪出人意料地开了口。看着她有点失去光泽的发梢和乱糟糟的头发，不知道那是出于心理状态的躯体化，还是只是单纯天气的沾染。</p>
+<p>“……看得我心境狭窄了。”</p>
+<p>“果然是吗。”</p>
+<p>“平常看着别人的吃喝玩乐都没有这种感觉。但就是因为是诺维娅正在这么做，总感觉心里有了些负面情绪。不知道是因为妒忌还是不甘。”</p>
+<p>“应该不是妒忌吧。”我感谢她的善良。</p>
+<p>“那就是自己的原因了。不甘心自己的不争气吗？”</p>
+<p>“嗯。有点吧。”</p>
+<p>明明是我在问她。我这么想着。</p>
+<p>“如果是别人成功了……成功做了这样那样的事情，那是理所当然的。因为有几十亿的‘别人’。但如果一定是那个人的话，总感觉很奇怪。”</p>
+<p>“嗯。”</p>
+<p>“会自暴自弃还是会继续加油？”</p>
+<p>“……我不想回答这种辩论赛一样的议题。”</p>
+<p>我很不满意这种回答，于是目不转睛地盯着她。她挪开了视线。</p>
+<p>“两者都不是。第三条路，继续那样生活下去。”</p>
+<p>叹气。我和她一齐的叹气。</p>
+<p>感情只是一时的。持续长久的叫做“性格”。</p>
+<p>我望着眼前不断迫近的又一垛黑云，突然感到一种深深的无力感。即使是一时能引发我如此联想的感情，最终也一切都无济于事吗？</p>
+<p>“当时我的心情虽然很复杂——听到白露的消息的时候，不过也就是难受了一会吧。后来放弃是自然的，因为本来也就差不多该放弃了。实际上，如果要归咎给白露的话是强加因果。”</p>
+<p>我点点头。我感觉 AT 力场正在尝试被溶解。</p>
+<p>“不过，”她突然把脸转向我，一片昏暗中看不清她的表情，“这和后来的事情一点关系都没有。和现在的关系也没有关系。这是另一个议题。”</p>
+<p>是吗。是这样的啊。不过下一个议题到什么时候才能被讨论起来呢？</p>
+<p>虽然在那之后出现了我始料未及的情况，从而使得无限多的事情都纳入了一方脑海之中。</p>
+<p>不过，那时还没人能想到后面的事情。</p>
+<p>话题最终试图以轻松的方式结束。</p>
+<p>“算是套出你的话了吧。”</p>
+<p>“唉。真是狡猾啊。不过也算是我自己不够有防范意识吧。”她说着往来时的方向走去，“算了。说出来的话就好受多了。以后如果有时间我再跟你聊吧。”</p>
+<p>此时的初雪身上出现了一种前所未有，后来也没有的坦率气质，明明马上就要进入一种和自己和解，和自己补完的境界了。但是，却没有达成。</p>
+<p>想到这一点，我一直都很残念。</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../ReKanata/4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../Kanata/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../ReKanata/4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../Kanata/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

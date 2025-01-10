@@ -2,9 +2,10 @@
 
 - [Kanata no Sonata](./ReKanata/index.md)
     - [Re:1](./ReKanata/1.md)
-    - [Re:2 / 5.41](./ReKanata/2.md)
-    - [Re:3 / 5.42](./ReKanata/3.md)
-    - [Re:4 / 5.43](./ReKanata/4.md)
+    - [Re:2 (5.41)](./ReKanata/2.md)
+    - [Re:3 (5.42)](./ReKanata/3.md)
+    - [Re:4 (5.43)](./ReKanata/4.md)
+    - [Re:5 (7)](./ReKanata/5.md)
 -----
 - [v1](./Kanata/index.md)
     - [Hatsuyuki](./Kanata/5.41.md)
