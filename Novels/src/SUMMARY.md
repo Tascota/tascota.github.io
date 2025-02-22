@@ -8,6 +8,8 @@
     - [Re:5 (7)](./ReKanata/5.md)
     - [Re:6 (9)](./ReKanata/6.md)
     - [Re:7 (10)](./ReKanata/7.md)
+    - [Re:8](./ReKanata/8.md)
+    - [Re:9](./ReKanata/9.md)
 -----
 - [v1](./Kanata/index.md)
     - [Hatsuyuki](./Kanata/5.41.md)
