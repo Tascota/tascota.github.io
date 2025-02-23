@@ -129,6 +129,7 @@ div#quote_part button {
     color: #ababaa;
     font-size: 15px;
     text-align: right;
+    line-height: normal;
 }
 
 .date p {
