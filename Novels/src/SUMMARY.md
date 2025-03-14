@@ -11,6 +11,7 @@
     - [Re:8](./ReKanata/8.md)
     - [Re:9](./ReKanata/9.md)
     - [Re:10](./ReKanata/10.md)
+    - [Re:11 (12)](./ReKanata/11.md)
 -----
 - [v1](./Kanata/index.md)
     - [Hatsuyuki](./Kanata/5.41.md)
