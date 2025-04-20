@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Re:14 (15) - 彼方的奏鸣曲</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../ReKanata/index.html"><strong aria-hidden="true">1.</strong> Kanata no Sonata</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ReKanata/1.html"><strong aria-hidden="true">1.1.</strong> Re:1</a></li><li class="chapter-item expanded "><a href="../ReKanata/2.html"><strong aria-hidden="true">1.2.</strong> Re:2 (5.41)</a></li><li class="chapter-item expanded "><a href="../ReKanata/3.html"><strong aria-hidden="true">1.3.</strong> Re:3 (5.42)</a></li><li class="chapter-item expanded "><a href="../ReKanata/4.html"><strong aria-hidden="true">1.4.</strong> Re:4 (5.43)</a></li><li class="chapter-item expanded "><a href="../ReKanata/5.html"><strong aria-hidden="true">1.5.</strong> Re:5 (7)</a></li><li class="chapter-item expanded "><a href="../ReKanata/6.html"><strong aria-hidden="true">1.6.</strong> Re:6 (9)</a></li><li class="chapter-item expanded "><a href="../ReKanata/7.html"><strong aria-hidden="true">1.7.</strong> Re:7 (10)</a></li><li class="chapter-item expanded "><a href="../ReKanata/8.html"><strong aria-hidden="true">1.8.</strong> Re:8</a></li><li class="chapter-item expanded "><a href="../ReKanata/9.html"><strong aria-hidden="true">1.9.</strong> Re:9</a></li><li class="chapter-item expanded "><a href="../ReKanata/10.html"><strong aria-hidden="true">1.10.</strong> Re:10</a></li><li class="chapter-item expanded "><a href="../ReKanata/11.html"><strong aria-hidden="true">1.11.</strong> Re:11 (12)</a></li><li class="chapter-item expanded "><a href="../ReKanata/12.html"><strong aria-hidden="true">1.12.</strong> Re:12</a></li><li class="chapter-item expanded "><a href="../ReKanata/13.html"><strong aria-hidden="true">1.13.</strong> Re:13 (13)</a></li><li class="chapter-item expanded "><a href="../ReKanata/14.html" class="active"><strong aria-hidden="true">1.14.</strong> Re:14 (15)</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">彼方的奏鸣曲</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="re14-15"><a class="header" href="#re14-15">Re:14 (15)</a></h1>
+<p>我们并排走在彼方的海边。</p>
+<p>离海岸越近，田地就越稀疏。大块的方形田地愈发像是剥落的马赛克一样。简易的单人车轨道横贯在无人看管的广袤土地上，一端是小镇，一端是下方就是海洋的悬崖。</p>
+<p>本来火星的海洋并不古老，海浪冲刷不出高耸的崖壁，也没有冰川的作用，理应不会有这种地形。这应该是某一座环形山的一段弧形吧。不过，火星很宽广，有这种风景不足为奇。</p>
+<p>崖壁上是灰绿色的苔原，因为火星的温度而过早出现在了纬度过低的地方，一直延伸到崖壁上，戛然而止。悬崖旁没有护栏，有几处崩塌的突出部边缘还附着着苔藓。从上面纵身一跃能够品味到空气的速度，应该很舒畅，但人也没有能够随意张开的翅膀。</p>
+<p>天空依然是一片灰蓝，厚重的云朵重叠，看不出层次感，只有深浅不一的区分而已。在那之下的大地和大海也都是灰色。</p>
+<p>区别在于，小镇那一段更多地偏向灰绿色，其中还有着深红褐色的土壤条纹，如同大地上的编织地毯。勉强能让人伸手看清五指的阳光，在穿过厚重的云层之后，勉强在深翻过的田地上划出不规则的明暗界限。各种颜色不一的补丁又被轨道、田埂和道路所切开。</p>
+<p>来时的轨道上早已长满了不高的杂草。每过一段时间，从阿拉伯横贯铁路的本线上就会来无人的运维车，把铁轨上的杂草除去。请运维车是要定期交费的。于是不过几个月，杂草再次长起，但都羸弱无力。</p>
+<p>至于眼前的大海则无所形容。深度不够的海洋掀不起什么浪花，海水只是随着几道缺口侵入了环形山中央的盆地。入口处松动的土壤早已被冲刷开来，但盆地的另一侧更多保留着原有的样子。崖壁底端，布多力计划未能顾及到的大地尽头，海水无力地冲刷起余下红褐色的氧化铁尘土，让浪花一片混沌。</p>
+<p>从远处看来，大海的各处没有蓝色，而是深灰色。海洋的蓝色来自于对光的散射，但阳光相当微弱，便只剩下深灰色。这种颜色的海洋上是无力的浪潮，冲击着松散的崖底，让人抬不起兴头。</p>
+<p>沿着崖壁有一条石板铺成的小道，一直通向左侧最远端的环形山最高处。那里的崖壁高耸起来，下方被溅起的石头撑起了反牛顿的尖端。</p>
+<p>只有石板是浅灰色，在泥炭般的土壤和桉树叶般的苔藓间显得格外起眼。</p>
+<p>心之壁从表面上看还没有融化的迹象。初雪一个人走在最前端，侧过头去瞟向左侧的迷你陨石坑。底部积着未化的积雪，旁边的几块脏冰见证着阳光与温度的拉锯。她的心中存着崖底无力的浪花、涨潮时润湿的最高水位线和那时沉闷的潮骚声。现在来讲，她本来就可以为一切事物而迷路——那种自称可怜的共情感也一样，何况是为大自然这种最能让人有感而发的地方？</p>
+<p>火星的现在，一切时间停止了流动。没有人再知道著名视频主的下一个企划，哪位主播的下一次直播预告，动画这周播出的下一集。时间这一刻并不美丽。虽然我们人类时常贪心，希望时间的流逝随着人的意志而转移，但至少每一份期望都出于心房和心室。但也正是美丽的时间将会流逝才显得美丽，作为代价，不美丽的时间或许必须像这样被停滞下来。</p>
+<p>问题，并不在于我制造出这样的场面是想要什么。空气凝固的崖边让白露裸露在外的皮肤甚至冒出些冷汗，她的皮肤更哑了。</p>
+<p>“我不太喜欢大自然，短时间内或许还不会变。”</p>
+<p>“毕竟这是彼方的海岸。”</p>
+<p>我想象中的海岸应该在苏格兰高地和冰岛能够找到。这不过是拙劣的模仿。</p>
+<p>“我和朝潮姐很一致。这里是令人窒息的地方，这个事实并不依托于其他地方是不是窒息。”</p>
+<p>我不想再掺合进哲学思辨，诺维娅去地球的那一天发生的讨论还在我的潜意识之中。</p>
+<p>初雪让我去找白露，告诉她这件事情——但是我不想成为传话筒。于是我成为了电话线。初雪不知道在想些什么，明明自己想要告诉白露这件事，却又在见面时故意避开对方。</p>
+<p>我望向远方的岬角，环形山的最高处。仔细一看，那里还有未拆下的长椅和护栏。祭典时就是在海边放的烟花，正对着那岬角。</p>
+<p>就是在去年的夏日祭之后——也就是火星历的 131 年，白露去了新威尼斯，在那里呆了一年多。火星的一年相当于地球的两年，大概足够一个青少年的成长了。</p>
+<p>初雪似乎还不知道白露为什么要逃离新威尼斯。信息差所带来的不成熟柑橘味几乎是所有青春故事的底色。成为了无聊的大人（或许只是高二病），这种味觉便会退化，进而觉得这是一点小事闹麻了。小实后来告诉我的，初雪对他说的某一段暴风雨般的情感宣泄，差不多也就是这种意思。</p>
+<p>首先她不认为那是小事。其次她认为，就算是小事也值得闹麻。或者说，她其实想说的是，“明明是你们大人自己没有过值得闹麻的小事，怪我们干什么呢？”这种问题。一切存在过的感情都应该被尊重。如果对人类最细腻的感情嗤之以鼻，当之无愧是一种损失。或许人是不愿意回首，但到了中年甚至老年时，又会努力想起自己年少时做过的事，拿来讲给其他人听的话，还不如从一开始就坦然接受。</p>
+<p>愿意把自己的脑袋变成橙色的海洋吗？</p>
+<p>心之壁来源于可能的胃痛感，胃痛感来源于信息不对等，所以首先要开怀畅谈吧。在这种稍微的主动存在的此刻，更应如此才对。</p>
+<p>我望着相距至少一百米的二人这么想。</p>
+<p>以什么提起话题呢？</p>
+<p>远方的长椅怎么样？</p>
+<p>海浪继续无力地拍打着岸边。远方同样迷茫的身影缓慢挪动，正好坐上了湿润的长椅。</p>
+<p>“白露啊。”我说，“当时你和初雪就是一起坐在那张长椅上的吧。”当时我和诺维娅一起坐在她们后面。</p>
+<p>“啊……”</p>
+<p>“你就是夏日祭之后去新威尼斯的。”</p>
+<p>看来她有些动摇。会有谁不怀念夏日祭呢？这还是记忆中的夏日祭。记忆中的一切感情都会被放大。</p>
+<p>“上一次夏日祭你没回来吧？”也就是 132 年的夏日祭，在大约六个月之前。</p>
+<p>应该说，我认为她没回来。没有白露的初雪在那一天本没有提起去祭典的兴头，只不过是为了带小孩而去了海边而已。看着年长一些的熟悉面孔和零零星星的游客，却只有自己不一样时，她又会怎么想呢？</p>
+<p>我回想当时的场景。初雪是场景的主角，她在之前说这件事的时候记得的无非只有眼泪。</p>
+<p>当时，唯一和她一样形单影只的是一个游客，背着大背包，里面是全套的摄影器材。出神的初雪坐在长椅上，三角架不知觉间搭到了脚旁，甚至连“抱歉”的话都没听到。烟花一朵朵绽放开来，倒映在海面上，涌起的浪潮如同滚烫的岩浆。最后一朵烟花喷发时，他随机采访了附近几位——初雪也在其中，但最后视频里她的话没能出现。她的画面只是作为背景，虽然动着嘴唇，但只有背景音乐的声音。那平时提不起精神的眼皮睁起来，汹涌的烟花的反射光线占满了整个眼球，怔住的目光里只有漫溢的情感。“最后那个少女的画面是画龙点睛之笔”，大家评论道。但画出再好的龙也是没法鸣叫的。我仔细地看着画面里初雪的脸，最大分辨率下她哑然的面庞，最高音质下暗淡无色的声音。</p>
+<p>能把眼界之外的烟花也一起映入眼中，是因为有泪水含在其中。真正流下眼泪的那个瞬间没有被视频辑录。</p>
+<p>但是，其实并不是这样。白露说。当时她已经逐渐无法直面杏了。</p>
+<p>“——我说过杏的事情吗？”她突然反应过来一般。</p>
+<p>“应该没有。”</p>
+<p>“这样啊……”她叹了口气。“算了。具体的跟初雪一块的时候再说吧。这种事情我不想回忆两次了。”</p>
+<p>反正，当时心里相当愧疚的她想着回来与谁谈谈——初雪算是唯一能够商谈的对象。</p>
+<p>她回来的时候已经是彼方的傍晚时分。初雪那时候已经带着我们去海边了，是被迫营业。于是她一直尾随我们之后，远远地望着。</p>
+<p>“你也太阴暗了。”我直接评价。</p>
+<p>“但是，我下不了决心。”她说，“我对不起小初……前辈。不知道应该怎么跟她说。</p>
+<p>“而且，小初前辈……我也不想让她那样。她也很温柔，不仅如此，我对她的憧憬，她对我的期望还更进一步。那完全在于我们两个自己作出的抉择。”</p>
+<p>白露一时间沉默不语，只是望着深渊般黑暗的这片浅海。我再次望向岬角处，初雪依然一个人坐在那里，横风吹得她的发丝一片混乱。</p>
+<p>“就像是，用蛮力打在了非牛顿流体上一样……那样一定会很疼。但我又不得不用这样的蛮力来对待这些柔软而粘着的情感。蛮力来源于我的退缩。或者说我只是单纯的太笨了。当然造成最后更大的蛮力的是我夏天时的退缩。所以这全都是我的错。我退缩了。”</p>
+<p>如果有再作评价的我，似乎会显得不近人情。</p>
+<p>再次转到人类补完的角度。这样说出来的真心的话，让我们的脑袋离成为橙汁又近了一步。而且此时此刻是白露在说出来。</p>
+<p>只可惜她的真心对的是我这个旁观者，而我又不掺合其中。但这样已经很棒了。立一个虚拟论敌：有的大人们在此时会让她们去面对面说出来，对着初雪、爷爷奶奶或者小杏。这样行不通。他们自己做得到吗？连孔子都说，“己所不欲，勿施于人。”</p>
+<p>为促进我身边的人类补完，我心力憔悴。为了表彰阶段性成果，我轻轻拍手。“祝贺你。”</p>
+<p>她只瞟我一眼，感情无法捉摸。“我很难受。”她只这么说。</p>
+<p>温柔的主角说，“全部说出来就好了”。灵魂伴侣相视无言。而共同迷路的孩子以另一种方式无话可说。我听着她内心的呐喊，她如同野兽一般，在世界的中心呼唤爱，不过也只有她自己能呼唤。其他人的努力不奏效，并不是因为“只能靠自己”的陈词滥调，而是因为其他人同样也呼唤着爱。自己作为野兽的部分都已经足够麻烦，怎么会有余力来帮助别人？</p>
+<p>于是，迷路的孩子才只能一个人迷路。纵使有结伴成对的，也不过是两个人一起迷路。青春故事的出路一般是两个人在一起，继续迷路；或者长大，自己的野兽自然会消失。</p>
+<p>“加油哦。”</p>
+<p>这么说的话，我不需要付出代价。</p>
+<br>
+<p>以另一种方式，我像是上次白露“出席”今年的夏日祭一样，以同样的方式试图介入初雪一侧。</p>
+<p>看见初雪回头的白露，那时候眼角噙着泪水，并转身往后全力奔去。彼时，她的心脏停跳一拍。</p>
+<p>不过我的心脏则如设计般精巧，被发现时，她叫我一起坐过去，让我继续承担旁观者的责任。</p>
+<p>“白露对你说了什么吧？”</p>
+<p>我点头。</p>
+<p>“我知道了。真相，具体来说是怎么一回事呢——”</p>
+<p>“不过，在这之前，我还是想知道头发的事情。”我说。</p>
+<p>话音刚落，我们的背后被人重重地敲击。</p>
+<p>“啊，是你们俩啊——这个的话，可正好和我有关。”黑潮姐不知不觉间走过来。估计是刚刚巡视完。</p>
+<p>“是吗？”我问道。</p>
+<br>
+<p>具体来说是这样的情况。</p>
+<p>在第一次在封球之后去过胧家之后，初雪还时不时去胧和新月那里。一次串门回来，她跑到这个岬角发呆。看起来似乎是压抑的情景，但不过只是她脑袋暂时宕机，并没有像一跃而下。</p>
+<p>黑潮姐当时也在巡视，看到这场景急步赶过来。</p>
+<p>一过来，就被初雪问了这种问题，“我应该怎么办？”</p>
+<p>黑潮姐有些晕乎。不过她是个正常人，对于这种事情很有经验，应该说些什么。</p>
+<p>“什么怎么办？”她首先问。</p>
+<p>“……所有的事情。”初雪思考了一下，缓缓开口，“眼前的未来，人生的目标，我的才能，白露的感情，失联的小诺维娅，以及我的发型。”</p>
+<p>黑潮姐用力思考了一会。</p>
+<p>“啊，发型啊？”她最后这么回答，“我觉得短发更适合你。”</p>
+<p>“欸？”</p>
+<p>突然转换到了相当形而下的话题，让初雪的脑袋转不过来。</p>
+<p>“真的吗？真的吗真的吗？”脑袋一片混沌中，她暂时显露出作为少女的本性。她脑后沉重的长发尽管柔软但没有光泽，看起来应该很无力。</p>
+<p>“不过那么短也不好……还是中等长度吧？像是小胧那样的？”</p>
+<p>胧的发型是圆圆的样子，如果剪了头发的话，长度比许多稍微留了留长发的男生都要短。不过无论如何她的头发长度最多也不会超过衣领。</p>
+<p>“不过，这种发长恐怕就辨认不出是男孩子还是女孩子了吧，嗯……”黑潮姐假装在思考着。其实就算是从外观的第二性征上看，无论是胧还是初雪似乎也辨认不出来。</p>
+<p>不过黑潮姐上面的话事实上并没有经过这么认真的推理。但初雪却捏着下巴。</p>
+<p>她在思考着把胧的发型接在自己的脑袋上吧？那种发型只适合会露出洁白的牙齿和灿烂的笑容的孩子哦。</p>
+<p>“这个有点……”她总结道。</p>
+<p>“那就再长些？”黑潮继续随口胡诌，“啊对对，八潮酱的那种狼尾感觉会很适合你。”</p>
+<p>初雪再次陷入了思考。思考的结果展现在我们面前。</p>
+<p>“哇，居然真的剪了……不过很帅嘛。有你的八潮姐姐的样子了。”</p>
+<p>“真的？”初雪马上问。眼里似乎闪出与环境不符的闪亮光芒。</p>
+<p>“除了身高之外——”</p>
+<br>
+<p>迷路的时候应该怎么办呢？</p>
+<p>一个办法是走回原来的起点。有时候周围的人都说应该前进，但前进不一定有出路。当然，人是一定要前进的，但一时间不前进也不是罪行。</p>
+<p>仿佛走钢丝一样的中庸之道是对于青少年思想的刻板印象，既要也要，既是也是。让这种大脑控制经济和政治会带来灾难。</p>
+<p>不过火星的大脑们虽然很老了，但也是这样的。算了。</p>
+<p>但回到个人的人生哲学，这也不是不可行。</p>
+<p>这样的话，“即使迷路也要前进”又是怎么一回事呢。为了补偿失去的夏天，应该做些什么呢。明明那一天我看见白露了，她向后跑去的背影里到底蕴含着什么呢。</p>
+<p>在黑暗无光的未来面前，为什么我不能继续迷路呢。我希望我可以打开控制台，输入传送的命令啊。</p>
+<p>这时候，我可以往后倒退吗？</p>
+<p>我的大脑一片空白。说实话，完全就是一片空白。尽管一片空白有时候也能酝酿出厉害的话语，甚至能够吓那个男孩子一跳。</p>
+<p>我望向远方的地平线。或者说地平线已然模糊不清。倒不如说，彼方的冬天哪有什么清晰的地平线？如果有水手向着那样的地平线航行，必然会迷航的。</p>
+<p>但地平线之上有隐隐约约的光亮。穿过厚厚的云层，那微弱的光线依然给我带来微热，没有让这里降到绝对零度。</p>
+<p>夏日祭，半个月之后。之前我就得知了这件事情。纳尼娅跟我说的。说实话，她那似乎玩世不恭的态度简直就像个游离的摄像机一般，难以想象她是个十二岁的少女。</p>
+<p>嘛，不过……既然卡夫卡君——海边的那位，年仅十五岁也能有那种思绪，纳尼娅的似乎也很正常？</p>
+<p>以上所提的一切都让我迷路。而带领着我走出迷路的就是那抹迷糊的光芒。那光芒，当然，同时也带着我走进另一次迷路。</p>
+<p>我的内心坚信着，似乎只要踏出一步就至少会有什么改变。有时候我也认可“至少现在一定不会是最坏”的话，但那话在这里不适用。或者我已经不想再思考哪句话在哪里不适用。我想的只是，我必须继续迈出下一步，朝着夏天的彼方迈出下一步。就算下一步那里没有夏天的彼方。</p>
+<p>像是八潮姐那样决绝的脚步我模仿不来，但我不想让更多的我流下小胧那样不合时宜的眼泪了。我也不想成为小实那样的自称怪物。我更不想成为我自己最讨厌的那种人。</p>
+<p>至少，未来我会想起，在某一个夏天——至少是火星南半球的夏天，我做过这件事。我试着对我自己取极限。这样就足够了。</p>
+<p>就像他们说的那样，我只是在做些什么。我将遇到的“此方”是怎样的呢？我不去思考这种事情，就算思考了也没有意义。</p>
+<p>不完美的彼方也是彼方。</p>
+<p>正因如此，我才暂时离开彼方。</p>
+<br>
+<p>初雪站起身来，又往来时的方向走去。路上她看到崖边的白露，连头也不回一下，只是示意她跟着自己走。白露照做。我不知道这象征着结束还是开始。</p>
+<p>两人在房间里聊了一会，在那期间她打发我去胧家。</p>
+<p>我所知道的不过是，第二天早上，我看见的初雪已经整理好行李了。她穿着那件白色的连帽卫衣。那就是我在未来的几年里一直记着的短发的初雪，那个冷漠但是又温柔的少女，那个沉默但是又坚定的人。</p>
+<p>她把一晚上就细化好的旅行计划发给我们。</p>
+<p>她——或者我们，只是要去那里，火星南半球的新希腊大区伊哈托布区彼方镇。那里有夏日祭。就算她不知道夏日祭是否会成功举办，烟花是什么颜色，更不用提路上她们又会遇到什么，最后她们又会怎么样。</p>
+<p>彼方的奏鸣曲暂时落幕之后，世界彼端的此方，奏鸣曲又会奏响。以二十四个月为一次的交换和循环。她尝试着把此方转化为彼方，那是项狭窄又广袤、微小又伟大的工作。</p>
+<p>“我们就像是莫比乌斯环上的蚂蚁一样呢。”白露只是评价。</p>
+<p>“非也。我们是被装进克莱因瓶的水才对。”</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../ReKanata/13.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../ReKanata/13.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

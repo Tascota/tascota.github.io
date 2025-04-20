@@ -12,6 +12,8 @@ const nyanpasu = ["喵帕斯", "「にゃんぱすー」", "宫内莲华", "《�
 const keion = ["不是很精彩呢", "「あんまり上手くないですね」", "平泽唯、中野梓", "《K-ON!》", "ja-jp"]
 const tomori = ["因为我的歌就是内心的呐喊", "「だって、私の歌は、心の叫びだから」", "高松灯", "《BanG Dream! It's MyGO!!!!!》", "ja-jp"]
 const kimoi = ["你真恶心", "「気持ち悪い」", "惣流·明日香·兰格雷", "《新世纪福音战士剧场版 Air/真心为你》", "ja-jp"]
+const aoitori = ["我喜欢霙的双簧管", "「私、みぞれのオーボエが好き」", "伞木希美", "《利兹与青鸟》", "ja-jp"]
+const kagerou = ["这个夏天的故事，永远不会结束", "「この夏の物語は、終わらない」", "じん", "阳炎 project", "ja-jp"]
 
 const quoteList = [
     madoka,
@@ -21,7 +23,9 @@ const quoteList = [
     nyanpasu,
     keion,
     tomori,
-    kimoi
+    kimoi,
+    aoitori,
+    kagerou
 ];
 
 function generateRandomQuote() {
@@ -50,6 +54,10 @@ const vocaloidList = [
     "拝啓、夏に溺れる - n-buna",
     "始発とカフカ - n-buna",
     "ウミユリ海底譚 - n-buna",
+    "もうじき夏が終わるから - n-buna",
+    "着火、カウントダウン - n-buna",
+    "ずっと空を見ていた - n-buna",
+    "カエルのはなし- n-buna",
     "アスノヨゾラ哨戒班 - Orangestar",
     "DAYBREAK FRONTLINE - Orangestar",
     "Henceforth - Orangestar",
@@ -58,13 +66,22 @@ const vocaloidList = [
     "群青レイン - じん",
     "アヤノの幸福理論 - じん",
     "コバルトメモリーズ - はなまきごはん",
+    "Marine Grey - はるまきごはん",
+    "アスター - はるまきごはん",
+    "宇宙分解 - はるまきごはん",
+    "銀河録 - はるまきごはん",
     "少女レイ - みきとP",
     "猛独が襲う - 一二三",
+    "月灯りと氷晶核 - 一二三",
     "ヨイヤミ - 一二三",
+    "アサヤケ - 一二三",
     "フィクションブルー - Ayase",
     "ヴァイオレッタ - Ayase",
     "ハレハレヤ - 羽生まゐご",
     "阿吽のビーツ - 羽生まゐご",
+    "ケガレの唄 - 羽生まゐご",
+    "サイエンス - MIMI",
+    "眠り姫 - Guiano",
     "サンセットバスストップ - トーマ",
     "ツギハギスタッカート - とあ",
     "炉心融解 - iroha(sasaki)",
