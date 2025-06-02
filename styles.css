@@ -195,3 +195,12 @@ figcaption {
     color: #efefee;
     font-weight: bold;
 }
+
+/*Anime Review*/
+.anisongs {
+    margin: auto auto 16px auto;
+}
+
+.anime-reviews li {
+    list-style: square;
+}
