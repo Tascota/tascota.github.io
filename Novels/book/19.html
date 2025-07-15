@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Re:19 - 彼方的奏鸣曲</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Kanata no Sonata</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1.html"><strong aria-hidden="true">1.1.</strong> Re:1</a></li><li class="chapter-item expanded "><a href="2.html"><strong aria-hidden="true">1.2.</strong> Re:2 (5.41)</a></li><li class="chapter-item expanded "><a href="3.html"><strong aria-hidden="true">1.3.</strong> Re:3 (5.42)</a></li><li class="chapter-item expanded "><a href="4.html"><strong aria-hidden="true">1.4.</strong> Re:4 (5.43)</a></li><li class="chapter-item expanded "><a href="5.html"><strong aria-hidden="true">1.5.</strong> Re:5 (7)</a></li><li class="chapter-item expanded "><a href="6.html"><strong aria-hidden="true">1.6.</strong> Re:6 (9)</a></li><li class="chapter-item expanded "><a href="7.html"><strong aria-hidden="true">1.7.</strong> Re:7 (10)</a></li><li class="chapter-item expanded "><a href="8.html"><strong aria-hidden="true">1.8.</strong> Re:8</a></li><li class="chapter-item expanded "><a href="9.html"><strong aria-hidden="true">1.9.</strong> Re:9</a></li><li class="chapter-item expanded "><a href="10.html"><strong aria-hidden="true">1.10.</strong> Re:10</a></li><li class="chapter-item expanded "><a href="11.html"><strong aria-hidden="true">1.11.</strong> Re:11 (12)</a></li><li class="chapter-item expanded "><a href="12.html"><strong aria-hidden="true">1.12.</strong> Re:12</a></li><li class="chapter-item expanded "><a href="13.html"><strong aria-hidden="true">1.13.</strong> Re:13 (13)</a></li><li class="chapter-item expanded "><a href="14.html"><strong aria-hidden="true">1.14.</strong> Re:14 (15)</a></li><li class="chapter-item expanded "><a href="15.html"><strong aria-hidden="true">1.15.</strong> Re:15 (17)</a></li><li class="chapter-item expanded "><a href="16.html"><strong aria-hidden="true">1.16.</strong> Re:16</a></li><li class="chapter-item expanded "><a href="17.html"><strong aria-hidden="true">1.17.</strong> Re:17(14.5)</a></li><li class="chapter-item expanded "><a href="18.html"><strong aria-hidden="true">1.18.</strong> Re:18</a></li><li class="chapter-item expanded "><a href="19.html" class="active"><strong aria-hidden="true">1.19.</strong> Re:19</a></li><li class="chapter-item expanded "><a href="20.html"><strong aria-hidden="true">1.20.</strong> Re:20 &lt;17&gt;</a></li><li class="chapter-item expanded "><a href="21.html"><strong aria-hidden="true">1.21.</strong> Re:21</a></li><li class="chapter-item expanded "><a href="22.html"><strong aria-hidden="true">1.22.</strong> Re:22 &lt;19&gt;</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">彼方的奏鸣曲</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="re19"><a class="header" href="#re19">Re:19</a></h1>
+<p>当然，终于我们还是去睡回笼觉了。后来我们再醒来的时候，已经是中午了。</p>
+<p>微弱的阳光从南窗射入，勉强能够加热我们的身体。到这里的话，就进入恩德国家公园的范围了。这里以北欧神话般的壮丽景色而闻名。落差千米的山崖以下就是拍打的海水，海中还不时冒出一些独立的孤峰，如同英灵殿里的石碑。</p>
+<p>天空中无时无刻不乌云密布，水分在云中堆积，却又迟迟不落下。整片灰暗的天空与翻卷的云彩融为一体，宛如被变作黑白的《星空》，又像倾倒在天空的女巫的魔药坩埚。</p>
+<p>我们的铁盒子就行驶在这样的天地之间。</p>
+<p>准确来说，直接从公园中间穿过的其实是旧线路了。在恩德被划为国家公园之后，就修建了直接从大瑟提斯高原下方穿过的新线路，从隧道出来就是伊西波利斯。这里的旧线路，按照封球之前的时刻表，只有观光列车经过了。大概是自动运行的时刻表当时没有跟着变吧。</p>
+<p>不过以这样的小车，在隧道里走过几十公里的话……还是算了吧。</p>
+<p>“哦。景色还不错。”初雪用手擦了擦窗内凝结的水雾，“不愧是观光线路。”</p>
+<p>“这地方适合无人机拍摄吧。”白露看着笔记本电脑说。</p>
+<p>她从起床之后就一直在看着笔记本，好像在敲代码还是干什么。我凑近去看，只看到一个界面简朴但是不失现代感的软件界面。</p>
+<p>“这是什么？”我问。</p>
+<p>“电车的时刻表管理系统。”她回答，“如果不修改一下的话，我们接下来会很麻烦的。”</p>
+<p>因为电车按照自动的时刻表，是永无止境地在阿拉伯铁路上运行的。我们到了伊西波利斯之后，它就会按照设定好的一样又返向新威尼斯方向。当然，新威尼斯现在去不了，所以估计是到去新威尼斯的大桥的这一边为止。</p>
+<p>“我在思考要怎么让它往伊哈托布那边去。”白露说，“怎么找都找不到啊……伊哈托布什么的。”</p>
+<p>画面上写着什么阿拉伯本线、埃律西昂本线什么的，调出可视的线路图来，全火星的地图上好像也确实没有显示出往南边的那个大海洋通去的分支。难办了啊。</p>
+<br>
+<p>“往伊哈托布的铁路不一直是另一家铁路公司运营的吗？”</p>
+<p>初雪直截了当地说。谜团解开了。</p>
+<p>“原来是这样……”白露的眉头皱得更紧了。她大概真的在思考要怎么把这么一大堆东西搬到另一辆车上。</p>
+<p>“不对，不对吧。你就算现在思考这种问题不也没用吗？”初雪用手在她的眼前甩了甩，然而后者依然没有反应，“比起那个，还是看看远处的雪原吧。”</p>
+<p>她猛一下推开窗，外边的冷空气突然涌进来，让我差点喘不上气。白露没说话，只是白了初雪一眼。</p>
+<p>“关上！”她拨开呼啸而入的寒风，大声说。</p>
+<p>初雪照做了。</p>
+<p>“你看到了吧。这就是小露子人格的恐怖之处。”</p>
+<p>“……”</p>
+<p>“就像我说的那个，外热内冷的性格。”她故意说着。我还以为那是我俩的秘密讨论，毕竟是对别人的议论。但她似乎是要激起白露的反击。</p>
+<p>“算了，”白露叹了口气，“这列车真够像那个……阿美寮的。看来是不能隐瞒了啊。不过本来也没什么好隐瞒的。”</p>
+<p>这种谜语人的对话又开始了。我有些难受，但仔细想想的话，好像是我熟悉在彼方挑起这种说话方式的。</p>
+<p>“都不在彼方了。说话直接一点。”</p>
+<p>白露稍微沉默了片刻。“底层的逻辑。如果不搞懂的话，就会很难受。这就是我的人生信条。”</p>
+<p>“那像这样的情况呢？”她指的恐怕不仅封球一事。</p>
+<p>“那就会非常非常难受。”</p>
+<p>“真可怜啊。不过或许就是因为那样，你才能去新威尼斯吧？”初雪问，“相比起来，我的人生信条就是得过且过。”</p>
+<p>“是初雪拉着我们两个来的吧？”我开口。</p>
+<p>“那就改成‘走一步看一步’……都差不多。”初雪随意地搪塞了我的提问。</p>
+<p>“大概是那样吧。不过，现在我觉得要是换成初雪去新威尼斯就好了。”</p>
+<p>“我不想去。”初雪说。</p>
+<p>“要是那上面写着你的名字，你一定会想去的，就是那么朴素地吸引人的存在。”</p>
+<p>“那我应该就也跟你一样后悔起来了。”</p>
+<p>“……”</p>
+<p>“算了。再怎么假设也没有意义了。不过小露子……这种人生信条是很危险的。比如说，你怎么想封球这件事？”</p>
+<p>“不知道。从各种角度分析都找不到能立足的理由。”</p>
+<p>“毕竟是社会科学，对吧？人类的思维是不透明的。”</p>
+<p>“没有理科那样的解法。”白露顿了顿，又补充，“我讨厌这个。”</p>
+<p>“不对。小露子，如果把那种信条运用在人生的各方面的话，人生会苦不堪言的。文学也好，音乐也好，那种东西应该靠感觉。”</p>
+<p>“要是人类的思维也像三体人一样是透明的就好了。”白露说。</p>
+<p>“那很可怕啊。”</p>
+<p>“我不觉得。”白露说时甚至没有从屏幕上挪开视线。</p>
+<p>“那就试验一下，从我开始。我昨天晚上做了一个梦。在那个梦里，我们都成了掉书袋大师。我掉文学的书袋，你掉科学的书袋。”</p>
+<p>“喔。那大概不是梦。”</p>
+<p>你们加起来就是全人类啊。我想着。</p>
+<br>
+<p>事已至此，先吃饭吧。</p>
+<p>看着桌子上加热水之后制成的土豆泥、意面和泡面，我们全都陷入了沉思。</p>
+<p>“吃曲奇怎么样？”初雪问。</p>
+<p>“不是你说要吃饭的吗？”</p>
+<p>初雪没有丝毫沉默地转向了另一个话题，“啊，车上的 AI 调教好了吗？”</p>
+<p>车上的控制系统里配备了一个简单的大语言模型，本来是为了解决乘客可能存在的各种问题而配备的。不过本来，无端地配备这种东西也只是为了面板上好看而已……</p>
+<p>通过很简单但是很有用的办法——提示词注入，电车的服务 AI 成功地能和我们交流了。</p>
+<p>“看在小初你估计为了寻找话题绞尽脑汁的份上，第一个问题就让 ta 给我们提供些话题的建议好了。”</p>
+<p>我看了看屏幕，提示词说是“掉书袋式的、《围城》式的”。</p>
+<p>“人类还需要 AI 来提供话题。真可怜。”初雪默默地吐槽。但她却把身子往前倾。</p>
+<p>“那应该是你在新威尼斯待少了吧。”白露说，“AI 提供的内容的情绪价值，和化学极乐也没什么区别。虽然没有价值，但人类的东西也不见得多有价值，反正就是，也没有理由强迫别人拒绝……算了算了，第一个话题。</p>
+<p>“宙斯认为，当时的人类太强大了，或许会造反，于是就想到了一个办法，把人类全分成两半——”</p>
+<p>“所以人类就会一生都寻找另一半了。啊，嗯，是这样呢。”初雪听起来有些泄气了，“柏拉图在《会饮篇》里说的。”</p>
+<p>“嗯，宙斯会想到现在的人们根本放弃了寻找另一半吗？”我问。</p>
+<p>“这不能叫放弃吧。看样子，不管是小杏还是小露子，都挺努力地寻找着另一半的。甚至还失去了某些本来能得到的东西，和宙斯想的一样。”</p>
+<p>“但是社会上——”</p>
+<p>“社会上吗？人们都不生育后代，那样是生物学上的绝种。从个人角度来看，宙斯能够让人类专注于寻找另一半而非对抗自己就是成功的了。</p>
+<p>“而且本来女同也生不了孩子。”她又补充。</p>
+<p>出人意料，好有道理的话。</p>
+<p>“哦。小初前辈倒是认真地寻找着彼方的、夏天的或者某个抽象的东西的另一半呢。”白露冷冷地说。</p>
+<p>“明明是自己和自己所有的‘另一半’加起来超过一个完整的人的家伙，还这么说？”</p>
+<p>“攻击性太强了吧？”白露皱起眉头。</p>
+<p>初雪以咂舌回敬。</p>
+<p>我无言地听着两人互相使用奇怪的逻辑和语言方法互相攻击，那大概就是她们和好的证明。大概？</p>
+<p>魔法的对波在行星际的时代就变成学术性的对波。这样的话听得我相当犯困，不知道当年以方鸿渐为首的教授等人怎么能进行下这样的对话。说到最后，她们隔大概半分钟才各自说出一句话，语速很慢，各自以对方条件反射性的皱眉以及“什么？”的反问为乐趣。</p>
+<p>“纳尼娅，以后不要成为小露子这样的坏女人。对什么都无所谓，迟早也会哪天赛博枪杀一个阿拉伯人，然后进监狱的。”</p>
+<p>我把笔记本电脑从白露面前夺过来，自从被初雪提出了异议之后，她就没再让 AI 提话题了。我从 AI 的数据库那里得知，那大概是来自加缪写的故事。</p>
+<br>
+<p>“嗯……所以《局外人》怎么样？”白露问。</p>
+<p>“突然问这个？”</p>
+<p>“毕竟我没看过嘛。”</p>
+<p>“你没看过的书比我想象中的要多啊……”初雪似乎一副惊讶的态度，“那么……只是出于好奇。你是用哪种态度来引用里面的话的？”</p>
+<p>“？”</p>
+<p>白露歪了歪脑袋。她扎起的马尾拂到我的耳朵上，让我一阵痒。</p>
+<p>“……嗯，就那样引用啊？”她最后说。</p>
+<p>这次轮到初雪微微歪头了。“那就比如说，你是怎么看待关于‘西西弗斯推石头’的那句话的？”</p>
+<p>“是那句，‘我们必须想象西西弗斯是幸福的’？”白露对于说出这句话本身而言没有花费太多时间。但对于这句话到底在说些什么，她确实想了想，然后说自己不知道。“因为，我没看过《局外人》，就更不可能看过《西西弗斯神话》了吧。</p>
+<p>“但是，具体来说，我只是把这句话当作一个众所皆知的句式而已……我们必须想象这只是种简单的解构。”她用装模作样的语气念出后一句话，确实充满了奇怪的笑点。</p>
+<p>“啊……那好。”</p>
+<p>“而且，每个人会引用的这样的预加载的库也不一样。就像，日本人就是喜欢引用宫泽的童话故事，中国人一向喜欢用《三体》里的情节来寓言现实。”</p>
+<p>“不对。这样会让文字更难读才对。”初雪说。</p>
+<p>“对于其他没有安装这个库的人来说是这样。”白露淡淡地回答，“但是那也就说明其实那个人并不是文字的核心受众了。嗯，你看过《三体》吗，我上面说的那个？”</p>
+<p>“没有。”初雪直截了当地回答，“虽然说我知道那是部很有名的科幻小说。”</p>
+<p>“其实那是神作啊。”白露说。</p>
+<p>“我提不太起兴趣。感觉看历史上的科幻小说总有种出戏感。”</p>
+<p>“那么，你没看过《海底两万里》、《从地球到月球》或者《地心游记》之类的凡尔纳吗？”白露问。</p>
+<p>“只看过第二个。”初雪回答，“作为儿时读物。”</p>
+<p>“那不就是了吗？再说了，现在的人类科技，还不如书中被锁死科技的人类呢。”</p>
+<p>初雪暂时沉默了一下。“这一点都不好笑。”</p>
+<p>“所以说，你有必要去看那本书。就算人类早就造出潜水艇以及登上月球了，人类也会看凡尔纳的。”</p>
+<p>白露似乎因为自己终于战胜了初雪有些自满。但她突然又转向我，“啊，刚刚说到哪了？”</p>
+<p>“你好像要用那本书的剧情讲些什么。”我回答。</p>
+<p>“那个跳过……为了不剧透剧情。中国的其他书，嘛……嗯……有一个叫什么名字来着？帮我想想？”</p>
+<p>“让我帮你想？”初雪皱起眉头，但还是开始说，“在中国文坛里，鲁迅算是早期最出名的，在中国人中有着很厉害的地位。虽然 20 世纪后期到 21 世纪，中国都没有太多能够给人类留下印象的书……大多主题是现代化或者城市化之类的。”</p>
+<p>“主题大概很现代的来着。”白露想着说。</p>
+<p>“现代吗？那个时期的中国的书倒是很不现代，以纯文学作品来说。不过后来中国人在非传统文学……尤其是类型文学的领域大放异彩了啊。大概是拜 21 世纪中国那惊人的网络文化以及网络文学的流行所赐，现在想想的话，中国的网文比起日本的轻小说，对于文学创作大众化的影响还要大得多。”</p>
+<p>具体而言……网文是从初期的纯粹类型文学中逐渐挖掘出了深度，轻小说反而是从具有深度的形态转变到了纯粹的类型文学上。不过区别在于，当时中国纯文学的固化其实反而是网文深刻化的催化剂；日本文学当时倒是没有这样的烦恼，反而纯文学与 ACG 文化的结合，倒让前者更加走向大众。于是乎，最后的发展结果就是，中国的网络文化与网络文学，最后催生出了那些最后现代的文学形式；日本的轻小说最后则孕育了那些在光谱上遍览也无法穷举的话题式文学。</p>
+<p>二者混合在一起，本来就混沌的文学性再也无法被简单衡量，文学的大众化时代就那样来临了。</p>
+<p>以上当然是 AI 的总结。</p>
+<p>“总结得还不错。”初雪点点头。</p>
+<p>“我好像想起来了……是个文字由 AI 总结的，配合着聊天记录、互联网上的动态、评论、点赞、收藏记录之类的集合而成的，像是锤人时的证据一样的信息录。”</p>
+<p>“信息录啊。那确实在文字的文学上不能更后现代了。”</p>
+<p>信息录，主要就是围绕某一特定主题整理出的“信息”。作家创造的不再是文字本身，而是支离破碎的各种信息。甚至文字本身无非只是为了便于读者理解而存在，有时甚至不是作家本人所撰写，由后来的整理者，甚至 AI 所总结的都比比皆是。</p>
+<p>“总之名字本身不记得了，似乎是各种奇怪的网名的集合，最后加上‘的信息录’四个字。主要讲的就是一个普通的网络文学创作者——记得是一个挺可爱的女孩子，因为什么事被网暴的事件全过程。网暴过程本身就很骇人听闻了，后来还记了那个女孩陷入了精神崩溃，用尽各种办法伤害自己时的各种记录。最后，是在她的情况被别人做成视频发到互联网后一天，她被发现因为重度抑郁的躯体化症状，在自己家里去世了。好像就是那样的故事。”</p>
+<p>“那个我也看过，名字好像最开始是‘互联网小天使雨酱’什么什么开头的。不过没坚持下去，看到她发在带锁帐号里的动态的时候撑不下去了。”初雪想着，露出难受的表情，“确实冲击性有点强。最后没办法，只能去看专门和谐的版本。”</p>
+<p>“我想说的就是那个。你知道为什么只有《雨》的信息录在日文互联网上被那么重视吗？”白露问。</p>
+<p>“因为我们可以理解？”</p>
+<p>“对了。第一个原因：通常来说，虽然在原来的圈子里通常会有几部乃至很多部相似主题、相似类型的作品，但破圈而被全人类所认知的通常只有其中最优秀的那些。所以《雨》被我们所首先看到了。”</p>
+<p>初雪认真点头。</p>
+<p>“第二个原因：因为网暴、自我伤害、精神疾病这种要素，日文互联网也同样熟悉。甚至说，出于中文互联网现代化的不平均性，还能总体上更共情一些也说不定。《雨》在欧美互联网没有那么大的关注度，在日文互联网却很快被发掘出了不分伯仲的‘日式《雨》’，就是这个原因。”</p>
+<p>“啊……”</p>
+<p>初雪正在思考。当然，我也在思考，只不过是出于些简单的字词。</p>
+<p>“‘发掘’，是什么意思？”我问。</p>
+<p>当然，我当时问出这个问题并不能怪我。信息录这种文学形式的理解与欣赏需要足够的现代社会经历——主要是互联网经历，像当时的我的那种小孩通常是读不来的。当然，短视频里那些搞笑的聊天记录和评论节选，其实也完全符合“信息录”的定义就是了。</p>
+<p>“信息录这种文学形式的恐怖、后现代、重要以及吸引人之处，总之就是它区别于其他任何创造性的创作的地方，就在于它的作者并不一定知道自己正在进行创作。”</p>
+<p>白露回答。</p>
+<p>“啊……？”我其实还是没有理解。</p>
+<p>“比如说，《雨》的作者，雨酱。她发在自己的带锁小号上的各种动态，显然是她的抑郁症病情以及几经崩溃的精神状态所带来的。但其中其实可以挖掘出巨大的艺术价值以及社会影响。这一点绝对是当时徘徊在三途川边缘的她无法意识到，也没有精力再去意识的。”</p>
+<p>“那这样不是……侵犯隐私了吗？”我的大脑突然宕机，“虽然是个有点蠢的问题。”</p>
+<p>“倒也没有，这一点这几十年都在被大家所争论着呢。”白露说，“真够聪明的，不愧是纳尼娅。”</p>
+<p>但白露的话并没有解决我的疑问。我转向初雪。</p>
+<p>“要问我吗？”她有些疑惑。</p>
+<p>我点点头。</p>
+<p>“嘛，主要的法理证据应该是因为她曾经签过‘信息捐献’的同意书。不过也有人指出，她后来恐怕无法再考虑这个同意书的事了，所以主要的许可应该来自于她后期写过的‘就算把我的事迹全都做成信息录也可以……我已经是具尸体了，再在网上曝尸荒野又咋了……’这样的话。”</p>
+<p>“那不会是气话吗？”</p>
+<p>“谁知道呢。”初雪摇摇头。她睡醒之后两侧翘起的头发到现在也没完全被安抚下来，“卡夫卡去世之前，也对好友说要烧毁自己的所有书稿。但就像你看到的那样，他的文字最后被好友整理并出版了。所以《城堡》也戛然而止。当然，他自己也被追封成现代主义的先驱了。”</p>
+<p>“卡夫卡甚至明确让好友烧掉自己的书呢。”白露说。</p>
+<p>“所以，他们的文字存留下来其实是那个时代的人们的幸运。其实我们也很幸运，就是那样了。”初雪说，“啊，对了，《局外人》还不错。”</p>
+<p>“怎么突然说《局外人》了？”白露问道，“加缪可是得过诺贝尔文学奖的啊。”</p>
+<p>“那我当然知道，诺贝尔文学奖又不能追封……但你一开始问我的就是这个问题了。”</p>
+<p>“啊。”</p>
+<p>“《局外人》比我想得要形而下得多，倒是……”</p>
+<p>估计又是一轮酣畅淋漓的讨论了吧。</p>
+<p>听着初雪和白露一阵阵的话语，其中有初雪像是上低音号般（故意）不高亢但意外温柔坚定的声音，也有白露那像是马林巴琴一样连续清脆的声音，我有点困了起来。我强撑着把自己的目光转向窗外无际的大地。漫长的火星大地在这片叫做恩德的土地上，与其他地方并无二致。但就像名字一样，宽广的大地确实在这里迎来尽头。</p>
+<p>但转念一想，大地在海浪的面前以千米的高崖急刹，被海浪挟带着的海洋，不也遇到了千米之高的阻碍吗？所以它也那样迎来了尽头。在各种各样沉重的话题之后，我还能联想到这一点，让我感觉这也值得被记入一个信息录。</p>
+<p>我兴奋地向车厢的另一面望去，却只看到一扇灰色的门。门外也正对着墙壁。</p>
+<p>啊，对哦。是这样。再说了，在千米之高的悬崖上，我还是从车内平视外边，怎么可能看得到海洋呢？能看到的无非乌托邦洋的灰色天空而已。意识到这一点后，扫兴的我干脆倒在了白露的腿上，一下子就沉睡过去。</p>
+<p>窗外的风景灰暗下来。层叠的乌云如同压在大地上的厚厚的棉被，压迫着整个世界。行驶在苍茫的大地上，我们的车厢就像只行将就木的潜水艇，无依无靠。</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="18.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="20.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="18.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="20.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
