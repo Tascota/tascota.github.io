@@ -1,0 +1,478 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>26 &lt;23&gt; - 彼方的奏鸣曲</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Prologue</a></li><li class="chapter-item expanded affix "><li class="spacer"></li><li class="chapter-item expanded "><a href="1.html"><strong aria-hidden="true">1.</strong> Re:1</a></li><li class="chapter-item expanded "><a href="2.html"><strong aria-hidden="true">2.</strong> Re:2 (5.41)</a></li><li class="chapter-item expanded "><a href="3.html"><strong aria-hidden="true">3.</strong> Re:3 (5.42)</a></li><li class="chapter-item expanded "><a href="4.html"><strong aria-hidden="true">4.</strong> Re:4 (5.43)</a></li><li class="chapter-item expanded "><a href="5.html"><strong aria-hidden="true">5.</strong> Re:5 (7)</a></li><li class="chapter-item expanded "><a href="6.html"><strong aria-hidden="true">6.</strong> Re:6 (9)</a></li><li class="chapter-item expanded "><a href="7.html"><strong aria-hidden="true">7.</strong> Re:7 (10)</a></li><li class="chapter-item expanded "><a href="8.html"><strong aria-hidden="true">8.</strong> Re:8</a></li><li class="chapter-item expanded "><a href="9.html"><strong aria-hidden="true">9.</strong> Re:9</a></li><li class="chapter-item expanded "><a href="10.html"><strong aria-hidden="true">10.</strong> Re:10</a></li><li class="chapter-item expanded "><a href="11.html"><strong aria-hidden="true">11.</strong> Re:11 (12)</a></li><li class="chapter-item expanded "><a href="12.html"><strong aria-hidden="true">12.</strong> Re:12</a></li><li class="chapter-item expanded "><a href="13.html"><strong aria-hidden="true">13.</strong> Re:13 (13)</a></li><li class="chapter-item expanded "><a href="14.html"><strong aria-hidden="true">14.</strong> Re:14 (15)</a></li><li class="chapter-item expanded "><a href="15.html"><strong aria-hidden="true">15.</strong> Re:15 (17)</a></li><li class="chapter-item expanded "><a href="16.html"><strong aria-hidden="true">16.</strong> Re:16</a></li><li class="chapter-item expanded "><a href="17.html"><strong aria-hidden="true">17.</strong> Re:17(14.5)</a></li><li class="chapter-item expanded "><a href="18.html"><strong aria-hidden="true">18.</strong> Re:18</a></li><li class="chapter-item expanded "><a href="19.html"><strong aria-hidden="true">19.</strong> Re:19</a></li><li class="chapter-item expanded "><a href="20.html"><strong aria-hidden="true">20.</strong> Re:20 &lt;17&gt;</a></li><li class="chapter-item expanded "><a href="21.html"><strong aria-hidden="true">21.</strong> Re:21</a></li><li class="chapter-item expanded "><a href="22.html"><strong aria-hidden="true">22.</strong> Re:22 &lt;19&gt;</a></li><li class="chapter-item expanded "><a href="23.html"><strong aria-hidden="true">23.</strong> Re:23</a></li><li class="chapter-item expanded "><a href="24.html"><strong aria-hidden="true">24.</strong> 24</a></li><li class="chapter-item expanded "><a href="25.html"><strong aria-hidden="true">25.</strong> 25 &lt;22&gt;</a></li><li class="chapter-item expanded "><a href="26.html" class="active"><strong aria-hidden="true">26.</strong> 26 &lt;23&gt;</a></li><li class="chapter-item expanded "><a href="27.html"><strong aria-hidden="true">27.</strong> 27</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">28.</strong> 28</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">29.</strong> 29</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">30.</strong> 30</div></li><li class="chapter-item expanded affix "><li class="spacer"></li><li class="chapter-item expanded affix "><a href="epilogue.html">Epilogue</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">彼方的奏鸣曲</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="26-23"><a class="header" href="#26-23">26 &lt;23&gt;</a></h1>
+<p>我突然陷入了和萨菲娅的……呃，二人世界。</p>
+<p>说实话，纳尼娅想得真够狭隘的。就算只是为了我自己，我也会自动在圣姆托利多做停留，怎么可能只是为了躲开初雪或者取材才待在这里。</p>
+<p>倒不如说，能听到初雪不再执着于那些莫名其妙出现在脑海里的远大理想，而是真心地说出“需要我”这样的话时，那一刻，我似乎还有些激动。</p>
+<p>……喂，打住。我没有这么压抑吧。</p>
+<p>但我同时也明白，现在这样的我似乎无法回应她，就算这种已经竭力缩小的需要也是。</p>
+<p>“……是像初雪一样叫你小露子？”</p>
+<p>回到现在。原来此时我还想着初雪啊。不知为何，有点抱歉。</p>
+<p>到南半球，火星互联网已经稳定可用了。我让初雪继续拍照发帖子，自己就休息了。能够久违地在精神上放松一会，还是不要顾及其他事情的好。只不过我身边还是有别人啊。</p>
+<p>说实话，还是个精神状态不是很好的家伙。</p>
+<p>我一直思考自己是不是因为小杏的事情有 PTSD 了，说不定真是这样。我一直在意着旁边的她，时不时偷瞄她几眼，有时候会看到她也在盯着我。倒是不像其他阴暗的家伙，她察觉到别人在盯着自己的时候，只会继续反盯下去，用那迷迷糊糊的眼神试图吓退对方。总是说阴暗的家伙像是小动物，那这家伙就像是动物园里被摆弄得过多的动物一样，一副毫无所谓的样子。</p>
+<p>我又看了看她。此时她突然转过头来，侧着头，微微张着嘴，也盯着我，一副看似诧异的样子。</p>
+<p>这时我才发现，就算是她灰色的眼瞳，在夏日强烈的阳光照射之下，也能看出某种蓝色的存在。在褪色的金发之下，灰蓝色的眼瞳此时如同无云的苍穹之下波光粼粼的大海一样，出人意料地夺目。</p>
+<p>欸。其实还挺可爱的嘛。</p>
+<p>我不由得笑出了声。她还是以那副奇怪的神情看着我。</p>
+<p>……总之，还是先去那个铁路公司什么的看看吧。</p>
+<br>
+<p>嗯，看样子是关门大吉了。</p>
+<p>只用远远地望去就知道了。没有人影、没有光亮，总之没有人存在的气息。周围的街道与其他地方一模一样，冷冷清清，只是时常有一两个人经过的样子。萨菲娅倒是并没有什么特别的反应。</p>
+<p>我仔细凑上去看了看。看样子并不像是因为破产倒闭什么的，而是被收编了。旁边还贴着“关于改制搬迁的通知”之类的话。公司改组为伊哈托布市属铁道公司，搬迁至伊哈托布市的什么什么地方……嗯，没错。员工可自行选择是否留职。时限至 132 年 21 月 1 日。</p>
+<p>啊，过期了。</p>
+<p>在此之后的提交请求不作受理。</p>
+<p>“怎么着？”我问，“那也没办法了对吧。”</p>
+<p>“……吃饭。”</p>
+<br>
+<p>不管怎么样，开着的餐馆总是会有的吧。就算是水箱温泉都有。</p>
+<p>楼梯在广场边缘不时断开的栏杆处凹下去，随意排列着的小巷们越来越近，我们最后遁入其中。圣姆托利的房子们，在这个高度之上多是蓝白色，之下就变成了各种颜色的混搭，如同一块巨大的调色盘，侧搁在大地之上。</p>
+<p>路旁房屋底下的门或开或掩，不时有小孩子跑进跑出，时常听到房里人们的交谈声。到交汇处，做工精美的路牌以浮雕的方式刻在临街建筑的外墙上，石板地面从两侧延伸出去。外墙里的是街旁人家的院子，有的只用栏杆当作物理遮蔽，有的则在厚厚的墙外还种上常春藤。</p>
+<p>又走过了一个路口。纵横交错的小巷小路让我不想再查什么地图，只是关注着路边的招牌。</p>
+<p>我看向旁边敞开大门的一个小院子。</p>
+<p>啊，敞开的门，还有若隐若现的招牌……看样子似乎是，并不指望主动热情地拉别人来吃的，而是应该会被“偶然一吃居然是这种绝味”的，很高手的那种。大隐隐于市的样子。招牌是木质的，用麻线挂住，旁边摆着小黑板，上面用手写的字体写着今天的菜肴。</p>
+<p>走进庭院里，本来以为会很冷清，但居然也坐有好几桌人。</p>
+<p>不过仔细想想也是。伊哈托布的人们还在正常地生活啊。是我们这些人莫名其妙地闯入了这里。</p>
+<br>
+<p>“想让你书写自己的故事？”</p>
+<p>结果居然是和我进行实质上的几天的约会吗？厉害啊，纳尼娅。我虽然自认没什么道德底线，但什么事情能让我好受，什么让我难受，我还是心里有数的。我搅和着碗里的沙拉，听着她说话。</p>
+<p>“事后声明，我并不是在卖惨。”她似乎反应到什么，突然插了一句。</p>
+<p>“……我知道。”</p>
+<p>她这么一说，我的心里反而涌起某种异样的情感。说起来，我到现在都没再联系过小杏了。前任文学吗。</p>
+<p>面对面前的女孩，来自过去的情感和来自现在的思考一齐袭来，不断冲击着我的大脑。我自己也思考过，我明明对初雪和小杏并没有什么过失，为什么我还下意识地去逃避她们呢？难道我不应该从心底里就不在意的吗？</p>
+<p>不过，自那之后，我的大脑就不再负担得起深度的思考了，我也没再思考下去。“活在当下”，我只能这样使用我的大脑。或许一切都会有答案的。</p>
+<p>“嘛，我知道你的处境了。”我说。</p>
+<p>她隔着半遮住自己眼睛的刘海看向我。发尾有点像初雪一样翘起，真想给她梳一下。</p>
+<p>“……虽然这么说有点不太礼貌，”我停顿了一下，她突然打断我。</p>
+<p>“既然我们都这样了。还是——抱歉，我们可以对彼此思维透明吗？”</p>
+<p>她突然的话让我有点摸不着头脑。“思维透明”？</p>
+<p>“初雪对你——”</p>
+<p>“没有。”</p>
+<p>“那纳尼娅——？”</p>
+<p>“一切所有的都没有，只是因为我想要这么做。说是病急乱投医也可以，但是……但是，我想把自己一团乱麻的内心理顺。这样说怎么样？”</p>
+<p>她撩了一下自己的刘海。灰色的眼瞳望向我，里面突然闪烁着浑浊但集中的光芒。我突然感觉自己被她所紧紧地凝视着，赶忙挪开了视线。我可难以承受别人的那种目光。</p>
+<p>“……什么怎么样？”</p>
+<p>“我想要这样向你表示我的意思。就是说，我想要对你敞开心扉，只是因为我想这么干。不是我突然爱上你了什么的，也不是我是个露出狂什么的，只是因为我想继续成为一个人。”</p>
+<p>我还是搞不懂情况。</p>
+<p>一般来说，这么说不就代表着表白吗？在什么作品里，这样的发言就算不是 cp，也至少可以绑定 cb 了。</p>
+<p>“……喂喂喂，你在说什么啊？”</p>
+<p>“或者说，你想把我当作露出狂也可以……总之，我想要把自己所有的想法、所有的情绪都告诉你。不是因为喜欢，也不是因为讨厌，只是因为我……我是这样的家伙而已。”</p>
+<p>她想要告诉我一切。欸，这和初雪的想法很像啊……不过如果她不是在说谎的话，这就不是初雪跟她说的。而且初雪也没跟她怎么说话。</p>
+<p>“你也想要我对你这样吗？”</p>
+<p>“嗯。”她呜咽了一声。</p>
+<p>“欸。”</p>
+<p>我抬头望向天空。猛然一抬头让我的脑袋有点缺血。</p>
+<p>“——那你是露出狂吗？”</p>
+<p>“……？”</p>
+<p>我看见她的脸上表露出一阵……惊讶，而不是厌恶？喂喂喂，你不会真的喜欢露出吧？如果是这样的话就当我没说好了，我会无言地对你产生 AT 力场的。</p>
+<p>“……我只是喜欢露出的……呃，那个，题材。”</p>
+<p>“啊太好了。听到你不会自己露出就放心了。”</p>
+<p>“毕竟，如果是我露出的话，会被抓到警察局吧。毕竟这么……嗯，没有魅力。”</p>
+<p>等等等，就算再有魅力也是会被抓到警察局的好不好。什么上了年纪的油腻男性的视角啊，好恶心。</p>
+<p>“你再这么说话我报警了哦。”</p>
+<p>“呜不要！”</p>
+<p>“那你就好好地说，自己只是喜欢露出的 xp，不是喜欢露出好吗。”</p>
+<p>“反正就是这个意思，”她说着吃完了自己碗里的烩饭，“不过……不过啊，我在想着试试的话……”</p>
+<p>“那你别跟着我。”我立马说，“我透明一下给你，‘呜哇变态’。”</p>
+<p>虽然我觉得她实际上也相当可爱……</p>
+<p>呃不对。我在想什么。好恶心，好大叔，好低俗。这种想法赶紧滚啊。</p>
+<p>“……你刚刚在盯着我的胸口看吧？”</p>
+<p>“不是。”</p>
+<p>“就是吧？人与人之间是有基本的距离的。是思想透明又不是衣服透明。请不要这样做。”</p>
+<p>“你是什么正论怪物吗？”</p>
+<p>“因为你刚刚那样做很不礼貌。有点涩涩的。”</p>
+<p>“……不要诬陷我好吗。”我突然有点生气。耳边不止的蝉鸣声突然放大了一刹那，不知道是不是它的原因。</p>
+<p>“啊。”</p>
+<p>“因为我在想着你胸口的地方，穿初雪的衣服还是太紧了。倒不是体型的问题。”</p>
+<p>我从来不会调侃别人的第二性征发育如何。不过我也不大肆反对就是了。</p>
+<p>我想起来，初雪也是同样的态度，但她会从荷尔蒙分泌之类的地方开始找原因，然后说到就连性压抑都是人的本能。所以她理解这个行为。但我不一样，我只是认为没法改变的事情不如不要在意，以免影响自己心情。</p>
+<p>“——诶，是这样啊。”</p>
+<p>“不是，你怎么一点都不意外啊？”总不至于没想到这一点吧？</p>
+<p>“没有，只是想起来我原来比你们大这么多啊。年龄。”</p>
+<p>她在 T 恤上比划了一下。粗略看来应该有 c 到 d 了吧？初雪的衣服穿不下也不奇怪。</p>
+<p>“……要不要带你去买衣服？”我问，“初雪的衣服穿起来很没劲吧。”</p>
+<p>“那还是算了吧……穿搭啊——”</p>
+<p>“不行。你真的很可爱的，”我思考着要怎么以不油腻的方式来描述，“就是，很漂亮。”</p>
+<p>“……诶。”</p>
+<p>她把目光从我这里挪开了。她白皙的皮肤被日光晒得有点发红，或许只是生理现象。</p>
+<p>我也不知道要怎么描述。总感觉毫无保留的阳光对她来说有点残忍，但我又很想看到这副面庞在阳光下微笑的样子。让人也不经意间想要抛开之前的一切，只是微笑而已。</p>
+<p>嗯，被过去的一切束缚着有什么意思呢。就算我的选择再塑造了我自己，也不是用这种方式塑造的。</p>
+<p>如果以前的我也这么想过就好了。</p>
+<br>
+<p>走去商场的路上，我继续追问萨菲娅。</p>
+<p>“那些不能算骚扰吧。”她说，“只是想被关注而已。”</p>
+<p>“给别人发一大堆信息，光是红点数都足够吓死好几个日本人了。”我说。</p>
+<p>“啊，你不是日本人吗？看名字——”</p>
+<p>“只有住在日本的日本人才会变成那样好吗？”</p>
+<p>“好好好，行行行！”她突然大声叫起来，“我在反省了好吧。真的。”</p>
+<p>“……”</p>
+<p>“但是，你真的不会有哪个瞬间真的很想被别人关注吗？就像是那种，想去故意 cue 别人，想被别人关注自己在做什么之类的。就算最后完全没有回复。”</p>
+<p>“完全不会。这样也太可怜了吧。”</p>
+<p>“欸——但我听说你平常会写稿子的啊。写的时候不会想 cue 一下读者吗？”</p>
+<p>一般来说不会。</p>
+<p>……但有偿供稿的时候是会的。我想到。之前给一个视频主写的稿子就是这样，融入各种莫名其妙的新梗旧梗。为了写它我至少去网上转了两个小时。只是它给的实在太多了。</p>
+<p>“迟疑了吧？”她试探地问道。</p>
+<p>“好吧。是有的。”</p>
+<p>“对吧。”</p>
+<p>“……”</p>
+<p>一阵沉默。</p>
+<p>“……真想问你，逼对方直到退步有什么好玩的。你不会就是那种会在网上辩论到底的人吧？呜哇……”</p>
+<p>“因为我遵从人类的本性啊。”</p>
+<p>“本性？”</p>
+<p>“人类的本性，不就是想要被别人认可吗？那在网上，看别人说出‘好吧’或者‘抱歉’的时候，你不会很高兴吗？还会有一种，正确得到了传播的感觉。”</p>
+<p>“……好下流的感觉。会感到这种情感好下流。”我皱了皱眉头。</p>
+<p>“啊？但是人类的本质就是会喜欢这种下流的感觉的啊。不信的话，我说句‘抱歉，是我冒昧了’给你试试。”</p>
+<p>“喂喂喂，差不多得了。”我说，“建模明明这么好看，为什么内心这么阴湿啊。”</p>
+<p>“都说了这才是最自然的内心。难不成，你喜欢那种圣人一样的完美无缺的人吗？”</p>
+<p>我想了想。似乎只想得到八潮姐，像那样的。“反正我招架不住。”我说。</p>
+<p>“所以说，这才是萌点啊。对于完美的人，自己会衍生出下意识的隔阂，反而没办法好好交流了。只有像我这样的全是缺点的人，你才会愿意把话都说出口。”她说，“——啊，说起来我还穿着 T 恤呢。是不是遮一下比较好？”</p>
+<p>她指了指自己的小臂。</p>
+<p>“……我有防晒衣。”</p>
+<p>“啊谢谢。所以可以给我一点回应吗。”</p>
+<p>“是的，”我说，“口渴了。能不能只听你说话。我会好好点头的。”</p>
+<br>
+<p>萨菲娅的真心话的杀伤力也太强了。我似乎突然就明白了，初雪和纳尼娅这几个月都在说些什么。</p>
+<p>只有跟不完美的我，初雪才能好好展露自己的内心。所以说是这个意思吗？</p>
+<p>……意思是说我不完美啊。嘛，我也不是反对这个说法。</p>
+<p>那么，我面对初雪的那种感觉，似乎也可以解释了。难不成，那个家伙在我的心里是完美的？</p>
+<p>不对不对不对。也太扯了吧，讲真的。</p>
+<br>
+<p>“小杏对你是那种态度，说不定就是因为你在她的心里是完美的形象。”萨菲娅继续说，“所以她只是在你的面前演出那个形象而已。或许不是演出也说不定。但最终的结果都是，你在她的面前展露出不完美的一面之后，这些事情就全都破灭了。”</p>
+<p>嗯嗯。其实还不错嘛，这家伙分析世界的一套。</p>
+<p>“居然一个人自闭着就能分析出这么有道理的结论啊。挺厉害的。”我说。</p>
+<p>“一点都不厉害吧。又在说谎。”</p>
+<p>“不厉害？”</p>
+<p>“不厉害啊。”</p>
+<p>“……这次我真的没说谎。刚刚反应什么就说了什么好吧。看我的发言速度也能发现——”</p>
+<p>“其实每个人都知道这些事情吧。”她说，“或者说，被突然点拨了一下的人也能光速理解对吧？那么，明明问题只是不愿意明晃晃地说出来而已。或许是因为说出来显得有点蠢吧。我的话，只是因为已经做了这么多蠢事了，也不缺这一点就是了。”</p>
+<p>“欸。大智若愚啊。”</p>
+<p>“听不懂。但应该是同一个意思吧？”</p>
+<p>“……啊是的。”</p>
+<br>
+<p>很意外。和萨菲娅说话居然让我感觉没有一点包袱。</p>
+<p>嗯。为什么我会就这样转变了心态呢？我记得我一开始应该不太喜欢她的来着。</p>
+<p>说起来，我突然想到之前我在网上跟日本人聊天时，对方说的话。她说，她在打工的地方反而更喜欢跟外国留学生打交道，因为这样就不用费劲去读空气了。她喜欢在软件上跟外国人聊天也是这个原因。我不知道这句话的真假，但对方似乎也没必要跟我撒谎。</p>
+<p>后来她跟我说自己和金发的女孩子交往了。可喜可贺可喜可贺。嗯。</p>
+<p>如果那位是喜欢这样，来暂时摆脱周围的一切的话，我这么感觉也并不奇怪了。对于我来说，就相当于通过和社会脱节的人相处，来暂时摆脱社会吗？我不讨厌就是了。</p>
+<p>于是，我和萨菲娅从各自的雷区聊到喜欢的动画，最后终于到了喜欢的 xp 的环节。</p>
+<p>她说自己还是不喜欢穿裙子。</p>
+<p>“同感。”我说，“我觉得裙子只有在拍照的时候最适合。其他时候都太麻烦了。”</p>
+<p>“对吧对吧。”</p>
+<p>“就像是——嗯——”</p>
+<p>我望向自己伸出去摸衣服面料的手臂。天生的小麦色皮肤让我陷入沉思。虽然建模让我还差不多可以招架，以至于还能被初雪拉去当角色特化的 coser，但穿衣选择却确实遭到了巨大打击。穿白色的衣服就会显黑，但我显的黑又没到可以显出独特美感的程度。</p>
+<p>“就像是，晒痕和黑皮只适合作为 xp 出现，而不是出现在自己身上。”我说。</p>
+<p>“白露的肤色并不——”</p>
+<p>“算了算了，这种安慰还是算了吧。换个说法，露出只适合作为 xp，而不是出现在自己身上，对吧。”</p>
+<p>“你刚刚说过这件事了吧？”她立马吐槽。</p>
+<p>“因为我想确认你刚刚那句话不是一时起兴说出来的。”</p>
+<p>“……”</p>
+<p>她沉默了。然后背过头去摇了摇头。呜哇是真的变态出现了。</p>
+<p>“我觉得有必要给你好好挑衣服了啊。你这社会性缺失的家伙。”我说着，把她拽进旁边的店里。</p>
+<br>
+<p>总感觉这家伙有点像只巨大的……狗狗？</p>
+<p>不知道为什么，她身上那种自由自在的感觉（或者叫社会性缺失的感觉），反而让我很安心。说来，人类真是莫名其妙的生物。喜欢找没有谈过恋爱的恋人，经历了一生，到最后又喜欢什么与世隔绝的地方来避世养老。或许我已经感受到人类的可悲之处了啊。啊可恶。</p>
+<p>怎么我都跟初雪一样说起这种乍一听很有大道理，但实际上没什么用的话了。</p>
+<p>真不诚实啊。</p>
+<p>就像萨菲娅说的一样不诚实。</p>
+<p>噗嗤。我就这么一下笑出了声。</p>
+<p>“……笑什么？”她迟疑地转过头问我，“果然吊带裤还是有点太幼稚了吧？”</p>
+<p>这个场面也有点好笑。不要上半身穿着初雪的白色 T 恤，然后套个小孩一样的牛仔吊带裤对着我啊。什么童装。也太小孩了吧。</p>
+<p>“啊嗯。有点。”</p>
+<p>“说真话……！”</p>
+<p>“特别幼稚。别这样。”我说。</p>
+<br>
+<p>其实总感觉她似乎有某种读懂我内心的能力。总是能精准地捕捉住我什么时候迟疑，又什么时候是真的透明。我又感觉或许熟悉我的人都是这样，小杏是这样，初雪也是这样。</p>
+<p>……啊。为什么我总是止不住地把她和小杏对比呢。</p>
+<p>不过，我对于这种被看穿的感觉并不讨厌。毕竟目前对方是萨菲娅。让人难以泛起警备心。</p>
+<p>或许正因为她是这种小动物一样的存在，才能做到这一点吧？</p>
+<p>我大概就是这样对她卸下防备的吧。</p>
+<p>欸，那么之前——</p>
+<br>
+<p>最后的最后，萨菲娅还是买了些普普通通的夏日常服。和初雪不一样图案的 T 恤衫，短裤以及长裤。</p>
+<p>“说起来，在这几天之后你要怎么办？”</p>
+<p>“大概是，就这样在这里一直待下去吧，”她说，“对这座城市我还算熟悉的。”</p>
+<p>“欸——”</p>
+<p>“出乎你的意料了？”</p>
+<p>“并没有。”我说，“如果你继续乱晃，我反而会担心你的。”</p>
+<p>“有点让人肉麻了。”</p>
+<p>“我会担心你，会不会因为没东西吃被饿晕在路边。”</p>
+<p>“喂！”</p>
+<p>说起来，为了让自己不至于泯然众人，萨菲娅还在旁边的无人便宜小玩意儿店买了些东西。</p>
+<p>“糟糕。这个颈环看起来也太牙白了吧。”我把后半句话咽了下去。怎么看这都是小道具而不是装饰品吧？为什么还有挂钩啊？</p>
+<p>“那别的呢？”</p>
+<p>“腿环看起来更牙白。”我直白地说。</p>
+<p>“你才戴什么都牙白吧？！”</p>
+<p>尽管这么说，她看样子并没有把这俩东西取下来的意思。</p>
+<p>这样我右边的看起来就是个外观相当牙白的阴角了。不过装饰品又显得不太阴暗，似乎更像是地雷系。又是干枯分叉的褪色金发，又是吓人的眼神与黑眼圈，又是胳膊上和大腿上毫无遮掩的痕迹……什么的。不过她本人不在意就行了吧。嗯。</p>
+<p>不过，比起这个，我还有更想问的问题……</p>
+<p>“啊，在那之前。”她突然转过身面向我，“有个想带你去的地方——不是想借机做什么的！你放心。”</p>
+<br>
+<p>我干脆把自己的顾虑扔给萨菲娅讨论了。毕竟她一直一副没话都要找话的样子，我早就有点累了。</p>
+<p>“——还问这种问题。自我中心。”她说。</p>
+<p>“问题是这里吗？”</p>
+<p>“问题就是这里啊……话说不要随便把别人比喻成动物啊。”她说，“好变态。”</p>
+<p>“我错了我错了。请你指教行了吧。”</p>
+<p>“哼哼。”</p>
+<p>她发出了某种阴暗的窃笑声。果然本质上还是一被夸就高兴的阴角。</p>
+<p>“因为我和小杏对你的看法不一样啊。”她说，“小杏应该只知道你是个全能的厉害的人吧。成绩又好，性格又开朗，虽然好像没什么朋友的样子。”</p>
+<p>“喂。好歹人是认识不少的好吗。”</p>
+<p>“然后你又关心她，又和她这样那样的。但是你们之间就是有层窗户纸，而且她越往里面捅，窗户纸就越厚。嗯，然后她大概是受不了这个了吧。如果是我的话，说不定就和你凑合着下去了，说不定哪天就真的说开了。但她应该既没有意思也没有闲心跟你这样。</p>
+<p>“总而言之嘛……就是你果然还是在她面前太完美了。但我听你们讲了不少你的事。虽然我们总共也没在一块待多久就是了。但你在的眼里就是不完美的了，所以我对你的态度是……呜呃，真正的小动物一般的态度。小杏的态度，说是自然的小动物，还不如说是在野兽面前吓得发抖的小动物。</p>
+<p>“……喂，我都把自己比喻成小动物了。”</p>
+<p>“你不会到最后也要跟我那个吧？”</p>
+<p>“什么啊，普信女。”</p>
+<p>“啊。我的 PTSD 果然还是有点太严重了吧。”</p>
+<p>“我也觉得。”她说，“虽然我觉得你的性格很适合作为交往对象。如果我不是这种身份的话。”</p>
+<p>“诶。真的是吗。”</p>
+<p>“明明从头到尾看起来都是阳角，但实际上对于各种事情都颇有微词，特别想吐槽什么的，对吧。感觉这就是你身上的萌点。像我这种阴角，指不定就被你哪句随口说的话圈住了。你以后得多注意这方面才行。不可以到处吸引阴角。”</p>
+<p>“……那你觉得你自己的萌点是？”</p>
+<p>“会有这样问本人的吗？”</p>
+<p>“会吧。虽然一般说不出口，但正常来说，都是会打造自己想被别人怎么认知的印象的吧？”</p>
+<p>“但我不会被别人认知啊。”</p>
+<p>“那要是就是被认知了呢？”</p>
+<p>“那我会疯狂地对 ta 献上自己身体上和心灵上的一切的。各种自己的秘密都说出来，就算是很牙白的、很下流的、很低俗的也要说。总之就是想被人疯狂地认知。”</p>
+<p>“比如现在？”我不由得退了半步，“呜哇，不仅是身体上，心理上也喜欢露出吗。”</p>
+<p>“——嗯。比如说腿环其实是我的 xp 什么的，还有我其实似乎有些抖 m 的癖好什么的。”</p>
+<p>“‘癖好’这个词真是用得好啊……”变态感一下子就出来了。</p>
+<p>“还有，玩法的话我其实喜欢……”</p>
+<p>“住口。变态。”</p>
+<p>“呼。”她好像松了口气，此时她的刘海已经被汗水沾湿了，“我还在想你要是不骂我一句我应该怎么办的。”</p>
+<p>“……”</p>
+<p>“怎么样，很变态吧。”她居然扬了扬嘴角，“可以再骂一句吗。”</p>
+<p>可恶，这不是给她骂爽了吗。不过，这样突然发现这家伙本质上还是个阴角，又感觉很可爱。差点就要被她随口的一些大道理给带跑了。</p>
+<p>嗯嗯嗯，阴角实际上有着很阳角的觉悟什么的，也很算是萌点啊——</p>
+<p>“那我不能骂了。”</p>
+<p>“欸。”</p>
+<p>“恶心，低俗，好下流。”</p>
+<p>“谢谢。”一阵毫无掩饰的阴暗的笑声。</p>
+<p>然后这家伙又说了几句话，以至于我已经把她的 xp 系统摸得清清楚楚了。</p>
+<p>“居然喜欢被……被那个吗。喜欢代入被那个的那一方，也太牙白了吧。”</p>
+<p>“我很开心哦。”</p>
+<p>“？”</p>
+<p>“有的时候人就是得大大方方地说出一些东西才行。”</p>
+<p>“……”</p>
+<p>与之相反，我居然说不出话。这之后我的回复就都是些不加选择的、不过脑子的话了。我的大脑飞速地运转，却再也找不到那种最简单、最真实也最直接的回复方式了。</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="25.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="27.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="25.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="27.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

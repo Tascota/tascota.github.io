@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Re:1 - 彼方的奏鸣曲</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Prologue</a></li><li class="chapter-item expanded affix "><li class="spacer"></li><li class="chapter-item expanded "><a href="1.html" class="active"><strong aria-hidden="true">1.</strong> Re:1</a></li><li class="chapter-item expanded "><a href="2.html"><strong aria-hidden="true">2.</strong> Re:2 (5.41)</a></li><li class="chapter-item expanded "><a href="3.html"><strong aria-hidden="true">3.</strong> Re:3 (5.42)</a></li><li class="chapter-item expanded "><a href="4.html"><strong aria-hidden="true">4.</strong> Re:4 (5.43)</a></li><li class="chapter-item expanded "><a href="5.html"><strong aria-hidden="true">5.</strong> Re:5 (7)</a></li><li class="chapter-item expanded "><a href="6.html"><strong aria-hidden="true">6.</strong> Re:6 (9)</a></li><li class="chapter-item expanded "><a href="7.html"><strong aria-hidden="true">7.</strong> Re:7 (10)</a></li><li class="chapter-item expanded "><a href="8.html"><strong aria-hidden="true">8.</strong> Re:8</a></li><li class="chapter-item expanded "><a href="9.html"><strong aria-hidden="true">9.</strong> Re:9</a></li><li class="chapter-item expanded "><a href="10.html"><strong aria-hidden="true">10.</strong> Re:10</a></li><li class="chapter-item expanded "><a href="11.html"><strong aria-hidden="true">11.</strong> Re:11 (12)</a></li><li class="chapter-item expanded "><a href="12.html"><strong aria-hidden="true">12.</strong> Re:12</a></li><li class="chapter-item expanded "><a href="13.html"><strong aria-hidden="true">13.</strong> Re:13 (13)</a></li><li class="chapter-item expanded "><a href="14.html"><strong aria-hidden="true">14.</strong> Re:14 (15)</a></li><li class="chapter-item expanded "><a href="15.html"><strong aria-hidden="true">15.</strong> Re:15 (17)</a></li><li class="chapter-item expanded "><a href="16.html"><strong aria-hidden="true">16.</strong> Re:16</a></li><li class="chapter-item expanded "><a href="17.html"><strong aria-hidden="true">17.</strong> Re:17(14.5)</a></li><li class="chapter-item expanded "><a href="18.html"><strong aria-hidden="true">18.</strong> Re:18</a></li><li class="chapter-item expanded "><a href="19.html"><strong aria-hidden="true">19.</strong> Re:19</a></li><li class="chapter-item expanded "><a href="20.html"><strong aria-hidden="true">20.</strong> Re:20 &lt;17&gt;</a></li><li class="chapter-item expanded "><a href="21.html"><strong aria-hidden="true">21.</strong> Re:21</a></li><li class="chapter-item expanded "><a href="22.html"><strong aria-hidden="true">22.</strong> Re:22 &lt;19&gt;</a></li><li class="chapter-item expanded "><a href="23.html"><strong aria-hidden="true">23.</strong> Re:23</a></li><li class="chapter-item expanded "><a href="24.html"><strong aria-hidden="true">24.</strong> 24</a></li><li class="chapter-item expanded "><a href="25.html"><strong aria-hidden="true">25.</strong> 25 &lt;22&gt;</a></li><li class="chapter-item expanded "><a href="26.html"><strong aria-hidden="true">26.</strong> 26 &lt;23&gt;</a></li><li class="chapter-item expanded "><a href="27.html"><strong aria-hidden="true">27.</strong> 27</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">28.</strong> 28</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">29.</strong> 29</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">30.</strong> 30</div></li><li class="chapter-item expanded affix "><li class="spacer"></li><li class="chapter-item expanded affix "><a href="epilogue.html">Epilogue</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">彼方的奏鸣曲</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="re1"><a class="header" href="#re1">Re:1</a></h1>
+<p>我从来没想过什么描写彼方。就算我并不出生在这，彼方的一切也已经从我记事起就浸染着我了。</p>
+<p>让我突然想起描写这里的原因是诺维娅的暂时离开。</p>
+<p>“人类不去一趟地球，就真的是‘人类失格’了呢——”她说。但实际上，我们就是在地球上出生的，只不过是很早就到了彼方居住而已。</p>
+<p>彼方——或者“卡纳塔”，如果有人坚持认为这不是个日语地名——位于地球联合国火星大区阿拉伯平原区。镇内有阿拉伯铁路穿过，主要支柱产业为农业。</p>
+<p>这种冷冰冰的介绍当然还可以无限地持续下去，但那样，彼方大地上的一切就失去了意义。</p>
+<p>她去地球是为了研学。当然，另一个目的是所谓预备风纪委员的培养。我只是单纯因为懒惰而这次没去地球。而这似乎改变了未来的许多可能性。</p>
+<br>
+<p>我所住的乘鞍家也是一户农家，房屋内外的一切设计都以节省人力为第一要务。屋内的装修风格几乎没有特别之处，过度简洁的设计甚至显得有些缺乏人居住的气息。唯一不同之处，在于夕立——这一家的老奶奶，是彼方的镇长。然而这个位置本身也无何特别之处。</p>
+<p>乘鞍家的中年一代在地联工作，留下的是叫做初雪的孩子。大言不惭地说，彼方可以称道之处在于这里的女孩子都很可爱。她那副有些锐气的面庞后是中长长度的黑发。目前来说，是从脑后披散到后背，显得稍微有些无力，又和她的面容很不搭——如果扎起马尾的话，看起来就帅气多了。</p>
+<p>露出后脑勺的她看起来那么伟大。</p>
+<p>——当然，并非是我自顾自地评价别人。这个评价是我问这个世界上最了解初雪的人之后得到的。</p>
+<p>新高白露。有着和初雪白皙的皮肤相比显得非常健康的肌肤、同样的黑发，但扎着高马尾。</p>
+<p>新高家不过距离这栋房子三块田地的距离，耳机中一首歌刚好放完的功夫就能走到。</p>
+<p>我和初雪曾经在从这到那的田埂上走过无数遍。夏天时，鞋垫踏在水泥硬化的路面上，发出啪嗒啪嗒的声音。来自不远处的海风吹拂起薄外套，没有拉上拉链的外套就那样鼓胀起来。而冬天时，靴子踩在积雪上，冰晶被踩碎的声音让耳朵发痒。而被夏天暂时带走的思绪也随之积累起来，新雪被逐渐踩实、踩脏，逐渐沾上泥土的颜色，直到化雪时的一片狼藉。</p>
+<p>我缓步走在彼方的田埂上，思考着雪落到雪融的循环。如果是夏天，我应该不会有这么思考的闲情雅致的吧。不过，这一个夏天已经过去了，而正好由那位夏天的白露带来的冲击余波，现在依然在这道田埂上回响着。</p>
+<p>其实，我认为白露是属于夏天的少女，只不过她的夏天以最为遗憾的方式落幕了而已。只有夏天过去了之后，人才会意识到夏天的好的。</p>
+<p>但现在，如果我对她说出这种内心想法，会被在看闷书的她轰出去的吧。</p>
+<p>我对初雪说，“我不是你们俩之间的传话筒”，但她这样回答：“……没有办法啊。毕竟我是输家。在那样之后，就算是人际关系上我都成了输家。”</p>
+<p>起因不过是因为某些事情，她对白露说了些气话。由此，她本来不多的人际关系就彻底崩塌了——至少是她自己这么认为。那些事情到底是什么，我到现在也还没弄清楚，更妄谈那两位女孩的脑海对此如何运作了。</p>
+<p>不过，对此我也不会指手画脚的。毕竟比起这世界上的任何一个地方，彼方都是个过于狭小但又过于宽广的场所了。狭小在于一切事理都简单的无以复加，事情的起因、经过与结果都很普通，甚至让身处别处，复杂繁复社会中的人们嗤之以鼻；但宽广在于，同时也是最可悲的在于，那些最小最简单的事情却是彼方所拥有的全部。每一件事情都被反复地放大，每一种思绪都被反复地思考。于是，本应该波澜不惊的事情成了彼方的全部。就像小田急电车接连驶过，不过一分钟之后，错过就成了永别。就那样，彼方的土地上生出简单而又易碎的世界，彼方的人们思考着所谓无关痛痒的小事，以有限的头脑思考着无限的彼方。</p>
+<p>每一个人的头脑都是一件乐器。彼方乐器的独奏曲，其方的歌曲，所谓的奏鸣曲。</p>
+<p>一个彼方居民的心中生出一个自己的世界，一千个彼方的居民有一千个世界。但每一个世界似乎都不能互相理解，那样，居民们就像细胞一样以细胞膜和细胞壁分割彼此。所谓的“心之壁”。AT 力场。一般而言是无法中和的。</p>
+<p>于是，从彼方走出的人们回过头来凝视彼方时，以那些充满心之壁的心来看待彼方，才会嗤之以鼻、不以为意。</p>
+<p>这才是彼方的最可悲之处啊。最属于彼方之时，人或许还没有那样的自觉，或许有些自觉但又不成体系，只能发出杂乱无章、无人知晓的断音。他们或许还思考着如何从彼方中走出。但离开彼方之后，人又会一会怀念彼方，一会嘲笑彼方，彼方就这样承受着一切，于是——</p>
+<p>但那些都不重要。想那些无非让自己的心更加混乱。最为重要的，无非只有自己在彼方发出的声音而已。</p>
+<p>心的独奏曲就是彼方的奏鸣曲。</p>
+<br>
+<p>只有心存在，奏鸣曲才能奏响——断音的重叠固然也能算作奏鸣曲的一种，但没有清澈的乐器，曲子无论是下里巴人还是阳春白雪，总归不能让自己信服。</p>
+<p>我所想做的，无非是让曲调和谐一些，再在合适的时机加入重奏的乐器——</p>
+<p>而这并不会是件简单的事吧。我有这样的预感。</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

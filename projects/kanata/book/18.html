@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Re:18 - 彼方的奏鸣曲</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Prologue</a></li><li class="chapter-item expanded affix "><li class="spacer"></li><li class="chapter-item expanded "><a href="1.html"><strong aria-hidden="true">1.</strong> Re:1</a></li><li class="chapter-item expanded "><a href="2.html"><strong aria-hidden="true">2.</strong> Re:2 (5.41)</a></li><li class="chapter-item expanded "><a href="3.html"><strong aria-hidden="true">3.</strong> Re:3 (5.42)</a></li><li class="chapter-item expanded "><a href="4.html"><strong aria-hidden="true">4.</strong> Re:4 (5.43)</a></li><li class="chapter-item expanded "><a href="5.html"><strong aria-hidden="true">5.</strong> Re:5 (7)</a></li><li class="chapter-item expanded "><a href="6.html"><strong aria-hidden="true">6.</strong> Re:6 (9)</a></li><li class="chapter-item expanded "><a href="7.html"><strong aria-hidden="true">7.</strong> Re:7 (10)</a></li><li class="chapter-item expanded "><a href="8.html"><strong aria-hidden="true">8.</strong> Re:8</a></li><li class="chapter-item expanded "><a href="9.html"><strong aria-hidden="true">9.</strong> Re:9</a></li><li class="chapter-item expanded "><a href="10.html"><strong aria-hidden="true">10.</strong> Re:10</a></li><li class="chapter-item expanded "><a href="11.html"><strong aria-hidden="true">11.</strong> Re:11 (12)</a></li><li class="chapter-item expanded "><a href="12.html"><strong aria-hidden="true">12.</strong> Re:12</a></li><li class="chapter-item expanded "><a href="13.html"><strong aria-hidden="true">13.</strong> Re:13 (13)</a></li><li class="chapter-item expanded "><a href="14.html"><strong aria-hidden="true">14.</strong> Re:14 (15)</a></li><li class="chapter-item expanded "><a href="15.html"><strong aria-hidden="true">15.</strong> Re:15 (17)</a></li><li class="chapter-item expanded "><a href="16.html"><strong aria-hidden="true">16.</strong> Re:16</a></li><li class="chapter-item expanded "><a href="17.html"><strong aria-hidden="true">17.</strong> Re:17(14.5)</a></li><li class="chapter-item expanded "><a href="18.html" class="active"><strong aria-hidden="true">18.</strong> Re:18</a></li><li class="chapter-item expanded "><a href="19.html"><strong aria-hidden="true">19.</strong> Re:19</a></li><li class="chapter-item expanded "><a href="20.html"><strong aria-hidden="true">20.</strong> Re:20 &lt;17&gt;</a></li><li class="chapter-item expanded "><a href="21.html"><strong aria-hidden="true">21.</strong> Re:21</a></li><li class="chapter-item expanded "><a href="22.html"><strong aria-hidden="true">22.</strong> Re:22 &lt;19&gt;</a></li><li class="chapter-item expanded "><a href="23.html"><strong aria-hidden="true">23.</strong> Re:23</a></li><li class="chapter-item expanded "><a href="24.html"><strong aria-hidden="true">24.</strong> 24</a></li><li class="chapter-item expanded "><a href="25.html"><strong aria-hidden="true">25.</strong> 25 &lt;22&gt;</a></li><li class="chapter-item expanded "><a href="26.html"><strong aria-hidden="true">26.</strong> 26 &lt;23&gt;</a></li><li class="chapter-item expanded "><a href="27.html"><strong aria-hidden="true">27.</strong> 27</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">28.</strong> 28</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">29.</strong> 29</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">30.</strong> 30</div></li><li class="chapter-item expanded affix "><li class="spacer"></li><li class="chapter-item expanded affix "><a href="epilogue.html">Epilogue</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">彼方的奏鸣曲</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="re18"><a class="header" href="#re18">Re:18</a></h1>
+<p>意识过来的时候，旅行已经进行到第二天了。</p>
+<p>白露的故事听起来很沉重，害得我久久睡不着觉。好不容易睡了会吧，却又突然梦到了什么，醒来一看手机已经是凌晨四点半了。这就是在路上的第二天了。</p>
+<p>哐啷哐啷，不平稳的铁轨与车轮碰撞，发出这样的声音。好神奇啊，明明都是金属，居然不会发出刺耳的摩擦声。</p>
+<p>车内只有驾驶室旁有一盏黄白色的小灯，像是飞机上的款式，镶嵌在不高的天花板上。然后就是脚边隐约发出荧光的灯带，应急逃生用。其实灯带也已经相当显眼了。</p>
+<p>火星没有月亮那么亮的卫星，所以月光那种东西是不存在的。</p>
+<p>我面对着一片完美的黑暗思考着。座位是深色的，墙壁是浅色的，这些都只是靠那盏小灯勉强辨认得出的结果。如果月光能够透过窗户照进来，会是怎么一副场面呢？</p>
+<p>其实不出意料的话，这节车厢也是从地球上运来的。火星什么都缺，唯一不缺的就是铁，还是氧化铁。我想着在哪里应该能找到生产信息，但那样就得到车尾，去车门外面了。很冷，我不想去。</p>
+<p>我又决定看看外面的风景。其实风景也基本没有，窗外的仅仅是苔原而已。这片地方最近应该没有下雪。</p>
+<p>看向天空也不过是那样。宇宙里的星星都很遥远，地球和火星的天球几乎一样，于是地球的星空和火星的星空也一样。古代人早编好的星座在这里也适用。正好我们在车的右边，朝向的南边应该正好能看到猎户座才对。我寻找着那三颗连在一起的星星，星图上说是猎户座的 Delta、Epsilon 和 Zeta。或者参宿一、二和三。</p>
+<p>啊，找到了。没有光污染也没有大气污染，找起来就是方便。</p>
+<p>不过以我的天文知识也就到此为止了。冬季应该有个四边形还是三角形来着？</p>
+<p>我的思绪就这样飞走了。那灿烂的星河，和白露所描述的小杏的眼瞳相比，哪个更深邃呢？</p>
+<br>
+<p>我的脑袋似乎在缓缓地坠落的最后，重重地砸到了白露的大腿上。这一锤子把她砸醒了。</p>
+<p>“啊，什么情况……？”她一片矇眬地问。</p>
+<p>看到调换了位置，坐到窗户旁的我，她好像知道了什么。</p>
+<p>“还够有情趣的。”她说着靠到了我的身上，拿手指贴到了窗上。一阵寒冷让她抖了一机灵。这应该是她唤醒自己的快捷方式。</p>
+<p>她不费一点力气就找到了天球上的猎户座。那个是腰带、那个是肩膀、那个是脚之类的需要想象力的连线游戏。不过更具有建设性的是她指出了让我睡着的冬季大三角。</p>
+<p>“俄里翁的左肩上，那颗红色的就是参宿四了。然后往左下方看，那颗最亮的就是天狼星。更左边能和这俩组成三角形的就是南河三。连在一起就是冬季大三角——啊哈哈，其实对着天空指来指去的根本没用不是吗。”</p>
+<p>静静地为我指着星星的白露，身上展现出一种令人想要依靠的感觉。同为阴角——大概，我突然理解了小杏患上白露依赖症的原因。</p>
+<p>“从天狼星往猎户座的腰带，往右上方做延长线。我们视角的右上方。大概一倍半的距离，就能看到一块蓝色的亮斑了，仔细看的话其实是好几颗恒星。那个就是昴星团了。”</p>
+<p>那种开朗有有活力的美少女，突然温柔下来的样子。如果是一天天只和她交集的话，怎么可能抵挡的了啊。</p>
+<p>我把视线从那从七颗变成六颗的昴星团那里挪回来。</p>
+<p>昴星团本来有七颗星——比较明显的，后来因为某种原因变成了六颗。消失的是昴宿增十二。</p>
+<p>猎户俄里翁爱上了作为阿特拉斯女儿的七姊妹。宙斯为了保护她们，把她们变作鸽子，飞起来作为星星。但七姐妹其中的墨洛珀却爱上了凡人，那位著名的推石头的西西弗斯。或许是因为和凡人相爱的耻辱，或许是因为不忍看到西西弗斯推石头，她就此从夜空中消失了。于是昴星团的七星就变成了六星。</p>
+<p>“所以，我们必须想象墨洛珀是幸福的。”她说，然后自嘲般地笑了笑，“虽然我没看过加缪的那本书。”</p>
+<p>我沉默着想着。神话就是那种可以被随意解释以便于我们使用的文字。她给我说这个到底意思是什么呢——</p>
+<p>“啊，别多想。这个只不过是我之前看到，就恰巧记在脑子里了而已。”</p>
+<p>你的脑袋还挺厉害啊。</p>
+<p>就在我想的时候，她突然侧过脸来看着我。“你果然还是想听小杏的事吧？”她问，“我就知道的。要不要把初雪也叫起来？”</p>
+<p>我站起身来，戳了戳熟睡着的初雪的脸。她侧身蜷缩在座椅上，用双手当作枕头熟睡着，扣着卫衣的帽子。一瞬间我突然又看到了之前那个软糯的初雪。这时候她表现出了一种脆弱感。原来她也没有那么锐利、那么高大啊。</p>
+<p>“喂……。”她嘟囔着，慢慢睁开了眼睛。突然，我的眼前被一片纯白笼罩。</p>
+<p>“喂！”初雪不由得喊了出来，露出了自己的声带里其实存在的少女声线。</p>
+<p>“醒了吗？”白露问。</p>
+<p>“……”初雪低着头，像是很不情愿般地打了个哈欠，“我没醒，你继续。”</p>
+<p>“真绝情啊。”</p>
+<p>“对于你这种女人，我没有交流的必要。”</p>
+<p>“哪种女人？”</p>
+<p>“喜欢玩女人自己还不自知的女人。”初雪说着闭上眼睛。</p>
+<p>“先把‘女人’这个富有攻击性的词换换行吗。”</p>
+<p>“啧。”初雪说，“想被叫‘女孩子’啊。但是你身上现在哪里像一个‘女孩子’了？也不自己审视一下自己。”</p>
+<p>“我唯独不想被装社会姐的专门为此剪短发的女子初中生这么说。”</p>
+<p>初雪不由自主地用手指卷了卷头发，然后发现本来披到肩胛骨的中长发已经被剪掉了。她只好摸了摸光滑的后脑勺。我之前听过说露出的后脑勺会很有魅力什么的，意外地真的如此。</p>
+<p>“啊啊，那算了。就当作情报交流行了吧。”初雪说着摇摇晃晃地站起来，“我们必须相信逃跑的白露也是幸福的。”</p>
+<p>不过，初雪的反讽，意外地为白露抛出了一个值得相当程度的思考的命题。白露幸福吗？</p>
+<p>其实答案早就有了。我和白露聊过那么多次天——虽然很多时候主旨思想都不甚明晰，但总之可以看出她的精神状态也不太稳定。但她自己是怎么想的呢——</p>
+<p>不过这件事再由我来追究的话，就又变成囿于彼方的奏鸣曲了。所以我什么都没说，只是穿上大衣走到车尾的展望台。</p>
+<p>说是展望台，其实只是个更多用玻璃与外界隔断的驾驶位而已。但尽管如此也够冷的了。</p>
+<p>我们三个人挤在展望台上不算宽的位置上，两人宽度的座位上挤了三个人，勉强能用互相的体温取暖。车尾朝向西方，就算太阳升起也看不到提前明亮起来的地平线，更何况这还是冬天。星河像来自异次元的裂缝一般横跨在苍穹之上。空中那块相当吸引人的亮斑是火卫一，福波斯。另一颗卫星得摩斯就大概泯然于众星了，只能靠划过天空的速度来辨别。但凭借人类有限的精力估计是辨别不出的吧。</p>
+<p>我出神地望着天空中那个巨大的土豆，清晰的边缘上坑坑洼洼，和土豆出奇相似。它也被重力束缚着，迟早要掉到火星上。</p>
+<p>“怎么样。刚刚那句话怎么说？”初雪第一个发话。</p>
+<p>“我自己幸福不幸福不知道。但那孩子估计确实是幸福的。”</p>
+<p>“嚯。报应。”</p>
+<p>白露无视了她的话，“就像我说的，从那之后我和小杏就没见过了，也没有联系过。我们很默契的互相取关了。但大概是她先删了我的联系方式，应该是和医生商量过之后的决定吧。”</p>
+<p>“现在她的……她的‘病’，怎么样了？”我问。</p>
+<p>“不知道，但应该是好了吧。虽然我没有和小杏本人联系过，但她家那边是联系过好几次的。小杏也不经常和他们说话，我只是知道她一直没有回老家，大概是还在新威尼斯。”</p>
+<p>“还在新威尼斯啊……”初雪感叹。</p>
+<p>如果那样的话，倒确实是全火星上最幸福的那批人了。最近“出入境（自称）”虽然正常化了，但个人目的的估计一直都不行了。</p>
+<p>“总之，她那样我就放心了。”白露最后憋出这么一句话。</p>
+<p>我下意识地和初雪对视了一下。初雪灰黑色的眼瞳虽然看不清，但估计也闪着同样的疑虑。小杏明明从头到尾都像一直以来的那么清醒才对。我的大脑这一天晚上一直努力地合成着她自己走进医院，然后消失在人海里的那幅画面，但却做不到。那到底是幅什么超乎常识的画啊。</p>
+<p>反而是白露，从牵着别人前行的那个背影，变成了踌躇徘徊的样子。</p>
+<p>“啊对。你不是还说这期间还有件也很重要的事吗？是什么？”</p>
+<p>听到这话的白露突然站了起来。</p>
+<p>“那件事……嘛，仔细想想的话，不过自作多情而已了。别在意了。”</p>
+<p>她走了回去。</p>
+<br>
+<p>“……我想到一个解法。”</p>
+<p>白露走后，变成了我和初雪两个人坐在展望席上。磨蹭了一两个小时，时间已近破晓。我感受到周边的荒野在逐渐被照亮，可以看到它们表面的地衣和苔叶反射的深绿色可见光。</p>
+<p>“？”</p>
+<p>“唯一的解法就是倒转时间了。白露明显对不起自己，虽然她嘴上没说，但内心里一定是这么想的。虽然说我不这么认为。如果她能再遇到一次小杏，要不就强行改变时间线当陌生人，要不就带她不上学私奔好了。”</p>
+<p>我眯着眼睛听初雪一本正经地说这些无聊的话。</p>
+<p>“不然，她要是遇到另一个像是小杏这样的女孩子，一定会再用她那魅魔体质再祸害她的。</p>
+<p>“虽然我不想承认，但白露作为……配偶，说不定还真的很有吸引力。又有表面上阳光的一面，又有温柔的一面，而且实际上是那幅外热内冷的糟糕性格。这不是能完美防止失去新鲜感的吗。”</p>
+<p>“白露，外热内冷？”</p>
+<p>“嗯。”初雪点头。“我比你想的要熟悉她的。不过还是得声明，以下的都是我邪恶的猜想而已。</p>
+<p>“那幅阳光活力的外表其实是伪装，温柔的一面也是伪装。面对彼方带来的存在危机，她选择用那份表面的积极来抗衡，和已经把存在危机变成了自己的一部分的我不一样。她其实很难真的接受别人作为自己人际关系的一部分。发现了吗？她在新威尼斯的朋友其实并不比小杏多多少。那或许就是她对别人的隔阂相当大的缘故。在小小的彼方还看不出来，但在人多得多的新威尼斯，她内心的那一部分就显露出来了。直接体现就是她一直以为自己只是逗着小杏玩而已。她并没有把小杏真的当作自己的小女友来对待。</p>
+<p>“这一点，倒不如说，小杏比白露她自己都清楚多了。所以小杏才能自己走进医院的大门，直截了当地扔掉白露。但白露还不知道，所以她还以为自己是无法直面小杏的感情，或者哪些方面导致的。</p>
+<p>“所以，本质上说，小露子就是个被彼方逼疯了的反社会人格！恐怖吧。”她说。</p>
+<p>“……”</p>
+<p>“就像我一样。”初雪很快补充，“不过这真的只是我自己的解法而已。”</p>
+<p>我沉默着，试图消化她的语言。</p>
+<p>“以我的反社会原子化内心，我是这么理解的。不要入脑，入脑你就输了。”</p>
+<p>“那你……”我放弃了思考，“初雪是外冷内热吧？”</p>
+<p>“是这样吗——说不定呢？”她说着也站起来，“哼哼”地傻笑了两声。这两声听起来倒是格外充满 JC 程度的活力，“我的话，只是个追逐着夏天、吸着夏天的尾气的笨蛋罢了。”</p>
+<p>“有点恶心的描述。”</p>
+<p>“什么啊。偶尔也让我装一下可爱的 JC 不好吗？”</p>
+<p>这个人设明明才维持了一天来着，我没有戳穿她。</p>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="17.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="19.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="17.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="19.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
