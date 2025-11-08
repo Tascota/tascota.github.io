@@ -47,6 +47,35 @@ nav a {
     color: #FF8080;
 }
 
+.right-text {
+    text-align: right;
+}
+
+blockquote:not(.main-quote) {
+    --line-color: #e0e0e0;
+    --line-width: 3px;
+    margin: 0 0 1em 0;
+    padding: 4px 16px 4px 20px;
+    position: relative;
+    background: transparent;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+blockquote::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    bottom: 8px;
+    width: var(--line-width);
+    background: linear-gradient(to bottom, var(--line-color), #f3f3f3);
+    border-radius: 2px;
+    opacity: 0.95;
+}
+
 /* homepage */
 .work {
     text-decoration: none;
@@ -95,6 +124,10 @@ button.smaller-button {
 }
 
 /* quote */
+.main-quote {
+    margin-left: 8px;
+}
+
 p.quote-content {
     font-size: larger;
     font-weight: bold;

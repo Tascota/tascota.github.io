@@ -19,15 +19,18 @@ const euphonium = ["于是，下一首曲子即将奏响！", "「そして、�
 const mono = ["就算变成大人，类似作业的东西也还是不会消失嘛", "「大人になっても、宿題っぽいのはなくなんないですね」", "雾山杏", "霧山アン", "《mono 女孩》", "「mono」", "ja-JP", "1"];
 const yojouhan = ["你必须接受现在的你，明白你不会成为除此以外的任何人", "「今、ここにいる君以外、ほかの何者にもなれない自分を認めなくてはいけない」", "樋口清太郎", "樋口清太郎", "《四叠半神话大系》", "「四畳半神話大系」", "ja-JP", "1"];
 const shuumatsu_end = ["但我觉得，活着真好……", "「生きるのは最高だったよね…」", "尤莉", "ユーリ", "《少女终末旅行》", "「少女終末旅行」", "ja-JP", "1"];
+const kafu_tomorrow = ["从今天起，我要改变明天的世界", "「今日から明日の世界を変えるよ」", "花谱", "花譜", "《神椿市建设中。》", "「神椿市建設中。」", "ja-JP", "1"];
+const ruri = ["如果某一份‘快乐’永不结束，我就不会想要下一份‘快乐’了", "「もし一つの『楽しい』が終わるなかったら、私は次の『楽しい』を必要としなかったと思う」", "谷川琉璃", "谷川瑠璃", "《琉璃的宝石》", "「瑠璃の宝石」", "ja-JP", "1"];
+const city = ["让我们在夏季的某处相见。", "“See you in the summer somewhere.”", "", "", "《小城日常》", "「CITY THE ANIMATION」", "ja-JP", "3"];
 // song
 const hotaru = ["啊啊 苍蓝之色 黎明与萤火", "「ああ 藍の色 夜明けと蛍」", "n-buna", "n-buna", "《黎明与萤火》", "「夜明けと蛍」", "ja-JP", "2"];
-const kagerou = ["这个夏天的故事，永远不会结束", "「この夏の物語は、終わらない」", "じん", "じん", "阳炎 Project", "陽炎 Project", "ja-JP", "2"];
+const kagerou = ["这个夏天的故事，永远不会结束", "「この夏の物語は、終わらない」", "", "", "《阳炎 Project》", "「陽炎 Project」", "ja-JP", "3"];
 const henceforth = ["啊啊 夏日如今再度", "「あぁ 夏は今もう一回」", "Orangestar", "Orangestar", "《Henceforth》", "「Henceforth」", "ja-JP", "2"];
 const diamond = ["拿音乐去赚钱 这样的我们已经没救了吧", "「音楽で金を稼いでいる俺たちは終わりだ」", "神绮一织", "カンザキイオリ", "《钻石》", "「ダイアモンド」", "ja-JP", "2"];
 const otona = ["我到底是什么时候‘成为了’大人的呀？", "「僕はいつ大人に『なった』のだろう？」", "椎名もた", "椎名もた", "《诸位再～见》", "「さよーならみなさん」", "ja-JP", "2"];
 
 const quoteList = [
-    madoka,
+    madoka,// anime
     shuumatsu,
     kininaru,
     nyanpasu,
@@ -39,7 +42,10 @@ const quoteList = [
     mono,
     yojouhan,
     shuumatsu_end,
-    hotaru,
+    kafu_tomorrow,
+    ruri,
+    city,
+    hotaru, // songs
     kagerou,
     henceforth,
     diamond,
@@ -58,6 +64,9 @@ function writeQuote() {
         }
         if (mode == "2") {
             document.getElementById("quote_origin").textContent = "（" + quote_now[5] + "より）";
+        }
+        if (mode == "3") {
+            document.getElementById("quote_origin").textContent = quote_now[5];
         }
     }
 
@@ -88,6 +97,9 @@ function translateQuote() {
     }
     if (mode == "2") {
         document.getElementById("quote_origin").textContent = "，" + quote_now[4] + "中";
+    }
+    if (mode == "3") {
+        document.getElementById("quote_origin").textContent = quote_now[4];
     }
 
     document.getElementById("quote").setAttribute("lang", "zh-CN");
