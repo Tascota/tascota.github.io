@@ -22,6 +22,10 @@ const shuumatsu_end = ["但我觉得，活着真好……", "「生きるのは�
 const kafu_tomorrow = ["从今天起，我要改变明天的世界", "「今日から明日の世界を変えるよ」", "花谱", "花譜", "《神椿市建设中。》", "「神椿市建設中。」", "ja-JP", "1"];
 const ruri = ["如果某一份‘快乐’永不结束，我就不会想要下一份‘快乐’了", "「もし一つの『楽しい』が終わるなかったら、私は次の『楽しい』を必要としなかったと思う」", "谷川琉璃", "谷川瑠璃", "《琉璃的宝石》", "「瑠璃の宝石」", "ja-JP", "1"];
 const city = ["让我们在夏季的某处相见。", "“See you in the summer somewhere.”", "", "", "《小城日常》", "「CITY THE ANIMATION」", "ja-JP", "3"];
+const katta = ["不要以为这样就赢了！", "「これで勝ったと思うなよ！」", "吉田优子", "吉田優子", "《街角魔族》", "「まちカドまぞく」", "ja-JP", "1"];
+const wonderhoy = ["Wonderhoy!☆", "「わんだほーい!☆」", "凤笑梦", "鳳えむ", "《世界计划 彩色舞台 feat. 初音未来》", "「プロジェクトセカイ カラフルステージ！ feat. 初音ミク」", "ja-JP", "1"];
+const happy = ["为世界带来笑容！", "「世界を笑顔に！」", "弦卷心", "弦巻こころ", "《BanG Dream!》", "「BanG Dream!」", "ja-JP", "1"];
+const itsumodoori = ["像往常一样", "「いつも通り」", "Afterglow", "Afterglow", "《BanG Dream!》", "「BanG Dream!」", "ja-JP", "1"];
 // song
 const hotaru = ["啊啊 苍蓝之色 黎明与萤火", "「ああ 藍の色 夜明けと蛍」", "n-buna", "n-buna", "《黎明与萤火》", "「夜明けと蛍」", "ja-JP", "2"];
 const kagerou = ["这个夏天的故事，永远不会结束", "「この夏の物語は、終わらない」", "", "", "《阳炎 Project》", "「陽炎 Project」", "ja-JP", "3"];
@@ -45,6 +49,10 @@ const quoteList = [
     kafu_tomorrow,
     ruri,
     city,
+    katta,
+    wonderhoy,
+    happy,
+    itsumodoori,
     hotaru, // songs
     kagerou,
     henceforth,
