@@ -76,6 +76,17 @@ blockquote::before {
     opacity: 0.95;
 }
 
+table, td, th {
+    border: 1px solid #ababab;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 3px;
+    width: 100px;
+    height: 25px;
+}
+
 /* homepage */
 .work {
     text-decoration: none;
