@@ -26,6 +26,7 @@ const katta = ["不要以为这样就赢了！", "「これで勝ったと思う
 const wonderhoy = ["Wonderhoy!☆", "「わんだほーい!☆」", "凤笑梦", "鳳えむ", "《世界计划 彩色舞台 feat. 初音未来》", "「プロジェクトセカイ カラフルステージ！ feat. 初音ミク」", "ja-JP", "1"];
 const happy = ["为世界带来笑容！", "「世界を笑顔に！」", "弦卷心", "弦巻こころ", "《BanG Dream!》", "「BanG Dream!」", "ja-JP", "1"];
 const itsumodoori = ["像往常一样", "「いつも通り」", "Afterglow", "Afterglow", "《BanG Dream!》", "「BanG Dream!」", "ja-JP", "1"];
+const kino = ["这个世界并不美丽，然而，又因此而美丽", "“The world is not beautiful, therefore it is”", "", "", "《奇诺之旅》", "「キノの旅」", "ja-JP", "3"];
 // song
 const hotaru = ["啊啊 苍蓝之色 黎明与萤火", "「ああ 藍の色 夜明けと蛍」", "n-buna", "n-buna", "《黎明与萤火》", "「夜明けと蛍」", "ja-JP", "2"];
 const kagerou = ["这个夏天的故事，永远不会结束", "「この夏の物語は、終わらない」", "", "", "《阳炎 Project》", "「陽炎 Project」", "ja-JP", "3"];
@@ -53,6 +54,7 @@ const quoteList = [
     wonderhoy,
     happy,
     itsumodoori,
+    kino.
     hotaru, // songs
     kagerou,
     henceforth,
