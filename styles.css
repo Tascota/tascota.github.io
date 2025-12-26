@@ -43,6 +43,10 @@ nav.navigation li {
     margin: 0 15px 0 0;
 }
 
+nav.location ul {
+    margin-bottom: 5px;
+}
+
 nav a {
     color: #FF8080;
 }
@@ -62,18 +66,6 @@ blockquote:not(.main-quote) {
 
 blockquote p {
     margin: 0;
-}
-
-blockquote::before {
-    content: "";
-    position: absolute;
-    left: 8px;
-    top: 8px;
-    bottom: 8px;
-    width: var(--line-width);
-    background: linear-gradient(to bottom, var(--line-color), #f3f3f3);
-    border-radius: 2px;
-    opacity: 0.95;
 }
 
 table, td, th {
@@ -107,9 +99,11 @@ td, th {
     color: white;
 }
 
-div.container {
+div.button-container {
     display: flex;
     align-items: center;
+    gap: 0.5em;
+    margin-top: auto;
 }
 
 button {
@@ -135,14 +129,25 @@ button.smaller-button {
 }
 
 /* quote */
+#quote_part {
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .main-quote {
-    margin-left: 8px;
+    flex: 1;
+    overflow: hidden;
+    margin: 10px 40px 10px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 p.quote-content {
     font-size: larger;
     font-weight: bold;
-    margin: 10px auto;
 }
 
 p.cite {
