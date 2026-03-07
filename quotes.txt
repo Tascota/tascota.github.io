@@ -282,18 +282,18 @@ excerpt
 阿尔贝·加缪
 Albert Camus
 《夏天集》
-«L’été»
+L’été
 fr-FR
-excerpt
+excerptItalic
 
 柯希莫·皮奥瓦斯科·迪·隆多——生活在树上——始终热爱大地——升入天空。
 «Cosimo Piovasco di Rondò – Visse sugli alberi – Amò sempre la terra – Salì in cielo.»
 伊塔洛·卡尔维诺
 Italo Calvino
 《树上的男爵》
-«Il Barone Rampante»
+Il Barone Rampante
 it-IT
-excerpt
+excerptItalic
 
 我们认识的叶藏，又直爽又乖巧，要是不那么喝酒的话，不，即使是喝酒……也还是个像神明一样的好孩子呢。
 「私たちの知っている葉ちゃんは、とても素直で、よく気がきいて、あれでお酒さえ飲まなければ、いいえ、飲んでも、……神様みたいないい子でした」
@@ -312,3 +312,12 @@ excerpt
 「山月記」
 ja-JP
 excerpt
+
+别慌
+“Don’t Panic”
+道格拉斯·亚当斯
+Douglas Adams
+《银河系搭车指南》
+The Hitchhiker's Guide to the Galaxy
+en-UK
+excerptItalic

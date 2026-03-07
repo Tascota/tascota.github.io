@@ -47,6 +47,7 @@ function writeQuote() {
 
     document.getElementById("quote").textContent = quote.org.text;
     document.getElementById("quote_author").textContent = quote.org.author;
+    document.getElementById("quote_origin").classList.remove("italic");
 
     const lang = quote.lang;
     const mode = quote.mode;
@@ -62,6 +63,9 @@ function writeQuote() {
             originText = ", " + quote.org.origin;
         if (mode === "excerpt") 
             originText = ", " + quote.org.origin;
+        if (mode === "excerptItalic") 
+            originText = ", " + quote.org.origin;
+            document.getElementById("quote_origin").classList.toggle("italic");
     }
     if (mode === "quoteTitleOnly") 
         originText = quote.org.origin;
@@ -71,7 +75,7 @@ function writeQuote() {
     setLang(lang);
 }
 
-function generateRandomQuote() {
+function generateRandomQuote() { // org lang
     if (quotes.length === 0) 
         return;
 
@@ -81,7 +85,7 @@ function generateRandomQuote() {
     writeQuote();
 }
 
-function translateQuote() {
+function translateQuote() { // org to zh
     if (!quote) 
         return;
 
@@ -89,11 +93,12 @@ function translateQuote() {
 
     document.getElementById("quote").textContent = "“" + quote.cn.text + "”";
     document.getElementById("quote_author").textContent = quote.cn.author;
+    document.getElementById("quote_origin").classList.remove("italic");
 
     let originText = "";
     if (mode === "quote")
         originText = "，" + quote.cn.origin;
-    if (mode === "excerpt")
+    if (mode === "excerpt" || mode === "excerptItalic")
         originText = "，" + quote.cn.origin + "中";
     if (mode === "quoteTitleOnly")
         originText = quote.cn.origin;

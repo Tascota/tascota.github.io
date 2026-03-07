@@ -79,6 +79,10 @@ td, th {
     height: 25px;
 }
 
+.italic {
+    font-style: italic;
+}
+
 /* homepage */
 .work {
     text-decoration: none;
