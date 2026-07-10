@@ -1,6 +1,6 @@
 ---
 title: 描绘彼方的三年
-published: 2024-08-25
+published: 2025-08-25
 tags: [Thoughts]
 category: Records
 draft: false
@@ -170,4 +170,4 @@ Yuu 说“其实我还有一个更大的梦想”，视角切换到钢琴。那�
 
 因为，我深知那只存在于彼方。
 
-> Added in v1.9, 2024-09-08.
+> Added in v1.9, 2025-09-08.
