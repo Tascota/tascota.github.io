@@ -1,0 +1,6 @@
+[book]
+title = "彼方的奏鸣曲"
+authors = ["Tascota"]
+language = "zh"
+multilingual = false
+src = "src"

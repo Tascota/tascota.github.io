@@ -1,0 +1,266 @@
+/* common */
+body {
+    background-color: #1f1f2f;
+    color: #efefee;
+    width: 50%;
+    min-width: 700px;
+    margin: 0 auto;
+    line-height: 23px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header, main {
+    flex: auto;
+    flex-flow: row;
+    padding: 1%;
+}
+
+a {
+    color: inherit;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+
+nav li {
+    float: left;
+    display: inline;
+    overflow: hidden;
+}
+
+nav.navigation li {
+    margin: 0 15px 0 0;
+}
+
+nav.location ul {
+    margin-bottom: 5px;
+}
+
+nav a {
+    color: #FF8080;
+}
+
+.right-text {
+    text-align: right;
+}
+
+blockquote:not(.main-quote) {
+    --line-color: #e0e0e0;
+    --line-width: 3px;
+    margin: 0 0 1em 0;
+    padding: 4px 16px 4px 20px;
+    position: relative;
+    background: transparent;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+table, td, th {
+    border: 1px solid #ababab;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 3px;
+    width: 100px;
+    height: 25px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* homepage */
+.work {
+    text-decoration: none;
+}
+
+.contact-box {
+    border: 3px solid;
+    border-radius: 3px;
+    padding: 1%;
+    height: fit-content;
+    width: 8em;
+    margin: 5px;
+}
+
+.web-white {
+    font-weight: bolder;
+    font-size: large;
+    color: white;
+}
+
+div.button-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: auto;
+}
+
+button {
+    background-color: #8080FF;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    border-radius: 4px;
+    border-color: white;
+    margin-right: 5px;
+}
+
+button.sakura {
+    background-color: #ff8080;
+    color: white;
+    border-color: white;
+}
+
+button.smaller-button {
+    margin-right: 5px;
+    font-size: medium;
+}
+
+/* quote */
+#quote_part {
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-quote {
+    flex: 1;
+    overflow: hidden;
+    margin: 10px 40px 10px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+p.quote-content {
+    font-size: larger;
+    font-weight: bold;
+}
+
+p.cite {
+    margin: 10px auto;
+    margin-inline-end: 40px;
+    text-align: right;
+}
+
+div#quote_part div.container {
+    justify-content: space-between;
+}
+
+div#quote_part button {
+    margin-top: 0;
+    text-align: left;
+}
+
+/* subs */
+.sub li {
+    list-style: square;
+    margin: 2px 0;
+}
+
+.sub p {
+    color: #ababaa;
+    font-size: small;
+}
+
+.reference {
+    color: #ababaa;
+    font-size: 15px;
+}
+
+.date {
+    color: #ababaa;
+    font-size: 15px;
+    text-align: right;
+    line-height: normal;
+}
+
+.date p {
+    margin: 0;
+}
+
+.date ul {
+    margin: 0;
+}
+
+.date li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+figcaption {
+    color: #ababaa;
+    font-size: 15px;
+    text-align: center;
+}
+
+.delline {
+    text-decoration-line: line-through;
+}
+
+.reference-index {
+    color: #ababaa;
+    font-size: 15px;
+    list-style: upper-roman;
+}
+
+/* conlang */
+.paragraph {
+    margin-bottom: 1.5em;
+}
+
+.paragraph p {
+    margin: 0;
+}
+
+.original {
+    color: #cdcdcc;
+}
+
+.translation {
+    color: #efefee;
+}
+
+.ref-translation {
+    font-size: small;
+    color: #ababaa;
+}
+
+.original-b {
+    color: #cdcdcc;
+    font-weight: bold;
+}
+
+.translation-b {
+    color: #efefee;
+    font-weight: bold;
+}
+
+/*Anime Review*/
+.anisongs {
+    margin: auto auto 16px auto;
+}
+
+.anime-reviews li {
+    list-style: square;
+}
