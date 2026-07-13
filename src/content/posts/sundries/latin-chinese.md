@@ -11,8 +11,6 @@ draft: false
 
 <hr>
 
-<section id="catholic">
-
 第一种十分古墓派的转写方法，以圣座早年间设立的教区的名称为基本。
 
 <br>
@@ -191,11 +189,7 @@ draft: false
 
 笔者不通拉丁语，因而难以给出其更多词性相关内容，还是看着办吧。
 
-</section>
-
 <hr>
-
-<section id="modern">
 
 第二种总结自现代的拉丁语维基百科。其转写方法不一且来自不同来源，所以很有可能从头到尾都与上面梵蒂冈的转写不一样。当然也有直接写拼音的，但为了代入感考虑我们还是不这么做。
 
@@ -230,7 +224,5 @@ draft: false
 还可以加 vum 来适用第二变格法，如上海 Sciamhaevum。
 
 总之，以看起来像拉丁语的地名为第一要点，例如再试着做几个转写：南宁 Nannimum / Nanninga；长春 Chamchunum；深圳 Xencenum，“深圳的企鹅”可以写成 spheniscida Xencenī。
-
-</section>
 
 > Added in v1.3.4, 2024-08-29.
