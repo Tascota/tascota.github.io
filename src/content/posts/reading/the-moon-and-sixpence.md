@@ -1,7 +1,7 @@
 ---
 title: 天堂、地狱，没有圣人
 published: 2026-01-18
-tags: [Notes]
+tags: [Shiori]
 category: Reading
 draft: false
 sourceLink: https://book.douban.com/review/17402295

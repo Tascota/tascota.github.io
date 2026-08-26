@@ -1,7 +1,7 @@
 ---
 title: 读《个人的体验》的个人的体验
 published: 2026-02-15
-tags: [Notes]
+tags: [Shiori]
 category: Reading
 draft: false
 sourceLink: https://book.douban.com/review/17448940

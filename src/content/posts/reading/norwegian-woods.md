@@ -1,7 +1,7 @@
 ---
 title: 爱、失去与渐行渐远的青春——只谈《挪威的森林》
 published: 2025-03-20
-tags: [Notes]
+tags: [Shiori]
 category: Reading
 draft: false
 #sourceLink:

@@ -1,7 +1,7 @@
 ---
 title: 2024 年夏季新番完结吐槽
 published: 2024-11-09
-tags: [Seasonal]
+tags: [Quarterlies]
 category: ACG
 draft: false
 #sourceLink:

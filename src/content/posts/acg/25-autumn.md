@@ -1,7 +1,7 @@
 ---
 title: 2025 年秋季新番漫谈
 published: 2025-12-27
-tags: [Seasonal]
+tags: [Quarterlies]
 category: ACG
 draft: false
 sourceLink: https://bgm.tv/blog/365644

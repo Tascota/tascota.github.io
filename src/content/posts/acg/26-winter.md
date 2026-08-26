@@ -1,7 +1,7 @@
 ---
 title: 2026 年冬季新番漫谈
 published: 2026-04-12
-tags: [Seasonal]
+tags: [Quarterlies]
 category: ACG
 draft: false
 sourceLink: https://bgm.tv/blog/372032

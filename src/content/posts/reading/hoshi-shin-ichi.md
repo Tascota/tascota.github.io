@@ -1,7 +1,7 @@
 ---
 title: 星新一与日本科幻
 published: 2025-01-05
-tags: [Notes]
+tags: [Shiori]
 category: Reading
 draft: false
 #sourceLink:

@@ -1,7 +1,7 @@
 ---
 title: 2025 年春季新番漫谈
 published: 2025-07-19
-tags: [Seasonal]
+tags: [Quarterlies]
 category: ACG
 draft: false
 sourceLink: https://bgm.tv/blog/357872

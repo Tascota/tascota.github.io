@@ -1,7 +1,7 @@
 ---
 title: 《冬牧场》：简单而复杂的牧场冬天
 published: 2024-10-20
-tags: [Notes]
+tags: [Shiori]
 category: Reading
 draft: false
 #sourceLink:

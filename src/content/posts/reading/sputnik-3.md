@@ -1,7 +1,7 @@
 ---
 title: 暂时的旅伴
 published: 2026-03-06
-tags: [Notes]
+tags: [Shiori]
 category: Reading
 draft: false
 sourceLink: https://book.douban.com/review/17492094
@@ -36,6 +36,6 @@ sourceLink: https://book.douban.com/review/17492094
 
 属于斯普特尼克们的结局。
 
-[>](../../records/sputnik-4/)
+[>](../../recording/sputnik-4/)
 
 > Added in v1.11.6, 2026-03-07.

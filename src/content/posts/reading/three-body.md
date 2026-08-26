@@ -1,7 +1,7 @@
 ---
 title: 浅谈我所读的《三体》
 published: 2025-05-18
-tags: [Notes]
+tags: [Shiori]
 category: Reading
 draft: false
 sourceLink: https://www.bilibili.com/read/cv41710966

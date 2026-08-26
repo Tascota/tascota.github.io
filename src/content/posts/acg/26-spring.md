@@ -1,7 +1,7 @@
 ---
 title: 2026 年春季新番漫谈
 published: 2026-07-09
-tags: [Seasonal]
+tags: [Quarterlies]
 category: ACG
 draft: false
 sourceLink: https://bgm.tv/blog/376569

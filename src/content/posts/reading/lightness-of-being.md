@@ -1,7 +1,7 @@
 ---
 title: 只得承受的生命之轻
 published: 2025-11-09
-tags: [Notes]
+tags: [Shiori]
 category: Reading
 draft: false
 sourceLink: https://book.douban.com/review/17191783
