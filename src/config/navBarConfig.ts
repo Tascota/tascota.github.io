@@ -183,16 +183,16 @@ export const navBarConfig: NavBarConfig = {
           url: "/anime/",
           icon: "material-symbols:movie",
         },
-        {
-          name: "Diary",
-          url: "/diary/",
-          icon: "material-symbols:book",
-        },
         // {
-        //   name: "Gallery",
-        //   url: "/albums/",
-        //   icon: "material-symbols:photo-library",
+        //   name: "Diary",
+        //   url: "/diary/",
+        //   icon: "material-symbols:book",
         // },
+        {
+          name: "Gallery",
+          url: "/albums/",
+          icon: "material-symbols:photo-library",
+        },
         // {
         //   name: "Devices",
         //   url: "/devices/",
@@ -213,11 +213,11 @@ export const navBarConfig: NavBarConfig = {
           url: "/about/",
           icon: "material-symbols:person",
         },
-        {
-          name: "Friends",
-          url: "/friends/",
-          icon: "material-symbols:group",
-        },
+        // {
+        //   name: "Friends",
+        //   url: "/friends/",
+        //   icon: "material-symbols:group",
+        // },
         {
           name: "Timeline",
           url: "/timeline/",

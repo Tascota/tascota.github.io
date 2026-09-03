@@ -45,3 +45,5 @@ description: 「ん」的五种读法？拨音的同位异音现象
 > 实际上，日语中语末的拨音如何表达，目前学界仍无定论。传统上认为表现为小舌鼻音 [ɴ]，但日本语言学家前川喜久雄在 2023 年的研究中驳斥了这一点。可参考以下论文：
 
 > Maekawa K. Production of the utterance-final moraic nasal in Japanese: A real-time MRI study. Journal of the International Phonetic Association. 2023;53(1):189-212. doi:10.1017/S0025100321000050
+> <br>
+> Added in v2.0.3, 2026-07-13.
