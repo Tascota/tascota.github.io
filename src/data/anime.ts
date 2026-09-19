@@ -1,7 +1,7 @@
 // 本地番剧数据配置
 export interface AnimeItem {
   title: string;
-  status: "watching" | "completed" | "planned";
+  status: "watching";
   rating: number;
   cover: string;
   description: string;
