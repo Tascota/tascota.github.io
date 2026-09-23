@@ -223,6 +223,11 @@ export const navBarConfig: NavBarConfig = {
           url: "/timeline/",
           icon: "material-symbols:timeline",
         },
+        {
+          name: "Versions",
+          url: "/versions/",
+          icon: "material-symbols:history",
+        },
       ],
     },
 
