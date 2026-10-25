@@ -2,7 +2,7 @@ import type { AnnouncementConfig } from "../types/config";
 
 // 公告栏配置
 export const announcementConfig: AnnouncementConfig = {
-  title: "v2.3.5b - 2026-10-24", // 公告标题，填空使用i18n字符串Key.announcement
+  title: "v2.3.5c - 2026-10-25", // 公告标题，填空使用i18n字符串Key.announcement
   content: "添加了两篇新文章。", // 公告内容
   closable: false, // 允许用户关闭公告
   link: {
