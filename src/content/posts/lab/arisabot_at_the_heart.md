@@ -1,7 +1,7 @@
 ---
 title: 在世界的中心呼唤爱的 ArisaBot
 published: 2026-10-24
-tags: [Tech]
+tags: [Tech, Kokoromochi]
 category: Lab
 draft: false
 # sourceLink:
