@@ -159,6 +159,9 @@ const t = (key: string) => i18n(key as I18nKey);
 	</div>
 
 	<script>
+		import I18nKey from "@i18n/i18nKey";
+		import { i18n } from "@i18n/translation";
+
 		const init = () => {
 			const btn =
 				document.getElementById("copy-rss-btn") ||
@@ -172,9 +175,11 @@ const t = (key: string) => i18n(key as I18nKey);
 					try {
 						await navigator.clipboard.writeText(url);
 						const originalText = this.textContent || "Copy Link";
-						this.textContent = url.includes("rss")
-							? "RSS link copied to clipboard!"
-							: "Atom link copied to clipboard!";
+						this.textContent = i18n(
+							url.includes("rss")
+								? I18nKey.rssCopied
+								: I18nKey.atomCopied,
+						);
 						this.style.backgroundColor =
 							"var(--success-color, #10b981)";
 
@@ -185,8 +190,11 @@ const t = (key: string) => i18n(key as I18nKey);
 					} catch (err) {
 						console.error("复制失败:", err);
 						const originalText = this.textContent || "Copy Link";
-						this.textContent =
-							"Copy failed, please copy the link manually";
+						this.textContent = i18n(
+							url.includes("rss")
+								? I18nKey.rssCopyFailed
+								: I18nKey.atomCopyFailed,
+						);
 						setTimeout(() => {
 							this.textContent = originalText;
 						}, 2000);

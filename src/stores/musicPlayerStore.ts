@@ -341,7 +341,7 @@ class MusicPlayerStore {
 	private loadLocalPlaylist(): void {
 		this.state.playlist = [...LOCAL_PLAYLIST];
 		if (this.state.playlist.length === 0) {
-			this.showError("本地播放列表为空");
+			this.showError(i18n(Key.musicPlayerErrorEmpty));
 		} else {
 			this.loadSong(this.state.playlist[0], false);
 		}

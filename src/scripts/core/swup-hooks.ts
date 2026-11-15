@@ -3,6 +3,8 @@
  * 处理页面过渡过程中的各种钩子事件
  */
 
+import I18nKey from "../../i18n/i18nKey";
+import { i18n } from "../../i18n/translation";
 import { pathsEqual, url } from "../../utils/url-utils";
 import type { FancyboxHandler } from "../handlers/fancybox-handler";
 import type { ScrollHandler } from "../handlers/scroll-handler";
@@ -552,7 +554,10 @@ export class SwupHooksManager {
 		if (isPost && (date || category || words)) {
 			dateEl.textContent = date;
 			categoryEl.textContent = category;
-			wordsEl.textContent = words ? `${words} 字` : "";
+			const wordUnit = i18n(
+				Number(words) > 1 ? I18nKey.wordsCount : I18nKey.wordCount,
+			);
+			wordsEl.textContent = words ? `${words} ${wordUnit}` : "";
 			metaEl.classList.remove("hidden");
 			metaEl.classList.remove("anim-in");
 

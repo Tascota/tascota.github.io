@@ -1,5 +1,4 @@
 ---
-import { siteConfig } from "../../../config";
 import I18nKey from "../../../i18n/i18nKey";
 import { i18n } from "../../../i18n/translation";
 import WidgetLayout from "../common/WidgetLayout.astro";
@@ -36,9 +35,6 @@ const weekDays = [
 	i18n(I18nKey.calendarSaturday),
 	i18n(I18nKey.calendarSunday),
 ];
-
-const isChinese = siteConfig.lang.startsWith("zh");
-const yearSuffix = isChinese ? "年" : " ";
 ---
 
 <WidgetLayout
@@ -46,5 +42,5 @@ const yearSuffix = isChinese ? "年" : " ";
 	class={`hidden md:block ${className}`}
 	style={style}
 >
-	<CalendarWidget client:visible {monthNames} {weekDays} {yearSuffix} />
+	<CalendarWidget client:visible {monthNames} {weekDays} />
 </WidgetLayout>

@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 
+import LanguageSwitch from "../../control/LanguageSwitch.svelte";
 import { LinkPresets } from "../../../constants/link-presets";
 import I18nKey from "../../../i18n/i18nKey";
 import { i18n } from "../../../i18n/translation";
@@ -145,6 +146,9 @@ const processedLinks: ProcessedNavBarLink[] = (
 			</div>
 		))
 	}
+	<div class="mobile-menu-item mt-2 pt-2 border-t border-black/10 dark:border-white/10">
+		<LanguageSwitch client:only="svelte" variant="inline"></LanguageSwitch>
+	</div>
 </div>
 
 <style>

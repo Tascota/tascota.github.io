@@ -156,7 +156,7 @@ export function loadLocalPlaylist(
 ): boolean {
 	state.playlist = [...LOCAL_PLAYLIST];
 	if (state.playlist.length === 0) {
-		showError("本地播放列表为空");
+		showError(i18n(Key.musicPlayerErrorEmpty));
 		return false;
 	}
 	return true;

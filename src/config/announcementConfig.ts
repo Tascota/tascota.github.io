@@ -2,8 +2,8 @@ import type { AnnouncementConfig } from "../types/config";
 
 // 公告栏配置
 export const announcementConfig: AnnouncementConfig = {
-  title: "v2.3.8 - 2026-11-11", // 公告标题，填空使用i18n字符串Key.announcement
-  content: "添加了一篇新博文。", // 公告内容
+  title: "v2.4.0 - 2026-11-15", // 公告标题，填空使用i18n字符串Key.announcement
+  content: "添加了界面语言切换功能，包含中日英及伊哈托布语。", // 公告内容
   closable: false, // 允许用户关闭公告
   link: {
     enable: true, // 启用链接

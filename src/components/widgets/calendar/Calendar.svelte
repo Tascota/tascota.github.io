@@ -31,10 +31,9 @@ import type {
 interface Props {
 	monthNames: string[];
 	weekDays: string[];
-	yearSuffix: string;
 }
 
-const { monthNames, weekDays, yearSuffix }: Props = $props();
+const { monthNames, weekDays }: Props = $props();
 
 // State
 let allPostsData: CalendarPost[] = $state([]);
@@ -244,8 +243,7 @@ onMount(() => {
 			<span
 				class="text-lg font-bold text-neutral-900 dark:text-neutral-100 select-none"
 			>
-				{currentYear}{yearSuffix}
-				{monthNames[currentMonth]}
+				{currentYear} / {monthNames[currentMonth]}
 			</span>
 		</button>
 	</div>

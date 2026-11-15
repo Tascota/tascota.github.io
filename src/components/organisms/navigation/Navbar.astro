@@ -5,6 +5,7 @@ import { navBarConfig, siteConfig } from "../../../config";
 import { LinkPresets } from "../../../constants/link-presets";
 import { LinkPreset, type NavBarLink } from "../../../types/config";
 import { url } from "../../../utils/url-utils";
+import LanguageSwitch from "../../control/LanguageSwitch.svelte";
 import ThemeSwitch from "../../control/ThemeSwitch.svelte";
 import SettingsPanel from "../../features/settings/SettingsPanel.svelte";
 import MobileTOC from "../../features/toc/MobileTOC.svelte";
@@ -143,6 +144,7 @@ const iconWebpSrc = hasIconPngFallback
             <div id="search-container">
                 <Search client:only="svelte"></Search>
             </div>
+            <LanguageSwitch client:only="svelte"></LanguageSwitch>
             {/* 只在 sidebar 模式下显示移动端 TOC 按钮 */}
 			{siteConfig.toc.enable && siteConfig.toc.mobileTop && <MobileTOC client:only="svelte"></MobileTOC>}
             <button aria-label="Display Settings" class="btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="display-settings-switch">
